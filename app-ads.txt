@@ -1,4 +1,17 @@
+ownerdomain=noqyris.github.io
 # app-ads.txt — Noqyris (IAB Authorized Sellers for Apps 1.0)
+#
+# Line 1 is the IAB OwnerDomain variable. Unity: "you must include the
+# OwnerDomain field"; the domain "must align with the seller's domain in
+# sellers.json files and resolve in a browser without redirects". Syntax
+# copied from docs.unity.com/en-us/grow/ads/optimization/app-ads-txt, whose
+# example line is `ownerdomain=yourdomain.com`. noqyris.github.io is the
+# developer website in both store listings and the domain this file is
+# served from. github.io IS on the Public Suffix List (publicsuffix.org, line
+# 13766 on 2026-09-10), which makes noqyris.github.io the registrable domain —
+# arguably the correct OwnerDomain; whether Unity's checker accepts a PSL-suffix
+# domain is unverified. The fallback root is noqyris.com — but the apex
+# currently answers 308 → www.noqyris.com, so fix that or use www.
 #
 # Generated 2026-08-20 from the Unity monetization dashboard:
 #   cloud.unity.com → Monetization → Settings → App-ads.txt → missing sellers

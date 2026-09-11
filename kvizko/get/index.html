@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="sr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>KVIZKO — Preuzmi</title>
+<script>
+// One link for every post: route by device. iPhone/iPad → the App Store page;
+// Android → the landing page's "Android: uskoro" line (there is no Play link
+// until Play production exists — replace the branch then); desktop → the landing page.
+(function () {
+  var APP_STORE = 'https://apps.apple.com/app/id6793550562';
+  var LANDING = '../';
+  var ua = navigator.userAgent || '';
+  var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  var isAndroid = /Android/.test(ua);
+  if (isIOS) location.replace(APP_STORE);
+  else if (isAndroid) location.replace(LANDING + '#android');
+  else location.replace(LANDING);
+})();
+</script>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; padding:2.5rem 1.25rem 4rem; background:#0d1117; color:#e6edf3;
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:44rem; margin:0 auto; }
+  h1 { color:#ffc940; font-size:2.1rem; margin:0 0 .25rem; }
+  a { color:#2dd4bf; }
+</style>
+</head>
+<body><div class="wrap">
+<h1>KVIZKO</h1>
+<p>Kviz znanja sa 4.600+ pitanja i objašnjenjem uz svaki odgovor.</p>
+<p>iPhone: <a href="https://apps.apple.com/app/id6793550562">App Store</a></p>
+<p>Android: <strong>uskoro</strong>.</p>
+<p><a href="../">Sve o igri, podrška i česta pitanja</a></p>
+</div></body>
+</html>
