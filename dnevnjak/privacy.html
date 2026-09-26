@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Politika privatnosti — Dnevnjak</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px 48px;
+        background: #16121d;
+        color: #f2ecdf;
+        font:
+          16px/1.6 system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 8px;
+        color: #e8b64c;
+      }
+      p,
+      li {
+        color: #d9d2c4;
+      }
+      .datum {
+        color: #9c93ab;
+        margin: 0 0 24px;
+      }
+      a {
+        color: #e8b64c;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>🗞️ Politika privatnosti — Dnevnjak</h1>
+      <p class="datum">Poslednje ažuriranje: 26. septembar 2026.</p>
+      <p>
+        Dnevnjak („aplikacija") je igra sa šest dnevnih izazova iz balkanske kulture koju razvija
+        Noqyris. Ova politika objašnjava koje podatke aplikacija koristi i zašto. Kratko:
+        <strong
+          >nemamo naloge ni svoje servere i ne tražimo tvoje ime, e-mail ni bilo koji lični
+          podatak.</strong
+        >
+        Jedini deo aplikacije koji šalje podatke o uređaju su reklame (vidi ispod), i to tek kada na
+        to pristaneš.
+      </p>
+
+      <h2>Šta aplikacija čuva i gde</h2>
+      <ul>
+        <li>
+          Napredak (rešene rubrike i poeni po danu), niz, statistika, dukati, kupljeni paketi i
+          podešavanja (zvuk, vibracija, podsetnik, izbor o reklamama) čuvaju se
+          <strong>isključivo lokalno na tvom uređaju</strong>.
+        </li>
+        <li>Nema naloga, prijave ni našeg servera. Ovi podaci ne napuštaju uređaj.</li>
+        <li>
+          <em>Podešavanja → Obriši napredak</em> briše rešene rubrike i poene po danu, niz i
+          statistiku. Tada ostaju: dukati i zamrzivači, kupovine (i evidencija o njima), osvojena
+          odlikovanja i titula, otključani dani arhive i iskorišćene pomoći, evidencija isplaćenih
+          nagrada po danu (koje rubrike su već donele dukate — da se ista nagrada ne bi isplatila
+          dvaput), podešavanja i izbor o reklamama. Sve ove podatke briše brisanje aplikacije.
+        </li>
+      </ul>
+
+      <h2>Reklame (Unity LevelPlay)</h2>
+      <ul>
+        <li>
+          Aplikacija na iPhone-u prikazuje reklame preko
+          <strong>Unity LevelPlay-a (ironSource)</strong>, posrednika koji prostor za reklamu nudi
+          reklamnim mrežama; danas su to <strong>ironSource Ads</strong> i
+          <strong>Unity Ads</strong>, obe usluge kompanije Unity. Reklame su preko celog ekrana i
+          nagradne video reklame koje sam pokrećeš da bi dobio nagradu u igri.
+        </li>
+        <li>
+          Kada se reklama učitava i prikazuje, Unity prikuplja i obrađuje tehničke podatke o uređaju
+          i o prikazanoj reklami — <strong>reklamni identifikator uređaja</strong> (ako ga
+          dozvoliš), model uređaja, verziju sistema, jezik, približnu državu (po IP adresi) i
+          podatke o prikazu i dodiru reklame. Unity te podatke koristi kao samostalni rukovalac, za
+          prikazivanje i merenje reklama, sprečavanje prevara i unapređenje svojih usluga. Mi te
+          podatke ne dobijamo i ne čuvamo.
+        </li>
+        <li>
+          <strong>Pre prve reklame</strong> aplikacija te pita za saglasnost. Ako je ne daš,
+          reklamni SDK se <strong>uopšte ne pokreće</strong>: igra radi isto, samo bez reklama i bez
+          nagrada koje se dobijaju gledanjem reklame. Izbor možeš da promeniš bilo kada u
+          podešavanjima aplikacije.
+        </li>
+        <li>
+          Na iOS-u te sistem pre toga pita i za dozvolu praćenja (<strong
+            >App Tracking Transparency</strong
+          >). Ako je odbiješ, reklamni identifikator se ne deli (iOS ga daje kao nule) i reklame
+          nisu personalizovane. Izbor menjaš i u
+          <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.
+        </li>
+        <li>
+          I kada odbiješ praćenje, a pristaneš na reklame, Unity-jev SDK (uključujući njegov modul
+          za kvalitet reklama, Unity Ad Quality) koristi tehničke podatke potrebne da se reklama
+          prikaže i izmeri: iOS identifikator za aplikacije istog izdavača (IDFV — isti u svim
+          Noqyris aplikacijama na tvom uređaju), identifikator koji Unity dodeljuje instalaciji,
+          model uređaja, verziju sistema i podatke o performansama i greškama. Unity-jev modul za
+          kvalitet reklama u svom privatnosnom manifestu za Apple navodi da ove podatke ne koristi
+          za praćenje; za sve ostalo važi politika privatnosti Unity-ja (link ispod).
+        </li>
+        <li>
+          Na Androidu aplikacija za sada <strong>ne prikazuje reklame</strong> i reklamni SDK se ne
+          pokreće.
+        </li>
+        <li>
+          Politika privatnosti Unity-ja:
+          <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>
+        </li>
+      </ul>
+
+      <h2>Kupovine u aplikaciji</h2>
+      <ul>
+        <li>
+          Kupovine (npr. paket dukata ili uklanjanje reklama) obrađuju
+          <strong>App Store (Apple) ili Google Play (Google)</strong>, pod njihovim uslovima. Podaci
+          o plaćanju nikad ne stižu do nas — ne vidimo ni ime, ni karticu, ni e-mail kupca.
+        </li>
+        <li>
+          Aplikacija na uređaju pamti samo šta je kupljeno, da bi ti isporučila kupljeno i da bi
+          „Vrati kupovine" radilo.
+        </li>
+      </ul>
+
+      <h2>Podsetnik (opciono)</h2>
+      <p>
+        Ako u podešavanjima uključiš podsetnik, aplikacija na tvom uređaju zakazuje lokalno
+        obaveštenje u izabrano vreme. Obaveštenje se ne šalje preko interneta i nijedan podatak se
+        ne prenosi. Podsetnik je podrazumevano isključen, a možeš ga isključiti u aplikaciji ili u
+        sistemskim podešavanjima.
+      </p>
+
+      <h2>Deljenje rezultata</h2>
+      <p>
+        Dugme „Podeli" otvara sistemski meni za deljenje sa tekstom rezultata (emodži kvadratići i
+        broj poena). Šta ćeš i kome poslati biraš ti; aplikacija ništa ne šalje sama.
+      </p>
+
+      <h2>Šta aplikacija ne radi</h2>
+      <ul>
+        <li>
+          Nema naše analitike ni praćenja; jedini kod koji šalje podatke o uređaju je reklamni SDK
+          opisan gore.
+        </li>
+        <li>
+          Ne traži pristup lokaciji, kontaktima, kameri ni fotografijama. Mapa u rubrici „Pogodi
+          grad" je crtež i ne koristi tvoju lokaciju.
+        </li>
+      </ul>
+
+      <h2>Deca</h2>
+      <p>
+        Aplikacija nije namenjena deci mlađoj od 13 godina i ne prikuplja svesno njihove podatke.
+      </p>
+
+      <h2>Izmene</h2>
+      <p>
+        Ako se ova politika promeni, nova verzija biće objavljena na ovoj stranici pre nego što
+        izmena stupi na snagu.
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>Noqyris — subotic.djo@gmail.com</p>
+    </main>
+  </body>
+</html>
