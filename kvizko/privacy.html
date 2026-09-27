@@ -11,70 +11,404 @@
   .wrap { max-width:44rem; margin:0 auto; }
   h1 { color:#ffc940; font-size:1.9rem; margin:0 0 .25rem; }
   h2 { color:#ffc940; font-size:1.15rem; margin:2rem 0 .5rem; }
-  .sub { color:#8a97ad; margin:0 0 2rem; }
+  h3 { color:#e6edf3; font-size:1rem; margin:1.25rem 0 .35rem; }
+  .sub { color:#8a97ad; margin:0 0 1rem; }
+  .lang { margin:0 0 2rem; font-size:.95rem; }
   a { color:#2dd4bf; }
   ul { padding-left:1.2rem; }
   li { margin:.35rem 0; }
+  .box { background:#161b22; border:1px solid #222b36; border-radius:10px; padding:.25rem 1rem; }
+  hr { border:0; border-top:1px solid #222b36; margin:3.5rem 0 2.5rem; }
   .foot { margin-top:3rem; padding-top:1.25rem; border-top:1px solid #222b36; color:#8a97ad; font-size:.9rem; }
 </style>
 </head>
 <body><div class="wrap">
 
+<section lang="sr" id="sr">
+
 <h1>Politika privatnosti — KVIZKO</h1>
-<p class="sub">Poslednja izmena: 4. septembar 2026.</p>
+<p class="sub">Poslednja izmena: 27. septembar 2026. (verzija 1.3.0)</p>
+<p class="lang"><a href="#en">English version below</a></p>
 
 <p>KVIZKO je kviz igra koju razvija <strong>Noqyris</strong>. Ova politika objašnjava koje se
-informacije obrađuju kada koristiš aplikaciju.</p>
+informacije obrađuju kada koristiš aplikaciju, ko ih obrađuje, koliko dugo se čuvaju i kako ih
+brišeš.</p>
 
-<h2>Šta mi ne prikupljamo</h2>
-<p>KVIZKO <strong>nema naloge, nema registraciju i nema svoj server</strong>. Ne prikupljamo tvoje ime,
-e-mail, broj telefona ni bilo koji drugi lični podatak. Sve što igra pamti — rezultati, statistika,
-napredak, podešavanja i kupovina — <strong>ostaje isključivo na tvom uređaju</strong>. Ako obrišeš
-aplikaciju, ti podaci nestaju sa njom.</p>
-
-<h2>Servisi trećih strana</h2>
-<p>Aplikacija koristi sledeće servise, koji mogu obrađivati podatke po sopstvenim pravilima:</p>
+<div class="box">
 <ul>
-  <li><strong>Unity LevelPlay (ironSource)</strong> — prikazuje reklame i posreduje između više
-      reklamnih mreža. Prikuplja i obrađuje tehničke podatke o uređaju i o prikazanoj reklami
-      („Services Data") — reklamni identifikator, tip uređaja, verziju sistema, približnu
-      lokaciju (država), podatke o prikazu i interakciji sa reklamom, kao i dijagnostičke
-      podatke o radu aplikacije — radi prikazivanja i merenja reklama, sprečavanja zloupotreba
-      i unapređenja svojih usluga, kao samostalni rukovalac.
-      <a href="https://unity.com/legal/privacy-policy">Unity politika privatnosti</a></li>
-  <li><strong>Apple Game Center</strong> (iOS) — ako si prijavljen, čuva tvoj rezultat na rang
-      listama. Rang liste su opcione; bez prijave igra radi normalno.</li>
-  <li><strong>Google Play igre</strong> (Android) — isto to na Androidu: ako si prijavljen,
-      čuva tvoj rezultat na rang listama i osvojena dostignuća. Bez prijave igra radi normalno.</li>
-  <li><strong>Apple App Store</strong> (iOS) i <strong>Google Play naplata</strong> (Android) —
+  <li>Kviz, „Preživi“, dnevni izazov, zadaci, niz, statistika, žetoni i kupovine rade na tvom
+      uređaju. Ti podaci ostaju na uređaju.</li>
+  <li>Samo <strong>Duel</strong> (igra uživo protiv drugog igrača) šalje podatke našem serveru.
+      Šalje anonimni ID igrača, nadimak koji izabereš i tok tvojih duela. Ne šalje ime,
+      e-mail ni broj telefona.</li>
+  <li>Reklame prikazuje Unity LevelPlay, i to samo ako na njih pristaneš.</li>
+</ul>
+</div>
+
+<h2>1. Šta ostaje samo na tvom uređaju</h2>
+<p>Na uređaju se čuvaju rezultati, statistika, napredak, nivoi, medalje, niz, zadaci, žetoni,
+kasica, podešavanja i kupovine. Podsetnici se zakazuju lokalno na telefonu i ne prolaze kroz naš
+server. Mi ove podatke ne vidimo. Ako obrišeš aplikaciju, oni nestaju s njom.</p>
+
+<h2>2. Duel — šta se šalje našem serveru</h2>
+<p>Duel radi preko servera koji za nas vodi <strong>Supabase</strong> (Supabase, Inc.). Server je
+u centru podataka u Frankfurtu, u Nemačkoj (EU). Duel koristi internet, a ostatak igre radi i
+bez njega. Kad otvoriš Duel, obrađuje se sledeće:</p>
+<ul>
+  <li><strong>Anonimni nalog.</strong> Server pravi nasumični identifikator igrača. Ne tražimo
+      e-mail, telefon ni lozinku, i nema prijave. Ključ sesije čuva se na uređaju, da bi te
+      server prepoznao sledeći put.</li>
+  <li><strong>Nadimak.</strong> Biraš ga jednom i posle ne može da se menja. Dok ga ne izabereš,
+      server ti dodeljuje privremeni nadimak oblika „Igrač 1234“. Nadimak koji izabereš prolazi
+      kroz filter neprimerenih reči i mora biti jedinstven.</li>
+  <li><strong>Tok duela.</strong> Čuva se sledeće:
+      <ul>
+        <li>koja su pitanja bila u meču (iz kataloga koji je već u aplikaciji);</li>
+        <li>tvoj odgovor na svako pitanje ili „Ne znam“, i da li je tačan;</li>
+        <li>vreme odgovora koje meri server;</li>
+        <li>bodovi, ishod meča, predaja ili prekid veze;</li>
+        <li>zahtevi za revanš i koliko si reakcija poslao/la;</li>
+        <li>tvoj ukupan broj „mozgića“ i zapis o svakoj dodeli.</li>
+      </ul></li>
+  <li><strong>Tehnički podaci.</strong> Aplikacija šalje verziju kataloga pitanja i verziju
+      protokola duela. Kao i kod svakog internet zahteva, server vidi IP adresu i oznaku
+      pregledača (user agent) tvog uređaja. Supabase čuva IP adresu i user agent uz sesiju
+      anonimnog naloga. Vodi i tehničke zapise o zahtevima radi rada i bezbednosti servisa;
+      nama su ti zapisi dostupni samo za poslednji dan.</li>
+  <li><strong>Prijave nadimka.</strong> Ako prijaviš nečiji nadimak (sa rang liste ili posle
+      meča), čuvamo ko je prijavio, koji nadimak i kada. Isto važi ako neko prijavi tebe.</li>
+  <li><strong>Blokiranja.</strong> Ako blokiraš igrača, čuvamo ko je koga blokirao (samo dva
+      nasumična ID-ja profila) i kada. Vas dvoje posle toga više ne igrate jedan protiv drugog, a
+      taj nadimak nestaje sa tvoje rang liste. Isto važi ako neko blokira tebe.</li>
+</ul>
+<p>Duel <strong>ne šalje</strong> ime, e-mail, broj telefona, kontakte ni lokaciju. Ne šalje ni
+reklamni identifikator, podatke o kupovinama ni stanje žetona. Ulaz u duel naplaćuje se na tvom
+uređaju. Šifru sobe za igru sa prijateljem deliš sam/a, preko sistema za deljenje na telefonu.</p>
+
+<h3>Šta vide drugi igrači</h3>
+<p>Drugi igrači vide tvoj nadimak, broj mozgića i mesto na rang listi (prvih 100). Tokom meča
+protivnik vidi i tvoje bodove, da li si odgovorio/la tačno, tvoje vreme odgovora, da li si
+povezan/a i reakcije koje pošalješ. Duel nema čet, nego samo pet unapred zadatih emodžija.</p>
+
+<h3>Zašto</h3>
+<p>Ove podatke koristimo za sledeće:</p>
+<ul>
+  <li>da te spojimo sa protivnikom;</li>
+  <li>da meč bude pošten: server odlučuje ko je prvi tačno odgovorio;</li>
+  <li>da vodimo rang listu;</li>
+  <li>da sprečimo zloupotrebe.</li>
+</ul>
+<p>Zaštita od zloupotreba obuhvata sledeće:</p>
+<ul>
+  <li>ograničenje broja zahteva;</li>
+  <li>ograničenje neuspelih pokušaja ulaska u sobu, za šta kratko čuvamo IP adresu;</li>
+  <li>kratku pauzu traženja protivnika posle više napuštenih mečeva;</li>
+  <li>automatsku proveru neuobičajeno brzih odgovora. Takvi profili igraju samo međusobno i drugi
+      igrači ih ne vide na rang listi.</li>
+</ul>
+<p>Pravni osnov je pružanje usluge koju tražiš kad otvoriš Duel, i naš legitimni interes da
+igra bude poštena i bezbedna. Podatke iz Duela ne koristimo za reklame i ne prodajemo ih.</p>
+
+<h3>Koliko dugo</h3>
+<ul>
+  <li>Mečevi i odgovori u njima čuvaju se 30 dana od kraja meča.</li>
+  <li>Profil (nadimak, mozgići) briše se kad 180 dana ne otvoriš Duel.</li>
+  <li>Zapisi o dodeli mozgića čuvaju se 180 dana.</li>
+  <li>Prijave nadimka čuvaju se 180 dana, ili kraće ako se jedan od dva profila obriše
+      ranije.</li>
+  <li>Blokiranje se čuva dok ga ne poništiš (u Duelu: „⋯“ → „Blokirani igrači“) ili dok se jedan
+      od dva profila ne obriše.</li>
+  <li>IP adrese neuspelih pokušaja ulaska u sobu brišu se u dnevnom čišćenju, najkasnije za
+      oko dva dana.</li>
+  <li>Anonimni nalog i podaci njegove sesije (IP adresa, user agent) brišu se kad obrišeš profil
+      za duel, a inače 180 dana posle poslednjeg otvaranja Duela, u prvom sledećem dnevnom
+      čišćenju.</li>
+</ul>
+
+<h3>Brisanje</h3>
+<p>Profil za duel brišeš u aplikaciji: u Duelu otvori „⋯“ (gore desno), izaberi „Obriši moj
+profil za duel“ i potvrdi. Brisanje nije moguće dok je meč u toku i ne može se opozvati. Odmah
+se briše sledeće:</p>
+<ul>
+  <li>tvoj nadimak: oslobađa se (drugi igrač ga može uzeti), a umesto njega piše „Obrisan
+      igrač“;</li>
+  <li>mozgići, zapisi o svakoj dodeli i mesto na rang listi;</li>
+  <li>istorija duela, odnosno svi završeni mečevi sa odgovorima u njima. Meč završen u
+      poslednjih 5 minuta briše se u prvom sledećem dnevnom čišćenju, jer protivnik možda još
+      gleda rezultat;</li>
+  <li>prijave koje su drugi podneli protiv tvog nadimka;</li>
+  <li>sva blokiranja: ona koja si ti postavio/la i ona koja su drugi postavili protiv tebe;</li>
+  <li>anonimni nalog, zajedno sa IP adresom i user agentom sesije;</li>
+  <li>na uređaju: ključ sesije, sačuvani nadimak i lokalna istorija duela.</li>
+</ul>
+<p>Prazan zapis profila (samo nasumični ID i oznaka da je obrisan) ostaje još jedan dan. Tako
+stari ključ sesije ne može da vrati profil. Posle toga ga briše dnevno čišćenje, a s njim i
+prijave koje si ti podneo/la. Žetoni i napredak u ostalim igrama ostaju na uređaju.</p>
+<p>Brisanje možeš tražiti i e-mailom. U poruci navedi svoj nadimak.</p>
+
+<h2>3. Servisi trećih strana</h2>
+<p>Aplikacija koristi sledeće servise:</p>
+<ul>
+  <li><strong>Supabase</strong> je server za Duel (poglavlje 2). Podatke obrađuje za nas, samo da
+      bi Duel radio. <a href="https://supabase.com/privacy">Supabase politika privatnosti</a></li>
+  <li><strong>Unity LevelPlay (ironSource)</strong> prikazuje reklame i posreduje između više
+      reklamnih mreža. Prikuplja tehničke podatke o uređaju i o prikazanoj reklami („Services
+      Data“): reklamni identifikator, tip uređaja, verziju sistema, približnu lokaciju (državu),
+      podatke o prikazu reklame i interakciji s njom, i dijagnostičke podatke o radu aplikacije.
+      Unity ih obrađuje kao samostalni rukovalac: da prikaže i meri reklame, spreči zloupotrebe
+      i unapredi svoje usluge. <a href="https://unity.com/legal/privacy-policy">Unity politika
+      privatnosti</a></li>
+  <li><strong>Apple Game Center</strong> (iOS) čuva tvoj rezultat na rang listama ako si
+      prijavljen/a. Rang liste su opcione, i bez prijave igra radi normalno.</li>
+  <li><strong>Google Play igre</strong> (Android) rade isto na Androidu: ako si prijavljen/a,
+      čuvaju tvoj rezultat na rang listama i osvojena dostignuća.</li>
+  <li><strong>Apple App Store</strong> (iOS) i <strong>Google Play naplata</strong> (Android)
       obrađuju kupovine u aplikaciji. Mi ne vidimo i ne čuvamo tvoje podatke o plaćanju.</li>
 </ul>
 
-<h2>Praćenje i tvoj izbor</h2>
-<p>Pri prvom pokretanju na iOS-u pojaviće se Apple-ov upit „App Tracking Transparency". Ako
-<strong>ne dozvoliš</strong> praćenje, reklame se traže kao <em>nepersonalizovane</em> — igra i dalje
-radi u potpunosti isto. Saglasnost možeš promeniti bilo kada u
+<h2>4. Reklame, praćenje i tvoj izbor</h2>
+<p>Pri prvom pokretanju na iOS-u pojavljuje se Apple-ov upit „App Tracking Transparency“. Ako
+<strong>ne dozvoliš</strong> praćenje, reklame se traže kao <em>nepersonalizovane</em>, a igra
+radi potpuno isto. Odluku možeš promeniti bilo kada, u
 <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.</p>
-<p>Na obe platforme, pre prve reklame, prikazuje se upit za saglasnost koji vodi Unity LevelPlay.
-Ako saglasnost ne bude data, reklamni SDK se uopšte ne pokreće: igra radi isto, ali bez reklama i
-bez bonusa koji se dobijaju gledanjem reklame. Odluku možeš promeniti u aplikaciji, u podešavanjima,
-preko reda „Politika privatnosti".</p>
-<p>Kupovinom „Ukloni reklame" (0,99 €) trajno se uklanjaju sve obavezne reklame (baner i
-međureklame). Jedini izuzetak su dobrovoljni video snimci koje sam pokrećeš — „Dupliraj zaradu",
-„Nastavi", „Vrati pomoć", bonus pomoć, objašnjenje pitanja i besplatni žetoni: prikazuju se samo na
-tvoj zahtev, i tada Unity LevelPlay obrađuje podatke kao za svaku prikazanu reklamu.</p>
+<p>Pre prve reklame, na obe platforme se prikazuje upit za saglasnost koji vodi Unity LevelPlay.
+Ako saglasnost ne daš, reklamni sistem se uopšte ne pokreće. Igra tada radi isto, ali bez
+reklama i bez bonusa koji se dobijaju gledanjem reklame. Odluku možeš promeniti u podešavanjima
+aplikacije, u redu „Politika privatnosti“.</p>
+<p><strong>Tokom duela se ne prikazuje nijedna reklama.</strong> Reklama između partija može
+doći tek posle duela.</p>
+<p>Kupovina „Bez reklama“ trajno uklanja baner i reklame između partija. „Paket dobrodošlice“
+uključuje istu stvar. Posle kupovine ostaju samo dobrovoljni video snimci koje sam/a pokrećeš:
+„Dupliraj zaradu“, „Nastavi“, „Vrati pomoć“, bonus pomoć, objašnjenje pitanja, besplatni žetoni
+i „Popravi niz“. Prikazuju se samo na tvoj zahtev, a Unity LevelPlay tada obrađuje podatke kao
+za svaku prikazanu reklamu.</p>
 
-<h2>Deca</h2>
+<h2>5. Prijava greške u pitanju</h2>
+<p>Dugme „Prijavi grešku u pitanju“ otvara tvoju aplikaciju za e-mail sa već napisanom porukom.
+Poruka sadrži pitanje, tačan odgovor, oznaku pitanja i verziju aplikacije. Ništa se ne šalje dok
+ti ne pošalješ mejl. Tada vidimo tvoju e-mail adresu i ono što si napisao/la, i koristimo ih
+samo da ispravimo pitanje i odgovorimo ti.</p>
+
+<h2>6. Deca</h2>
 <p>KVIZKO nije namenjen deci mlađoj od 13 godina i ne prikuplja svesno njihove podatke. Aplikacija
-sadrži reklame, što je označeno u App Store rejtingu.</p>
+sadrži reklame, što je označeno u App Store rejtingu. U Duelu nema četa. Drugi igrači vide samo
+nadimak, koji prolazi kroz filter. Svaki nadimak se može prijaviti, a svakog igrača blokirati.</p>
 
-<h2>Promene</h2>
+<h2>7. Tvoja prava</h2>
+<p>Možeš tražiti uvid u podatke iz Duela koji se odnose na tebe. Možeš tražiti i njihovu
+ispravku (na primer, promenu nadimka, koju na zahtev radimo mi), brisanje ili ograničenje
+obrade, i možeš uložiti prigovor. Piši nam na adresu ispod i navedi svoj nadimak, jer drugi
+podatak po kome bismo te prepoznali ne postoji. Imaš pravo i na pritužbu Povereniku za
+informacije od javnog značaja i zaštitu podataka o ličnosti (Srbija), ili nadzornom organu u
+svojoj zemlji.</p>
+
+<h2>8. Promene</h2>
 <p>Ako se politika promeni, izmenićemo ovu stranicu i datum na vrhu.</p>
 
-<h2>Kontakt</h2>
-<p>Pitanja o privatnosti: <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
+<h2>9. Kontakt</h2>
+<p>Rukovalac podacima iz Duela je Noqyris. Pitanja o privatnosti i zahtevi:
+<a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
 
-<div class="foot">KVIZKO © 2026 Noqyris · <a href="./">Podrška</a></div>
+</section>
+
+<hr>
+
+<section lang="en" id="en">
+
+<h1>Privacy Policy — KVIZKO</h1>
+<p class="sub">Last updated: 27 September 2026 (version 1.3.0)</p>
+<p class="lang"><a href="#sr">Srpska verzija gore</a></p>
+
+<p>KVIZKO is a quiz game developed by <strong>Noqyris</strong>. This policy explains what
+information is processed when you use the app, who processes it, how long it is kept and how
+to delete it.</p>
+
+<div class="box">
+<ul>
+  <li>The quiz, "Survive", the daily challenge, quests, the streak, statistics, žetoni (coins)
+      and purchases work on your device. That data stays on the device.</li>
+  <li>Only <strong>Duel</strong> (a live match against another player) sends data to our
+      server. It sends an anonymous player ID, the nickname you choose and the course of your
+      duels. It never sends a name, e-mail or phone number.</li>
+  <li>Ads are shown by Unity LevelPlay, and only if you consent to them.</li>
+</ul>
+</div>
+
+<h2>1. What stays on your device only</h2>
+<p>Scores, statistics, progress, levels, medals, the streak, quests, žetoni, the piggy bank,
+settings and purchases are stored only on your device. Reminders are scheduled locally on the
+phone and never pass through our server. We cannot see this data. If you delete the app, it
+goes with it.</p>
+
+<h2>2. Duel: what is sent to our server</h2>
+<p>Duel runs on a server operated for us by <strong>Supabase</strong> (Supabase, Inc.). The
+server is in a data centre in Frankfurt, Germany (EU). Duel needs an internet connection; the
+rest of the game works without one. When you open Duel, the following is processed:</p>
+<ul>
+  <li><strong>Anonymous account.</strong> The server creates a random player identifier. We do
+      not ask for an e-mail, phone number or password, and there is no login. A session key is
+      stored on your device so the server recognises you next time.</li>
+  <li><strong>Nickname.</strong> You choose it once, and it cannot be changed afterwards. Until
+      you choose one, the server gives you a temporary nickname such as "Igrač 1234". The
+      nickname you choose passes a filter for inappropriate words and must be unique.</li>
+  <li><strong>The course of each duel.</strong> The server keeps:
+      <ul>
+        <li>which questions were played (from the catalogue already inside the app);</li>
+        <li>your answer to each question, or "I don't know", and whether it was correct;</li>
+        <li>the response time, measured by the server;</li>
+        <li>points, the result, a forfeit or a lost connection;</li>
+        <li>rematch requests and how many reactions you sent;</li>
+        <li>your total of "mozgići" (brain points) and a record of each award.</li>
+      </ul></li>
+  <li><strong>Technical data.</strong> The app sends the version of its question catalogue and
+      of the duel protocol. As with any internet request, the server sees your device's IP
+      address and browser identifier (user agent). Supabase stores the IP address and user
+      agent with the anonymous account's session. It also keeps technical request logs to run
+      and secure the service; we can see those logs for the last day only.</li>
+  <li><strong>Nickname reports.</strong> If you report someone's nickname (from the ranking or
+      after a match), we keep who reported, which nickname and when. The same applies if someone
+      reports you.</li>
+  <li><strong>Blocks.</strong> If you block a player, we keep who blocked whom (the two random
+      profile IDs only) and when. From then on the two of you never play each other, and that
+      nickname disappears from your ranking. The same applies if someone blocks you.</li>
+</ul>
+<p>Duel <strong>does not send</strong> your name, e-mail, phone number, contacts or location.
+It does not send your advertising identifier, purchase data or žeton balance either: the entry
+fee is charged on your device. You share a friend-room code yourself, through the phone's share
+sheet.</p>
+
+<h3>What other players see</h3>
+<p>Other players see your nickname, your mozgići total and your place on the ranking (top 100).
+During a match your opponent also sees your points, whether you answered correctly, your
+response times, whether you are connected and the reactions you send. There is no chat in
+Duel, only five preset emoji.</p>
+
+<h3>Why</h3>
+<p>We use this data:</p>
+<ul>
+  <li>to pair you with an opponent;</li>
+  <li>to keep the match fair: the server decides who answered correctly first;</li>
+  <li>to keep the ranking;</li>
+  <li>to prevent abuse.</li>
+</ul>
+<p>Abuse prevention covers:</p>
+<ul>
+  <li>request limits;</li>
+  <li>a limit on failed attempts to join a room, for which we keep the IP address briefly;</li>
+  <li>a short matchmaking pause after several abandoned matches;</li>
+  <li>an automatic check for unusually fast answers. Profiles it flags only meet each other and
+      do not appear on the ranking other players see.</li>
+</ul>
+<p>The legal basis is providing the service you ask for when you open Duel, and our legitimate
+interest in a fair and secure game. Duel data is never used for advertising and never sold.</p>
+
+<h3>How long</h3>
+<ul>
+  <li>Matches and the answers in them: 30 days after the match ends.</li>
+  <li>Your profile (nickname, mozgići): deleted after 180 days in which you do not open
+      Duel.</li>
+  <li>Mozgići award records: 180 days.</li>
+  <li>Nickname reports: 180 days, or less if either of the two profiles is deleted
+      earlier.</li>
+  <li>Blocks: until you lift the block (in Duel: "⋯" → "Blokirani igrači", blocked players) or
+      either of the two profiles is deleted.</li>
+  <li>IP addresses of failed room-join attempts: removed by the daily clean-up, within about two
+      days.</li>
+  <li>The anonymous account and its session data (IP address, user agent): deleted when you
+      delete your duel profile, and otherwise 180 days after you last opened Duel, in the next
+      daily clean-up.</li>
+</ul>
+
+<h3>Deletion</h3>
+<p>You delete your duel profile in the app: in Duel, open "⋯" (top right), choose "Obriši moj
+profil za duel" (delete my duel profile) and confirm. Deletion is not possible while a match is
+in progress, and it cannot be undone. The following is deleted at once:</p>
+<ul>
+  <li>your nickname: it is released (another player can take it), and "Obrisan igrač" (deleted
+      player) is shown in its place;</li>
+  <li>your mozgići, every award record and your place on the ranking;</li>
+  <li>your duel history, that is every finished match with the answers in it. A match that
+      ended in the last 5 minutes goes in the next daily clean-up instead, because your
+      opponent may still be looking at the result;</li>
+  <li>reports other players filed against your nickname;</li>
+  <li>every block: the ones you placed and the ones other players placed on you;</li>
+  <li>the anonymous account, together with the session's IP address and user agent;</li>
+  <li>on your device: the session key, the saved nickname and the local duel history.</li>
+</ul>
+<p>An empty profile record (only the random ID and a "deleted" mark) stays for one more day, so
+that an old session key cannot bring the profile back. The daily clean-up then removes it,
+together with any reports you filed. Your žetoni and your progress in the rest of the game stay
+on your device.</p>
+<p>You can also ask for deletion by e-mail. Include your nickname.</p>
+
+<h2>3. Third-party services</h2>
+<p>The app uses these services:</p>
+<ul>
+  <li><strong>Supabase</strong> is the server for Duel (section 2). It processes data on our
+      behalf, only to run Duel. <a href="https://supabase.com/privacy">Supabase privacy
+      policy</a></li>
+  <li><strong>Unity LevelPlay (ironSource)</strong> shows ads and mediates between several ad
+      networks. It collects technical data about the device and the ad shown ("Services
+      Data"): the advertising identifier, device type, OS version, approximate location
+      (country), ad impression and interaction data, and diagnostic data about the app. Unity
+      processes it as an independent controller: to serve and measure ads, prevent fraud and
+      improve its services. <a href="https://unity.com/legal/privacy-policy">Unity privacy
+      policy</a></li>
+  <li><strong>Apple Game Center</strong> (iOS) keeps your score on the leaderboards if you are
+      signed in. Leaderboards are optional, and the game works normally without signing
+      in.</li>
+  <li><strong>Google Play Games</strong> (Android) does the same on Android: if you are signed
+      in, it keeps your score on the leaderboards and the achievements you earn.</li>
+  <li><strong>Apple App Store</strong> (iOS) and <strong>Google Play billing</strong> (Android)
+      process in-app purchases. We never see or store your payment details.</li>
+</ul>
+
+<h2>4. Ads, tracking and your choice</h2>
+<p>On first launch on iOS, Apple's "App Tracking Transparency" prompt appears. If you
+<strong>do not allow</strong> tracking, ads are requested as <em>non-personalised</em>, and the
+game works exactly the same. You can change this at any time in
+<em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+<p>Before the first ad, on both platforms, a consent prompt run by Unity LevelPlay appears. If
+you do not consent, the ad system never starts. The game then works the same, but without ads
+and without the bonuses earned by watching one. You can change your decision in the app's
+settings, on the "Privacy policy" row.</p>
+<p><strong>No ad of any kind is shown during a duel.</strong> A between-games ad can appear only
+after it.</p>
+<p>The "No ads" purchase permanently removes the banner and the between-games ads. The
+"Welcome pack" includes the same. After buying either, only optional videos that you start
+yourself remain: "Double winnings", "Continue", "Restore a lifeline", a bonus hint, a question
+explanation, free žetoni and "Repair streak". They play only when you ask, and Unity LevelPlay
+then processes data as for any ad shown.</p>
+
+<h2>5. Reporting a wrong question</h2>
+<p>"Report a mistake in this question" opens your own mail app with a pre-written message. The
+message contains the question, its answer, the question's id and the app version. Nothing is
+sent until you send the e-mail yourself. We then see your e-mail address and what you wrote,
+and use them only to fix the question and reply to you.</p>
+
+<h2>6. Children</h2>
+<p>KVIZKO is not intended for children under 13 and does not knowingly collect their data. The
+app contains ads, as shown in its App Store rating. Duel has no chat. Other players see only a
+nickname, which is filtered. Any nickname can be reported and any player blocked.</p>
+
+<h2>7. Your rights</h2>
+<p>You can ask for access to the Duel data about you. You can also ask for it to be corrected
+(for example, a nickname change, which we make on request), deleted or restricted, and you can
+object to its processing. Write to the address below and include your nickname: there is no
+other detail by which we could recognise you. You also have the right to lodge a complaint with
+the Serbian Commissioner for Information of Public Importance and Personal Data Protection, or
+with the supervisory authority of your own country.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, we will update this page and the date at the top.</p>
+
+<h2>9. Contact</h2>
+<p>The controller of Duel data is Noqyris. Privacy questions and requests:
+<a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
+
+</section>
+
+<div class="foot">KVIZKO © 2026 Noqyris · <a href="./">Podrška / Support</a></div>
 
 </div></body>
 </html>
