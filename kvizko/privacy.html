@@ -155,6 +155,8 @@ prijave koje si ti podneo/la. Žetoni i napredak u ostalim igrama ostaju na ure�
       reklamnih mreža. Prikuplja tehničke podatke o uređaju i o prikazanoj reklami („Services
       Data“): reklamni identifikator, tip uređaja, verziju sistema, približnu lokaciju (državu),
       podatke o prikazu reklame i interakciji s njom, i dijagnostičke podatke o radu aplikacije.
+      Na Androidu Unity Ads, prema sopstvenoj izjavi za Google Play, može da prikuplja i svoj
+      identifikator korisnika i podatke o kupovinama u aplikaciji.
       Unity ih obrađuje kao samostalni rukovalac: da prikaže i meri reklame, spreči zloupotrebe
       i unapredi svoje usluge. <a href="https://unity.com/legal/privacy-policy">Unity politika
       privatnosti</a></li>
@@ -163,7 +165,9 @@ prijave koje si ti podneo/la. Žetoni i napredak u ostalim igrama ostaju na ure�
   <li><strong>Google Play igre</strong> (Android) rade isto na Androidu: ako si prijavljen/a,
       čuvaju tvoj rezultat na rang listama i osvojena dostignuća.</li>
   <li><strong>Apple App Store</strong> (iOS) i <strong>Google Play naplata</strong> (Android)
-      obrađuju kupovine u aplikaciji. Mi ne vidimo i ne čuvamo tvoje podatke o plaćanju.</li>
+      obrađuju kupovine u aplikaciji. Mi ne vidimo i ne čuvamo tvoje podatke o plaćanju.
+      Na Androidu Google-ova biblioteka za naplatu šalje Google-u i tehničke podatke o svom
+      radu, i kad ništa ne kupiš.</li>
 </ul>
 
 <h2>4. Reklame, praćenje i tvoj izbor</h2>
@@ -177,6 +181,10 @@ odbijanja igra te ponovo pita samo kad sam/a dodirneš ponudu za reklamu, i to n
 <p>Na iOS-u se Apple-ov upit „App Tracking Transparency“ pojavljuje tek ako saglasnost daš. Ako
 <strong>ne dozvoliš</strong> praćenje, reklame se traže kao <em>nepersonalizovane</em>. Tu
 odluku možeš promeniti bilo kada, u <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.</p>
+<p>Na Androidu nema drugog upita: ako saglasnost daš, Unity uz ostale podatke dobija i reklamni
+identifikator uređaja. Možeš ga resetovati ili obrisati bilo kada u podešavanjima telefona, u
+odeljku za oglase (obično <em>Podešavanja → Privatnost → Oglasi</em> ili
+<em>Podešavanja → Google → Oglasi</em>).</p>
 <p><strong>Tokom duela se ne prikazuje nijedna reklama.</strong> Reklama između partija može
 doći tek posle duela.</p>
 <p>Kupovina „Bez reklama“ trajno uklanja baner i reklame između partija. „Paket dobrodošlice“
@@ -356,7 +364,9 @@ on your device.</p>
   <li><strong>Unity LevelPlay (ironSource)</strong> shows ads and mediates between several ad
       networks. It collects technical data about the device and the ad shown ("Services
       Data"): the advertising identifier, device type, OS version, approximate location
-      (country), ad impression and interaction data, and diagnostic data about the app. Unity
+      (country), ad impression and interaction data, and diagnostic data about the app. On
+      Android, Unity Ads may also collect its own user identifier and in-app purchase history,
+      according to its own Google Play disclosure. Unity
       processes it as an independent controller: to serve and measure ads, prevent fraud and
       improve its services. <a href="https://unity.com/legal/privacy-policy">Unity privacy
       policy</a></li>
@@ -366,7 +376,9 @@ on your device.</p>
   <li><strong>Google Play Games</strong> (Android) does the same on Android: if you are signed
       in, it keeps your score on the leaderboards and the achievements you earn.</li>
   <li><strong>Apple App Store</strong> (iOS) and <strong>Google Play billing</strong> (Android)
-      process in-app purchases. We never see or store your payment details.</li>
+      process in-app purchases. We never see or store your payment details. On Android,
+      Google's billing library also sends Google technical data about how it runs, even if you
+      buy nothing.</li>
 </ul>
 
 <h2>4. Ads, tracking and your choice</h2>
@@ -380,6 +392,10 @@ on the "Privacy and ads" row.</p>
 <p>On iOS, Apple's "App Tracking Transparency" prompt appears only if you consent. If you
 <strong>do not allow</strong> tracking, ads are requested as <em>non-personalised</em>. You can
 change that at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+<p>On Android there is no second prompt: if you consent, Unity also receives the device's
+advertising ID along with the other data. You can reset or delete it at any time in the phone's
+settings, in the ads section (usually <em>Settings → Privacy → Ads</em> or
+<em>Settings → Google → Ads</em>).</p>
 <p><strong>No ad of any kind is shown during a duel.</strong> A between-games ad can appear only
 after it.</p>
 <p>The "No ads" purchase permanently removes the banner and the between-games ads. The
