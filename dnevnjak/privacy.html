@@ -48,7 +48,7 @@
   <body>
     <main>
       <h1>🗞️ Politika privatnosti — Dnevnjak</h1>
-      <p class="datum">Poslednje ažuriranje: 28. septembar 2026.</p>
+      <p class="datum">Poslednje ažuriranje: 11. oktobar 2026. (verzija 1.0.1)</p>
       <p>
         Dnevnjak („aplikacija") je igra sa šest dnevnih izazova iz balkanske kulture koju razvija
         Noqyris. Ova politika objašnjava koje podatke aplikacija koristi i zašto. Kratko:
@@ -64,7 +64,8 @@
       <ul>
         <li>
           Napredak (rešene rubrike i poeni po danu), niz, statistika, dukati, kupljeni paketi i
-          podešavanja (zvuk, vibracija, podsetnik, izbor o reklamama) čuvaju se
+          podešavanja (zvuk, vibracija, podsetnik, izbor o reklamama i kada je pitanje o reklamama
+          poslednji put postavljeno) čuvaju se
           <strong>isključivo lokalno na tvom uređaju</strong>.
         </li>
         <li>
@@ -98,17 +99,28 @@
           podatke ne dobijamo i ne čuvamo.
         </li>
         <li>
-          <strong>Pre prve reklame</strong> aplikacija te pita za saglasnost. Ako je ne daš,
-          reklamni SDK se <strong>uopšte ne pokreće</strong>: igra radi isto, samo bez reklama i bez
-          nagrada koje se dobijaju gledanjem reklame. Izbor možeš da promeniš bilo kada u
-          podešavanjima aplikacije.
+          <strong>Aplikacija te pita za saglasnost pre ijedne reklame — nikad pri pokretanju</strong
+          >, već posle prve završene rubrike ili kad sam/a dodirneš ponudu za nagradu uz reklamu.
+          Pitanje kaže ko prikazuje reklame i ko dobija koje podatke, a odgovori „Prihvatam" i „Ne
+          prihvatam" su ravnopravni. Ako ne prihvatiš, reklamni SDK se
+          <strong>uopšte ne pokreće</strong>: reklame se ne prikazuju i nema nagrada za gledanje
+          reklama; dukati i dalje stižu igrom, a pomoć, arhivski dan i vraćanje niza mogu da se
+          plate i dukatima. Posle „Ne prihvatam" aplikacija te sama ne pita ponovo — pitanje se
+          vraća samo kad dodirneš ponudu za reklamu, i to najviše jednom u šest meseci. Odluku
+          menjaš ili povlačiš kad god hoćeš u <em>Podešavanja → Privatnost i reklame</em>;
+          povlačenje odmah zaustavlja učitavanje i prikaz reklama.
         </li>
         <li>
-          Na iOS-u te sistem pre toga pita i za dozvolu praćenja (<strong
-            >App Tracking Transparency</strong
-          >). Ako je odbiješ, reklamni identifikator se ne deli (iOS ga daje kao nule) i reklame
-          nisu personalizovane. Izbor menjaš i u
+          Na iOS-u, <strong>tek ako prihvatiš reklame</strong>, sistem te pita i za dozvolu praćenja
+          (<strong>App Tracking Transparency</strong>); ako ih ne prihvatiš, ta dozvola se i ne
+          traži. Ako praćenje odbiješ, reklamni identifikator se ne deli (iOS ga daje kao nule) i
+          reklame nisu personalizovane. Izbor menjaš i u
           <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.
+        </li>
+        <li>
+          Neprimerenu reklamu (ili reklamu za uzrast iznad oznake aplikacije) prijavljuješ u
+          <em>Podešavanja → Prijavi reklamu</em>: otvara se e-pošta ka nama sa popunjenim naslovom.
+          Šalješ je samo ako želiš, i tada dobijamo ono što u nju upišeš i adresu sa koje je šalješ.
         </li>
         <li>
           I kada odbiješ praćenje, a pristaneš na reklame, Unity-jev SDK (uključujući njegov modul
