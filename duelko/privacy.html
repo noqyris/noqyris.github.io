@@ -1,0 +1,302 @@
+<!doctype html>
+<!--
+  DUELKO privacy policy, version 1.0 (2026-10-22). Source copy; published at
+  https://noqyris.github.io/duelko/privacy.html (repository/web/noqyris.github.io/duelko/).
+  Written from the code of 1.0: no backend (no VITE_SUPABASE_* in release builds), the
+  regional consent in src/services/adConsent.ts, cordova-plugin-purchase. docs/APP_PRIVACY.md
+  holds the App Store Connect answers. The online half (docs/KNOWN_DEFECTS.md) changes this page.
+-->
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0f1d">
+<meta name="description" content="Koje podatke DUELKO obrađuje, ko ih dobija, šta vide drugi igrači i kako to kontrolišeš.">
+<title>DUELKO — Politika privatnosti</title>
+<style>
+  :root {
+    --bg: #0b0f1d;
+    --surface: #121a2e;
+    --surface-2: #17213a;
+    --line: #243154;
+    --text: #e8eaf2;
+    --muted: #a6aec6;
+    --accent: #2dd4bf;
+    --accent-soft: rgba(45, 212, 191, 0.14);
+    --warn: #fbbf24;
+    --warn-soft: rgba(251, 191, 36, 0.09);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+      72px max(16px, env(safe-area-inset-left));
+  }
+  .brand {
+    margin: 0;
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 0.82rem;
+    letter-spacing: 0.16em;
+  }
+  h1 {
+    margin: 0.3rem 0 0.4rem;
+    font-size: clamp(1.9rem, 7vw, 2.5rem);
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+  }
+  h2 {
+    margin: 3rem 0 0.8rem;
+    font-size: 1.36rem;
+    line-height: 1.25;
+    scroll-margin-top: 16px;
+  }
+  h2 .n { color: var(--accent); margin-right: 0.35em; font-variant-numeric: tabular-nums; }
+  h3 { margin: 0 0 0.35rem; font-size: 1.04rem; line-height: 1.35; }
+  p { margin: 0 0 0.85rem; }
+  ul, ol { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  strong { font-weight: 650; }
+  .meta { color: var(--muted); font-size: 0.95rem; }
+  .lead { font-size: 1.06rem; }
+  .summary {
+    margin: 1.6rem 0 0;
+    padding: 16px 18px 6px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 14px;
+  }
+  .summary h2 { margin: 0 0 0.6rem; font-size: 1.1rem; }
+  .toc {
+    margin: 1.4rem 0 0;
+    padding: 14px 18px 8px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+  }
+  .toc p { margin: 0 0 0.4rem; color: var(--muted); font-size: 0.9rem; letter-spacing: 0.04em; }
+  .toc ol { columns: 2 14rem; column-gap: 1.5rem; margin: 0; }
+  .toc li { break-inside: avoid; margin: 0.15rem 0 0.35rem; }
+  .item {
+    margin: 0.85rem 0;
+    padding: 14px 16px 4px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+  .why { color: var(--muted); }
+  .why strong { color: var(--text); }
+  .note {
+    margin: 0.85rem 0;
+    padding: 12px 16px 2px;
+    background: var(--warn-soft);
+    border-left: 3px solid var(--warn);
+    border-radius: 10px;
+  }
+  .note strong:first-child { color: var(--warn); }
+  mark.ph {
+    background: var(--accent-soft);
+    color: var(--accent);
+    padding: 0.05em 0.35em;
+    border-radius: 5px;
+    font-weight: 650;
+    white-space: nowrap;
+  }
+  .url { word-break: break-all; }
+  .path { white-space: nowrap; }
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  @media (max-width: 420px) {
+    body { font-size: 16px; }
+    .item { padding: 12px 14px 2px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="brand">DUELKO</p>
+  <h1>Politika privatnosti</h1>
+  <p class="meta">Poslednja izmena: <time datetime="2026-10-22">22. oktobra 2026.</time> · verzija aplikacije 1.0</p>
+  <p class="lead">Ova stranica objašnjava koje podatke aplikacija DUELKO obrađuje, ko ih dobija i kako
+    to kontrolišeš. Opisujemo ono što ova verzija aplikacije zaista radi. <a href="#en">English below.</a></p>
+</header>
+
+<section class="summary" aria-labelledby="ukratko">
+  <h2 id="ukratko">Ukratko</h2>
+  <ul>
+    <li>Nema naloga, imejla ni broja telefona. Ova verzija ne šalje ništa na naš server — nema ga.</li>
+    <li>Napredak, žetoni, zadaci i podešavanja ostaju samo na tvom telefonu.</li>
+    <li>Reklame prikazuje Unity (Unity Ads i ironSource Exchange). U Evropi samo ako to prihvatiš;
+      drugde posle Apple-ovog pitanja o praćenju.</li>
+    <li>Kupovine idu isključivo preko Apple-a. Podatke o kartici nikad ne vidimo.</li>
+  </ul>
+</section>
+
+<nav class="toc" aria-label="Sadržaj">
+  <p>SADRŽAJ</p>
+  <ol>
+    <li><a href="#odgovoran">Ko je odgovoran</a></li>
+    <li><a href="#telefon">Šta ostaje na telefonu</a></li>
+    <li><a href="#reklame">Reklame</a></li>
+    <li><a href="#kupovine">Kupovine</a></li>
+    <li><a href="#obavestenja">Podsetnici i linkovi</a></li>
+    <li><a href="#deca">Deca</a></li>
+    <li><a href="#prava">Tvoja prava</a></li>
+    <li><a href="#izmene">Izmene ove politike</a></li>
+  </ol>
+</nav>
+
+<section aria-labelledby="odgovoran">
+  <h2 id="odgovoran"><span class="n">1.</span>Ko je odgovoran</h2>
+  <p>Aplikaciju DUELKO razvija studio <strong>Noqyris</strong>, koji je odgovoran za obradu opisanu
+    na ovoj stranici. Pitanja o privatnosti i zahteve šalji na
+    <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="telefon">
+  <h2 id="telefon"><span class="n">2.</span>Šta ostaje na telefonu</h2>
+  <p>Ime i avatar koje izabereš, rang, žetoni, niz dana, dnevni zadaci, rezultat dnevnog duela,
+    pitanja koja si nedavno dobio (da se ne ponavljaju) i podešavanja čuvaju se samo u memoriji
+    aplikacije na tvom uređaju. Ova verzija nema nalog i ništa od toga ne šalje nama.</p>
+  <p>Ako obrišeš aplikaciju ili u Profilu izabereš „Obriši nalog”, ti podaci se brišu i ne mogu
+    da se vrate.</p>
+</section>
+
+<section aria-labelledby="reklame">
+  <h2 id="reklame"><span class="n">3.</span>Reklame</h2>
+  <p>Reklame u aplikaciji prikazuje <strong>Unity Technologies</strong> kroz Unity LevelPlay; reklame
+    dolaze iz mreža <strong>Unity Ads</strong> i <strong>ironSource Exchange</strong>. Ništa o reklamama
+    se ne pita i nijedna reklamna biblioteka se ne pokreće dok ne završiš drugi meč u ligi ili sam
+    ne dodirneš ponudu za reklamu.</p>
+
+  <h3>U Evropi</h3>
+  <p>Kada telefon koristi evropsku vremensku zonu (to je i Srbija, i ceo region), aplikacija te
+    pita da li prihvataš reklame — kad napuštaš rezultat drugog završenog meča, ili kad sam dodirneš
+    ponudu „Pogledaj reklamu”. Samo ako dodirneš „Prihvatam”, iOS zatim prikazuje svoje pitanje o
+    praćenju i pokreće se Unity LevelPlay.</p>
+  <div class="note">
+    <p><strong>Ako odbiješ:</strong> reklamna biblioteka se ne pokreće i ništa se ne šalje Unity-ju;
+      nema reklama, pa ni onih koje donose žetone. Žetone i dalje dobijaš igranjem. Odbijanje te
+      ponovo pitamo samo kad sam dodirneš ponudu za reklamu, i najviše jednom u 180 dana.</p>
+  </div>
+
+  <h3>Van Evrope</h3>
+  <p>Aplikacija ne postavlja svoje pitanje. U istim trenucima iOS prikazuje Apple-ovo pitanje o
+    praćenju, a Unity LevelPlay se pokreće posle bilo kog odgovora. Ako ne dozvoliš praćenje,
+    mreža ne dobija oglasni identifikator uređaja i označena je opcija „ne prodaj i ne deli moje
+    podatke” (CCPA).</p>
+
+  <h3>Šta Unity dobija kada se pokrene</h3>
+  <p>Prema Unity-jevim objavama: podatke o uređaju i aplikaciji (model, jezik, vrsta veze, IP
+    adresa, približna lokacija na nivou države), podatke o reklamama koje vidiš i dodirneš, podatke
+    o performansama i dijagnostici, i oglasni identifikator (IDFA) — samo ako dozvoliš praćenje.
+    Mi Unity-ju ne šaljemo tvoje ime. Šaljemo mu tvoj izbor o saglasnosti, oznaku „ne prodaj moje
+    podatke” kad važi i oznaku da aplikacija nije namenjena deci.</p>
+  <p>Više: <a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+    rel="noopener">Unity politika privatnosti za igrače</a>.</p>
+
+  <h3>Kada se reklame prikazuju</h3>
+  <p>Nikad usred meča. Kratka reklama može da se pojavi kad napuštaš rezultat završenog meča u ligi
+    (najviše posle svakog drugog meča, nikad prvog dana), uz najavu „Kratka pauza za reklamu”.
+    Reklamu za nagradu gledaš samo ako je sam izabereš, i uvek piše koju nagradu donosi. Kupovina
+    „Bez reklama” uklanja reklame posle mečeva, a nagrade daje bez gledanja.</p>
+
+  <h3>Kako da promeniš izbor i prijaviš reklamu</h3>
+  <p>U Evropi: <span class="path">Profil → Reklame → „Promeni izbor”</span>. Van Evrope praćenje menjaš
+    u iOS podešavanjima, kod aplikacije DUELKO; <span class="path">Profil → Reklame → „Više o tome”</span>
+    vodi tamo. Neprikladnu reklamu prijavljuješ iz <span class="path">Profil → Reklame → „Prijavi
+    reklamu”</span>: otvara se imejl koji šalješ ti.</p>
+
+  <h3>Merenje instalacija</h3>
+  <p>Ako preko neke reklame instaliraš drugu aplikaciju, iOS može toj reklamnoj mreži da pošalje
+    potvrdu instalacije (SKAdNetwork). Ona ne sadrži identifikator uređaja.</p>
+</section>
+
+<section aria-labelledby="kupovine">
+  <h2 id="kupovine"><span class="n">4.</span>Kupovine</h2>
+  <p>Sve kupovine („Bez reklama”, paketi žetona) idu isključivo kroz Apple App Store i plaćanje
+    obrađuje Apple. Mi nikad ne vidimo podatke o kartici ni o tvom Apple nalogu, i nema posrednika.
+    Aplikacija na telefonu pamti identifikatore transakcija kupljenih paketa, da bi svaki paket
+    dodala samo jednom. „Vrati kupovine” u Prodavnici traži od App Store-a tvoje ranije kupovine.</p>
+</section>
+
+<section aria-labelledby="obavestenja">
+  <h2 id="obavestenja"><span class="n">5.</span>Podsetnici i linkovi</h2>
+  <p>Ako dozvoliš obaveštenja, aplikacija na samom telefonu zakazuje podsetnike (dnevni duel,
+    čuvanje niza). Ne šalju se preko servera i možeš ih isključiti u Profilu. Linkovi iz Profila
+    (ova stranica, podrška, uslovi) otvaraju se u pregledaču.</p>
+</section>
+
+<section aria-labelledby="deca">
+  <h2 id="deca"><span class="n">6.</span>Deca</h2>
+  <p>DUELKO je kviz za opštu publiku i nije namenjen deci. Ne prikupljamo svesno podatke dece;
+    reklamnoj mreži šaljemo oznaku da aplikacija nije namenjena deci.</p>
+</section>
+
+<section aria-labelledby="prava">
+  <h2 id="prava"><span class="n">7.</span>Tvoja prava</h2>
+  <p>Pošto ova verzija ne šalje podatke nama, sve što o tebi postoji kod nas je ono što nam sam
+    napišeš imejlom. Za podatke koje obrađuje Unity obrati se Unity-ju preko njihove stranice o
+    privatnosti; saglasnost povlačiš u Profilu, a praćenje u iOS podešavanjima. Imaš pravo da se
+    žališ nadležnom organu za zaštitu podataka (u Srbiji: Poverenik za informacije od javnog značaja
+    i zaštitu podataka o ličnosti).</p>
+</section>
+
+<section aria-labelledby="izmene">
+  <h2 id="izmene"><span class="n">8.</span>Izmene ove politike</h2>
+  <p>Kad aplikacija dobije nove mogućnosti koje menjaju ovo što piše (na primer igru preko
+    interneta), ova stranica se menja pre nego što takva verzija stigne do tebe, a datum gore se
+    ažurira.</p>
+</section>
+
+<hr>
+
+<section id="en" lang="en" aria-labelledby="en-title">
+  <h2 id="en-title">English</h2>
+  <p><strong>DUELKO</strong> is developed by <strong>Noqyris</strong>. Contact:
+    <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>. This describes version 1.0.</p>
+  <ul>
+    <li><strong>No account, no server.</strong> Your name, avatar, rank, coins, streak, missions,
+      recently served questions and settings stay on your device. Deleting the app (or Profil →
+      “Obriši nalog”) deletes them.</li>
+    <li><strong>Ads</strong> are shown by Unity Technologies through Unity LevelPlay (Unity Ads,
+      ironSource Exchange). Nothing ad-related starts before your second finished league match, or before you tap an ad offer yourself. In a
+      European time zone the app first asks whether you accept ads; only after “Prihvatam” (accept)
+      does iOS ask about tracking and the SDK start — a refusal starts nothing. Elsewhere there is no
+      question of ours: Apple’s tracking prompt is shown at those moments and the SDK starts after any
+      answer; without tracking permission it gets no advertising identifier and the CCPA “do not
+      sell or share” flag is set. Unity receives device and app data, ad interactions, diagnostics and,
+      only with permission, the IDFA (<a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s player privacy policy</a>).
+      Interstitials appear only when leaving a finished league match’s results, at most after every
+      second match and never on the first day; rewarded ads are opt-in. Profil → Reklame changes your
+      choice or reports an ad.</li>
+    <li><strong>Purchases</strong> go through Apple only; we never see payment data. The app keeps the
+      transaction ids of coin packs on the device so each is granted once.</li>
+    <li><strong>Reminders</strong> are local notifications scheduled on the device, if you allow them.</li>
+    <li>The app is for a general audience and not directed at children.</li>
+  </ul>
+</section>
+
+</main>
+</body>
+</html>
