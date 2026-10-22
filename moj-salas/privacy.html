@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="sr-Latn">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Politika privatnosti — Moj Salaš</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px 48px;
+        background: #fff6e3;
+        color: #4a2f16;
+        font:
+          16px/1.6 system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 8px;
+        color: #7c4e26;
+      }
+      .datum {
+        color: #8a6a45;
+        margin: 0 0 24px;
+      }
+      a {
+        color: #468428;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Politika privatnosti — Moj Salaš</h1>
+      <p class="datum">Poslednje ažuriranje: 22. oktobar 2026. (verzija 1.0.0)</p>
+      <p>
+        Moj Salaš („aplikacija") je farm igra koju razvija Noqyris. Ova politika objašnjava koje
+        podatke aplikacija koristi, ko ih dobija i zašto. Kratko:
+        <strong>nemamo naloge sa imenom ili imejlom i ne tražimo nikakav lični podatak.</strong>
+        Podatke o uređaju šalju samo reklame (i to tek kad na njih pristaneš ili odgovoriš iOS-u), a
+        pijaca komšija čuva tvoje ponude pod nasumičnim anonimnim brojem.
+      </p>
+
+      <h2>Šta aplikacija čuva na tvom telefonu</h2>
+      <ul>
+        <li>
+          Napredak u igri (novac, nivo, parcele i usevi, magacin, zgrade i unapređenja, narudžbine,
+          statistika, dostignuća), podešavanja (zvuk, vibracija), tvoj odgovor o reklamama i podaci
+          za prijavu na pijacu komšija čuvaju se <strong>lokalno na tvom uređaju</strong>
+          (na iPhone-u u sistemskom skladištu podešavanja).
+        </li>
+        <li>
+          <em>Radnja → Podešavanja → Obriši napredak i počni ispočetka</em> briše napredak. Brisanje
+          aplikacije briše sve njene podatke sa uređaja.
+        </li>
+      </ul>
+
+      <h2>Reklame (Unity LevelPlay i Unity Ads)</h2>
+      <ul>
+        <li>
+          Aplikacija prikazuje samo <strong>nagradne video reklame koje sam biraš</strong> da
+          pogledaš za nagradu u igri (npr. „gotovo odmah" ili dupli dnevni poklon). Nema reklama
+          preko celog ekrana koje iskaču same, nema banera. Sve u igri stižeš i bez reklama, samo
+          sporije.
+        </li>
+        <li>
+          Reklame prikazuje <strong>Unity LevelPlay</strong> (posrednik), a reklame daje
+          <strong>Unity Ads</strong> — obe usluge kompanije Unity Technologies. Kada se reklama
+          učitava i prikazuje, Unity prikuplja i obrađuje tehničke podatke o uređaju i aplikaciji
+          (model uređaja, verzija sistema, jezik, približna država po IP adresi, identifikator za
+          aplikacije istog izdavača), podatke o prikazanim i dodirnutim reklamama i — samo ako to
+          dozvoliš kad iOS pita — <strong>reklamni identifikator</strong> uređaja. Unity te podatke
+          koristi da prikaže, prilagodi i izmeri reklame i spreči prevare. Mi te podatke ne dobijamo
+          i ne čuvamo.
+        </li>
+        <li>
+          <strong>Ništa se ne pita pri pokretanju.</strong> Pitanje stiže tek kad dodirneš ponudu
+          reklame. Ako je tvoj telefon podešen na evropsku vremensku zonu (Srbija, Bosna i
+          Hercegovina, Crna Gora, Severna Makedonija, Hrvatska, zemlje EU, Švajcarska…), prvo te
+          pitamo da li prihvataš reklame („Prihvatam" / „Odbijam", ravnopravno); tek posle
+          „Prihvatam" iOS te pita za dozvolu praćenja (App Tracking Transparency), i tek tada se
+          reklamni sistem pokreće. Ako odbiješ, reklamni sistem se uopšte ne pokreće i ponude
+          reklama se ne prikazuju; ponovo te pitamo tek kad sam otvoriš
+          <em>Radnja → Podešavanja → Privatnost i reklame</em> ili posle šest meseci, na dodir
+          ponude.
+        </li>
+        <li>
+          Van Evrope te pita samo iOS (dozvola praćenja); reklamni sistem se pokreće posle tvog
+          odgovora, a ako praćenje nisi dozvolio, reklamni identifikator se ne deli i Unity tvoje
+          podatke ne „prodaje" niti deli za praćenje.
+        </li>
+        <li>
+          Odluku menjaš kad god hoćeš u <em>Radnja → Podešavanja → Privatnost i reklame</em> (i u
+          Podešavanjima iPhone-a → Privatnost i bezbednost → Praćenje). Neprimerenu reklamu
+          prijavljuješ u <em>Podešavanja → Prijavi reklamu</em> (otvara se e-pošta ka nama).
+        </li>
+        <li>
+          Politika privatnosti Unity-ja:
+          <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>
+        </li>
+      </ul>
+
+      <h2>Pijaca komšija (Supabase)</h2>
+      <ul>
+        <li>
+          Od nivoa 3 možeš da prodaješ robu drugim igračima i kupuješ od njih. Kad prvi put otvoriš
+          pijacu komšija, aplikacija napravi <strong>anonimni nalog</strong>: nasumičan broj, bez
+          imena, imejla, broja telefona i bez reklamnog identifikatora.
+        </li>
+        <li>
+          Na serveru se čuvaju: taj anonimni broj, nasumično ime tvoje tezge (npr. „Zlatni Klas"),
+          nivo koji igra javlja, tvoje ponude (artikal, količina, cena, stanje, vremena) i kupovine
+          između igrača. Završene ponude i kupovine brišu se posle 30 dana. Server je kod
+          <strong>Supabase</strong>-a u Frankfurtu (EU), koji kao obrađivač vodi i tehničke logove
+          zahteva sa IP adresom. Drugi igrači vide samo ime tezge i ponudu — nikad tvoj broj.
+        </li>
+        <li>
+          Igrači ne pišu nikakav tekst jedni drugima: nema poruka ni imena koje bi neko mogao da
+          zloupotrebi.
+        </li>
+        <li>
+          <em>Radnja → Podešavanja → Obriši moje podatke sa pijace</em> briše tvoju tezgu, ponude i
+          anonimni nalog sa servera (roba sa tezge se vraća u magacin, a prodato se naplaćuje);
+          kupovine u kojima si učestvovao ostaju bez tvog broja do brisanja posle 30 dana.
+        </li>
+        <li>
+          Politika privatnosti Supabase-a:
+          <a href="https://supabase.com/privacy">supabase.com/privacy</a>
+        </li>
+      </ul>
+
+      <h2>Šta aplikacija ne radi</h2>
+      <ul>
+        <li>Nema naše analitike ni praćenja; kupovina u aplikaciji nema.</li>
+        <li>Ne traži pristup lokaciji, kontaktima, kameri, mikrofonu ni fotografijama.</li>
+        <li>Igra radi i bez interneta; tada ne šalje ništa.</li>
+      </ul>
+
+      <h2>Deca</h2>
+      <p>
+        Aplikacija nije namenjena posebno deci i ne prikuplja svesno podatke dece mlađe od 13
+        godina. Reklame su podešene da ne prikazuju sadržaj za starije uzraste.
+      </p>
+
+      <h2>Izmene</h2>
+      <p>
+        Ako se ova politika promeni, nova verzija biće objavljena na ovoj stranici pre nego što
+        izmena stupi na snagu.
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>Noqyris — <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
+    </main>
+  </body>
+</html>
