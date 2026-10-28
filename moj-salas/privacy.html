@@ -44,13 +44,14 @@
   <body>
     <main>
       <h1>Politika privatnosti — Moj Salaš</h1>
-      <p class="datum">Poslednje ažuriranje: 22. oktobar 2026. (verzija 1.0.0)</p>
+      <p class="datum">Poslednje ažuriranje: 28. oktobar 2026. (verzija 1.0.0)</p>
       <p>
         Moj Salaš („aplikacija") je farm igra koju razvija Noqyris. Ova politika objašnjava koje
         podatke aplikacija koristi, ko ih dobija i zašto. Kratko:
         <strong>nemamo naloge sa imenom ili imejlom i ne tražimo nikakav lični podatak.</strong>
-        Podatke o uređaju šalju samo reklame (i to tek kad na njih pristaneš ili odgovoriš iOS-u), a
-        pijaca komšija čuva tvoje ponude pod nasumičnim anonimnim brojem.
+        Podatke o uređaju šalju samo reklame (i to tek kad na njih pristaneš ili odgovoriš iOS-u),
+        pijaca komšija čuva tvoje ponude pod nasumičnim anonimnim brojem, a anonimna statistika igre
+        (koju možeš da isključiš) govori nam samo šta se u igri dešava.
       </p>
 
       <h2>Šta aplikacija čuva na tvom telefonu</h2>
@@ -62,7 +63,7 @@
           (na iPhone-u u sistemskom skladištu podešavanja).
         </li>
         <li>
-          <em>Radnja → Podešavanja → Obriši napredak i počni ispočetka</em> briše napredak. Brisanje
+          <em>Imanje → Podešavanja → Obriši napredak i počni ispočetka</em> briše napredak. Brisanje
           aplikacije briše sve njene podatke sa uređaja.
         </li>
       </ul>
@@ -93,7 +94,7 @@
           „Prihvatam" iOS te pita za dozvolu praćenja (App Tracking Transparency), i tek tada se
           reklamni sistem pokreće. Ako odbiješ, reklamni sistem se uopšte ne pokreće i ponude
           reklama se ne prikazuju; ponovo te pitamo tek kad sam otvoriš
-          <em>Radnja → Podešavanja → Privatnost i reklame</em> ili posle šest meseci, na dodir
+          <em>Imanje → Podešavanja → Privatnost i reklame</em> ili posle šest meseci, na dodir
           ponude.
         </li>
         <li>
@@ -102,7 +103,7 @@
           podatke ne „prodaje" niti deli za praćenje.
         </li>
         <li>
-          Odluku menjaš kad god hoćeš u <em>Radnja → Podešavanja → Privatnost i reklame</em> (i u
+          Odluku menjaš kad god hoćeš u <em>Imanje → Podešavanja → Privatnost i reklame</em> (i u
           Podešavanjima iPhone-a → Privatnost i bezbednost → Praćenje). Neprimerenu reklamu
           prijavljuješ u <em>Podešavanja → Prijavi reklamu</em> (otvara se e-pošta ka nama).
         </li>
@@ -131,7 +132,7 @@
           zloupotrebi.
         </li>
         <li>
-          <em>Radnja → Podešavanja → Obriši moje podatke sa pijace</em> briše tvoju tezgu, ponude i
+          <em>Imanje → Podešavanja → Obriši moje podatke sa pijace</em> briše tvoju tezgu, ponude i
           anonimni nalog sa servera (roba sa tezge se vraća u magacin, a prodato se naplaćuje);
           kupovine u kojima si učestvovao ostaju bez tvog broja do brisanja posle 30 dana.
         </li>
@@ -141,9 +142,54 @@
         </li>
       </ul>
 
+      <h2>Anonimna statistika igre (Supabase)</h2>
+      <ul>
+        <li>
+          Da bismo znali gde je igra preteška ili dosadna, igra šalje kratke zapise o tome šta se u
+          njoj desilo: pokretanje igre, novi nivo, kraj vodiča, korak u Dedinoj svesci, isporuka (i
+          ime mušterije iz igre), ubrzanje i čime je plaćeno, nagradna reklama (gde je tražena i da
+          li je pogledana), isplaćen paket dukata, ponuda ili kupovina na pijaci komšija i pun
+          ambar. Uz svaki zapis idu nivo u igri, verzija igre i vreme.
+        </li>
+        <li>
+          Zapisi nose <strong>nasumičan broj uređaja</strong> koji pravi sama igra. On nije vezan za
+          anonimni nalog pijace, za reklamni identifikator ni za bilo šta o tebi. Ne šaljemo ime,
+          imejl, lokaciju ni kontakte, ne pratimo te van igre i ne dajemo zapise nikome. Čuvaju se
+          na istom serveru kao pijaca (<strong>Supabase</strong>, Frankfurt, EU) i brišu posle
+          godinu dana.
+        </li>
+        <li>
+          <em>Imanje → Podešavanja → Anonimna statistika igre</em> je isključuje: igra više ništa ne
+          šalje, a server briše sve što je stiglo pod brojem tvog uređaja. Ako je ponovo uključiš,
+          igra pravi nov broj.
+        </li>
+      </ul>
+
+      <h2>Kupovine u aplikaciji</h2>
+      <ul>
+        <li>
+          U prodavnici igre možeš da kupiš dukate (potrošne kupovine; troše se samo na ubrzanja).
+          Plaćanje obavlja Apple (App Store): mi ne vidimo i ne čuvamo tvoje ime, Apple ID ni
+          podatke o plaćanju.
+        </li>
+        <li>
+          Igra na telefonu pamti samo brojeve transakcija koje je već isplatila, da ti dukati ne
+          stignu dvaput. To se ne šalje nama.
+        </li>
+      </ul>
+
+      <h2>Obaveštenja</h2>
+      <ul>
+        <li>
+          Ako ih dozvoliš, igra na telefonu zakaže podsetnik (npr. „Njive su zrele") za trenutak kad
+          nešto bude gotovo. Zakazuje ih sam telefon: nemamo server za obaveštenja i ništa se ne
+          šalje. Isključuješ ih u Podešavanjima iPhone-a → Obaveštenja → Moj Salaš.
+        </li>
+      </ul>
+
       <h2>Šta aplikacija ne radi</h2>
       <ul>
-        <li>Nema naše analitike ni praćenja; kupovina u aplikaciji nema.</li>
+        <li>Ne prati te van igre i ne povezuje statistiku igre sa tobom.</li>
         <li>Ne traži pristup lokaciji, kontaktima, kameri, mikrofonu ni fotografijama.</li>
         <li>Igra radi i bez interneta; tada ne šalje ništa.</li>
       </ul>
