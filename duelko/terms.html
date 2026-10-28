@@ -1,0 +1,225 @@
+<!doctype html>
+<!--
+  DUELKO terms of use (2026-10-28). Source copy; to be published at
+  https://noqyris.github.io/duelko/terms.html (repository/web/noqyris.github.io/duelko/) — only on
+  the owner's word, that repo is public. The app links here (TERMS_URL, src/siteUrls.ts) and asks
+  for acceptance of this version (TERMS_VERSION) before the first game against other players.
+  Written from the code: names screened by checkName and set_profile, report and block
+  (supabase/migrations/0013_names_reports_blocks.sql), DECISIONS 0049. App Review guideline 1.2
+  wants the zero-tolerance line in section 3.
+-->
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0b0f1d">
+<meta name="description" content="Uslovi korišćenja aplikacije DUELKO: pravila igre protiv drugih igrača, prijava i blokiranje, kupovine.">
+<title>DUELKO — Uslovi korišćenja</title>
+<style>
+  :root {
+    --bg: #0b0f1d;
+    --surface: #121a2e;
+    --line: #243154;
+    --text: #e8eaf2;
+    --muted: #a6aec6;
+    --accent: #2dd4bf;
+    --warn: #fbbf24;
+    --warn-soft: rgba(251, 191, 36, 0.09);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.62 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, sans-serif;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: max(28px, env(safe-area-inset-top)) max(16px, env(safe-area-inset-right))
+      72px max(16px, env(safe-area-inset-left));
+  }
+  .brand { margin: 0; color: var(--accent); font-weight: 800; font-size: 0.82rem; letter-spacing: 0.16em; }
+  h1 { margin: 0.3rem 0 0.4rem; font-size: clamp(1.9rem, 7vw, 2.5rem); line-height: 1.12; letter-spacing: -0.01em; }
+  h2 { margin: 2.6rem 0 0.8rem; font-size: 1.3rem; line-height: 1.25; scroll-margin-top: 16px; }
+  h2 .n { color: var(--accent); margin-right: 0.35em; font-variant-numeric: tabular-nums; }
+  p { margin: 0 0 0.85rem; }
+  ul { margin: 0 0 0.9rem; padding-left: 1.25rem; }
+  li { margin: 0.3rem 0; }
+  li::marker { color: var(--accent); }
+  a { color: var(--accent); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 3px; }
+  strong { font-weight: 650; }
+  .meta { color: var(--muted); font-size: 0.95rem; }
+  .lead { font-size: 1.06rem; }
+  .rule {
+    margin: 1rem 0;
+    padding: 14px 18px 6px;
+    background: var(--warn-soft);
+    border-left: 3px solid var(--warn);
+    border-radius: 12px;
+  }
+  .rule strong:first-child { color: var(--warn); }
+  .path { white-space: nowrap; }
+  @media (max-width: 420px) { body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <p class="brand">DUELKO</p>
+  <h1>Uslovi korišćenja</h1>
+  <p class="meta">Poslednja izmena: <time datetime="2026-10-28">28. oktobra 2026.</time></p>
+  <p class="lead">Ovi uslovi važe kada koristiš DUELKO, kviz-duel koji razvija studio
+    <strong>Noqyris</strong>. Kako postupamo s podacima, piše u <a href="privacy.html">Politici
+    privatnosti</a>. <a href="#en">English below.</a></p>
+</header>
+
+<section aria-labelledby="apple">
+  <h2 id="apple"><span class="n">1.</span>Apple-ov licencni ugovor</h2>
+  <p>DUELKO preuzimaš iz Apple-ovog App Store-a, pa za njegovo korišćenje važi Apple-ov standardni
+    licencni ugovor za krajnjeg korisnika (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed
+    Application End User License Agreement</a>). Ovi uslovi ga dopunjuju. Ako se nešto u njima
+    razlikuje od Apple-ovog ugovora, važi Apple-ov ugovor.</p>
+</section>
+
+<section aria-labelledby="dozvola">
+  <h2 id="dozvola"><span class="n">2.</span>Šta smeš da radiš s aplikacijom</h2>
+  <p>Dobijaš ličnu dozvolu da DUELKO koristiš na Apple uređajima koje poseduješ ili koristiš, po
+    Apple-ovim pravilima. Pitanja, igre, tekstovi, slike i ostali sadržaj aplikacije pripadaju
+    Noqyris-u. Ne smeš ih kopirati, prodavati ni objavljivati van aplikacije.</p>
+</section>
+
+<section aria-labelledby="drugi">
+  <h2 id="drugi"><span class="n">3.</span>Igra protiv drugih igrača: nulta tolerancija</h2>
+  <p>Kad igraš uživo, sa prijateljem ili protiv snimka tuđe partije, drugi igrači vide ime i avatar
+    koje izabereš, tvoj rang i rezultat, a na rang-listama i tvoje mesto. Tvoja odigrana partija
+    može drugima da se pusti kao snimak; to isključuješ u Profilu. Pre prve igre protiv drugih
+    aplikacija traži da prihvatiš ove uslove.</p>
+  <div class="rule">
+    <p><strong>Nema nikakve tolerancije</strong> za uvredljiv sadržaj i za igrače koji zloupotrebljavaju
+      igru. Zabranjeno je ime ili ponašanje koje:</p>
+    <ul>
+      <li>je uvredljivo, vulgarno, seksualno ili preteće, ili uznemirava druge;</li>
+      <li>vređa ili ponižava ljude zbog nacionalnosti, vere, pola, seksualne orijentacije,
+        invaliditeta ili bilo čega drugog, ili veliča nasilje, mržnju i zločin;</li>
+      <li>lažno predstavlja DUELKO, Noqyris ili drugog igrača;</li>
+      <li>sadrži reklamu, link ili nečije lične podatke, pa i tvoje;</li>
+      <li>vara: izmenjena aplikacija, automatsko igranje, namešteni rezultati ili zloupotreba
+        prijava.</li>
+    </ul>
+    <p>Kad to utvrdimo, bez upozorenja: vraćamo ime na „Igrač“ i to ime ne možeš ponovo da
+      uzmeš, rezultati se ne računaju, gubiš mesto na rang-listama i nagrade, a možemo i trajno
+      da ti onemogućimo igru protiv drugih igrača.</p>
+  </div>
+  <p>Ime proveravamo pre nego što ga drugi vide i odbijamo ono što prepoznamo kao uvredljivo.
+    Nijedan filter ne hvata sve, pa se oslanjamo i na tvoje prijave.</p>
+</section>
+
+<section aria-labelledby="prijava">
+  <h2 id="prijava"><span class="n">4.</span>Prijava i blokiranje</h2>
+  <p>Gde god vidiš tuđe ime — u predvorju meča, na rezultatu meča, u Prijateljima i na
+    rang-listama — dugme <span class="path">„Prijavi · Blokiraj”</span> nudi dve stvari:</p>
+  <ul>
+    <li><strong>Prijavi ime.</strong> Prijave pregledamo i postupamo po njima u roku od 24 sata.
+      Ime koje prijavi više različitih igrača odmah se vraća na „Igrač“, i pre nego što ga
+      pogledamo.</li>
+    <li><strong>Blokiraj.</strong> Odmah i bez obaveštenja drugoj strani: više vas ne spajamo u
+      meč, ne možete jedan drugom u sobu ni na revanš, ne dobijate jedan drugog kao snimak, a
+      blokirani igrač nestaje iz tvojih prijatelja. Blokiranje poništavaš u
+      <span class="path">Profil → Prijatelji → Blokirani</span>.</li>
+  </ul>
+  <p>Sve ostalo — ponašanje, varanje, ili nešto što dugme ne pokriva — prijavi imejlom na
+    <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</p>
+</section>
+
+<section aria-labelledby="kupovine">
+  <h2 id="kupovine"><span class="n">5.</span>Besplatno, žetoni i kupovine</h2>
+  <p>DUELKO je besplatan. Kupovine („Bez reklama”, paketi žetona) idu isključivo preko Apple-a, po
+    Apple-ovim pravilima i cenama prikazanim pre kupovine. Žetoni, RP i rang postoje samo u igri:
+    nemaju novčanu vrednost i ne mogu se prodati, preneti ni zameniti za novac.</p>
+</section>
+
+<section aria-labelledby="reklame">
+  <h2 id="reklame"><span class="n">6.</span>Reklame</h2>
+  <p>Aplikacija prikazuje reklame, kako piše u <a href="privacy.html">Politici privatnosti</a>.
+    Ne gledaj i ne dodiruj reklame lažno ili automatski; reklamne mreže to smatraju nevažećim
+    saobraćajem.</p>
+</section>
+
+<section aria-labelledby="sadrzaj">
+  <h2 id="sadrzaj"><span class="n">7.</span>Pitanja</h2>
+  <p>Pitanja pišemo i proveravamo pažljivo, ali ne garantujemo da je svaki odgovor tačan. Grešku
+    nam javi imejlom i ispravićemo je.</p>
+</section>
+
+<section aria-labelledby="napredak">
+  <h2 id="napredak"><span class="n">8.</span>Tvoj napredak</h2>
+  <p>Napredak se čuva na tvom telefonu, a za igru protiv drugih i uz anonimni nalog na našem
+    serveru. <span class="path">Profil → „Obriši nalog”</span> briše oba i ne može da se vrati.</p>
+</section>
+
+<section aria-labelledby="promene">
+  <h2 id="promene"><span class="n">9.</span>Promene aplikacije i uslova</h2>
+  <p>DUELKO možemo menjati: dodavati, menjati ili ukidati igre i funkcije. Ne obećavamo da će
+    aplikacija uvek biti dostupna niti da će raditi na svakom uređaju. Kad bitno promenimo ove
+    uslove, menjamo ovu stranicu i datum gore, a aplikacija te ponovo pita pre igre protiv drugih.</p>
+</section>
+
+<section aria-labelledby="odgovornost">
+  <h2 id="odgovornost"><span class="n">10.</span>Odgovornost</h2>
+  <p>U meri u kojoj to zakon dozvoljava, Noqyris ne odgovara za posrednu štetu nastalu korišćenjem
+    aplikacije ni za ono što drugi igrači napišu ili urade. Ništa u ovim uslovima ne ograničava
+    prava koja ti kao potrošaču daje zakon.</p>
+</section>
+
+<section aria-labelledby="kontakt">
+  <h2 id="kontakt"><span class="n">11.</span>Kontakt</h2>
+  <p>Noqyris — <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en" aria-labelledby="en-title">
+  <h2 id="en-title">Terms of Use — English</h2>
+  <p>These terms apply when you use DUELKO, a quiz duel developed by <strong>Noqyris</strong>.
+    Apple’s standard <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Licensed
+    Application End User License Agreement</a> applies and these terms supplement it; where they
+    differ, Apple’s agreement prevails. How we handle data is in the
+    <a href="privacy.html">Privacy Policy</a>.</p>
+  <ul>
+    <li><strong>Playing against others — zero tolerance.</strong> In live, friend and recorded
+      duels other players see the name and avatar you choose, your rank and score. You accept these
+      terms in the app before your first game against other players. There is no tolerance for
+      objectionable content or abusive users: no name or conduct that is offensive, vulgar, sexual,
+      threatening or harassing; that demeans people for their nationality, religion, sex, sexual
+      orientation, disability or anything else, or glorifies violence, hatred or crime; that
+      impersonates DUELKO, Noqyris or another player; that contains ads, links or personal data;
+      and no cheating (modified apps, automated play, fixed results, abuse of reports). When we
+      find it, without warning, the name is reset to “Igrač” and cannot be used again, results do
+      not count, leaderboard places and rewards are lost, and play against others may be disabled
+      for good. Names are screened before others see them; no filter catches everything.</li>
+    <li><strong>Report and block.</strong> “Prijavi · Blokiraj” wherever another player’s name is
+      shown — the lobby, match results, Friends and the leaderboards. We review reports and act on
+      them within 24 hours; a name reported by several players is reset at once. Blocking is
+      immediate: you are never matched, cannot join each other’s rooms or rematches, and are not
+      served each other’s recordings; undo it in Profil → Prijatelji → Blokirani. Anything else:
+      <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</li>
+    <li><strong>Purchases</strong> go through Apple only. Coins, RP and rank have no monetary value
+      and cannot be sold, transferred or exchanged.</li>
+    <li>The app shows ads as the Privacy Policy describes; do not view or tap them artificially.
+      We take care with the questions but do not guarantee every answer. Profil → “Obriši nalog”
+      deletes your progress on the device and on our server.</li>
+    <li>We may change the app and these terms; after a material change the app asks again before
+      you play against others. To the extent the law allows, Noqyris is not liable for indirect
+      loss or for what other players write or do; nothing here limits your rights as a consumer.</li>
+  </ul>
+</section>
+
+</main>
+</body>
+</html>
