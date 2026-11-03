@@ -27,7 +27,7 @@
 <section lang="sr" id="sr">
 
 <h1>Politika privatnosti — KVIZKO</h1>
-<p class="sub">Poslednja izmena: 11. oktobar 2026. (verzija 1.3.1)</p>
+<p class="sub">Poslednja izmena: 3. novembar 2026. (verzija 1.3.4)</p>
 <p class="lang"><a href="#en">English version below</a></p>
 
 <p>KVIZKO je kviz igra koju razvija <strong>Noqyris</strong>. Ova politika objašnjava koje se
@@ -37,18 +37,23 @@ brišeš.</p>
 <div class="box">
 <ul>
   <li>Kviz, „Preživi“, dnevni izazov, zadaci, niz, statistika, žetoni i kupovine rade na tvom
-      uređaju. Ti podaci ostaju na uređaju.</li>
-  <li>Samo <strong>Duel</strong> (igra uživo protiv drugog igrača) šalje podatke našem serveru.
-      Šalje anonimni ID igrača, nadimak koji izabereš i tok tvojih duela. Ne šalje ime,
-      e-mail ni broj telefona.</li>
-  <li>Reklame prikazuje Unity LevelPlay, i to samo ako na njih pristaneš.</li>
+      uređaju i tamo se čuvaju.</li>
+  <li><strong>Duel</strong> (igra uživo protiv drugog igrača) šalje podatke našem serveru za
+      Duel: anonimni ID igrača, nadimak koji izabereš i tok tvojih duela. Ne šalje ime, e-mail
+      ni broj telefona.</li>
+  <li>Igra nam šalje i <strong>statistiku o tome kako se igra</strong>, bez tvog imena
+      (odeljak 6). U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji tek ako je dozvoliš;
+      svuda je možeš isključiti u Podešavanjima.</li>
+  <li>Reklame prikazuje Unity LevelPlay. U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i
+      Srbiji, i na Androidu svuda, samo ako na njih pristaneš (odeljak 4).</li>
 </ul>
 </div>
 
-<h2>1. Šta ostaje samo na tvom uređaju</h2>
+<h2>1. Šta se čuva na tvom uređaju</h2>
 <p>Na uređaju se čuvaju rezultati, statistika, napredak, nivoi, medalje, niz, zadaci, žetoni,
 kasica, podešavanja i kupovine. Podsetnici se zakazuju lokalno na telefonu i ne prolaze kroz naš
-server. Mi ove podatke ne vidimo. Ako obrišeš aplikaciju, oni nestaju s njom.</p>
+server. Ove podatke igra ne šalje nikome; statistika igre (odeljak 6) šalje samo ono što tamo
+piše. Ako obrišeš aplikaciju, oni nestaju s njom.</p>
 
 <h2>2. Duel — šta se šalje našem serveru</h2>
 <p>Duel radi preko servera koji za nas vodi <strong>Supabase</strong> (Supabase, Inc.). Server je
@@ -151,6 +156,9 @@ prijave koje si ti podneo/la. Žetoni i napredak u ostalim igrama ostaju na ure�
 <ul>
   <li><strong>Supabase</strong> je server za Duel (poglavlje 2). Podatke obrađuje za nas, samo da
       bi Duel radio. <a href="https://supabase.com/privacy">Supabase politika privatnosti</a></li>
+  <li><strong>Cloudflare</strong> (Cloudflare, Inc.) prima i čuva za nas statistiku igre
+      (odeljak 6). Podatke obrađuje za nas, po svom ugovoru o obradi podataka.
+      <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare politika privatnosti</a></li>
   <li><strong>Unity LevelPlay (ironSource)</strong> prikazuje reklame i posreduje između više
       reklamnih mreža. Prikuplja tehničke podatke o uređaju i o prikazanoj reklami („Services
       Data“): reklamni identifikator, tip uređaja, verziju sistema, približnu lokaciju (državu),
@@ -171,15 +179,24 @@ prijave koje si ti podneo/la. Žetoni i napredak u ostalim igrama ostaju na ure�
 </ul>
 
 <h2>4. Reklame, praćenje i tvoj izbor</h2>
-<p>Igra te pita za saglasnost za reklame posle prve završene partije, ili ranije, ako sam/a
+<p>Pri pokretanju igra ne pita ništa i reklamni sistem se ne pokreće. Šta sledi zavisi od toga
+gde je telefon (po njegovoj vremenskoj zoni):</p>
+<p><strong>U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji, i na Androidu svuda:</strong>
+igra te pita za saglasnost za reklame posle prve završene partije, ili ranije, ako sam/a
 dodirneš ponudu za reklamu sa nagradom. Upit kaže ko prikazuje reklame, koje podatke Unity
 dobija i zašto. Dok ne odgovoriš, i ako saglasnost ne daš, reklamni sistem se uopšte ne
 pokreće: nema reklama ni nagrada za gledanje reklama, a žetoni i dalje stižu igrom. Posle
 odbijanja igra te ponovo pita samo kad sam/a dodirneš ponudu za reklamu, i to najranije posle
 180 dana. Odluku možeš promeniti bilo kada, u podešavanjima aplikacije, u redu
-„Privatnost i reklame“.</p>
-<p>Na iOS-u se Apple-ov upit „App Tracking Transparency“ pojavljuje tek ako saglasnost daš. Ako
-<strong>ne dozvoliš</strong> praćenje, reklame se traže kao <em>nepersonalizovane</em>. Tu
+„Privatnost i reklame“. Na iOS-u se Apple-ov upit „App Tracking Transparency“ pojavljuje tek
+ako saglasnost daš.</p>
+<p><strong>Na iOS-u u ostalim zemljama</strong> igra ne postavlja svoje pitanje: u istim
+trenucima (posle prve završene partije ili na dodir ponude) jedan ekran kaže šta sledi, a
+onda Apple-ov upit „App Tracking Transparency“ pita da li igra sme da te prati. Reklame se
+prikazuju na oba odgovora. Red „Privatnost i reklame“ u podešavanjima tamo samo objašnjava i
+vodi u podešavanja telefona.</p>
+<p>Ako na iOS-u <strong>ne dozvoliš</strong> praćenje, reklame se traže kao
+<em>nepersonalizovane</em>, a Unity-ju se kaže da tvoje podatke ne sme da prodaje ni deli. Tu
 odluku možeš promeniti bilo kada, u <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.</p>
 <p>Na Androidu nema drugog upita: ako saglasnost daš, Unity uz ostale podatke dobija i reklamni
 identifikator uređaja. Možeš ga resetovati ili obrisati bilo kada u podešavanjima telefona, u
@@ -203,24 +220,82 @@ koja sadrži verziju aplikacije i mesto da opišeš reklamu. Ništa se ne šalje
 mejl. Prijavu koristimo samo da proverimo reklamu, prijavimo je Unity-ju i blokiramo je, i da
 ti odgovorimo.</p>
 
-<h2>6. Deca</h2>
-<p>KVIZKO nije namenjen deci mlađoj od 13 godina i ne prikuplja svesno njihove podatke. Aplikacija
-sadrži reklame, što je označeno u App Store rejtingu. U Duelu nema četa. Drugi igrači vide samo
-nadimak, koji prolazi kroz filter. Svaki nadimak se može prijaviti, a svakog igrača blokirati.</p>
+<h2>6. Statistika igre (Noqyris)</h2>
+<p>Igra nam šalje statistiku o tome kako se igra, da bismo videli gde igrači zapnu ili odustanu, šta
+je preteško i šta ne radi. Statistiku pravimo i čitamo samo mi (Noqyris); nije reklamna i ne
+prodajemo je.</p>
+<h3>Koji podaci</h3>
+<ul>
+  <li>Slučajni broj instalacije: nasumičan ID koji igra napravi na tvom telefonu. Nije reklamni
+      identifikator, nije ID uređaja i ne daje se nikome, ni našoj reklamnoj mreži (Unity LevelPlay).</li>
+  <li>Kako igraš: početak i kraj igranja, ekrani, nivoi i pokušaji, koraci uputstva, ponude i prikazi
+      reklama sa zaradom po prikazu, greške u igri i vreme učitavanja.</li>
+  <li>Verzija igre, platforma (iOS ili Android), verzija sistema, jezik i razlika vremenske zone.</li>
+  <li>Zemlja: Cloudflare obrađuje IP adresu radi prenosa i ograničenja broja zahteva; mi je ne
+      upisujemo i iz nje čuvamo samo zemlju.</li>
+</ul>
+<p>Ne šaljemo ime, e-poštu, model telefona, reklamni identifikator ni kupovine.</p>
+<h3>Pravni osnov</h3>
+<ul>
+  <li>U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji: tvoj pristanak (GDPR čl. 6(1)(a),
+      ZZPL čl. 12, Zakon o elektronskim komunikacijama čl. 160). Igra te pita pre nego što išta
+      pošalje i dok ne kažeš „Dozvoli“ ništa ne čuva ni ne šalje.</li>
+  <li>U ostalim zemljama: naš legitimni interes da popravljamo igru, uz mogućnost da statistiku
+      isključiš kad god hoćeš.</li>
+</ul>
+<h3>Ko obrađuje podatke</h3>
+<p>Podatke za nas obrađuje Cloudflare, Inc., po svom ugovoru o obradi podataka. Pojedinačni događaji
+sa slučajnim brojem instalacije čuvaju se kod Cloudflare-a, moguće i van EU (SAD), uz EU-U.S. Data
+Privacy Framework i standardne ugovorne klauzule. Dnevni zbirovi bez broja instalacije čuvaju se u
+EU.</p>
+<h3>Koliko dugo</h3>
+<ul>
+  <li>pojedinačni događaji: 3 meseca, pa se brišu sami;</li>
+  <li>dnevni zbirovi (bez broja instalacije, ne mogu se povezati sa tobom): dok postoji igra;</li>
+  <li>brojač dnevnog ograničenja (šifrovan otisak broja instalacije): 2 dana.</li>
+</ul>
+<h3>Kako da isključiš i obrišeš</h3>
+<p>U Podešavanjima igre isključi „Statistika igre“: od tada igra ne šalje ništa, ni posle ponovnog
+pokretanja. Dugme „Obriši podatke statistike“ isključuje statistiku, briše sa telefona ono što je
+statistika upisala i traži od servera brisanje. Broj instalacije ostaje na telefonu samo dok server
+ne potvrdi brisanje. Kad server primi zahtev:</p>
+<ul>
+  <li>podaci te instalacije odmah se više ne prikazuju u pregledu po igraču;</li>
+  <li>dnevni zbirovi poslednjih 8 dana računaju se ponovo bez nje u roku od jednog dana;</li>
+  <li>stariji dnevni zbirovi je i dalje sadrže, ali samo kao deo zbira (npr. jedan igrač više), bez
+      broja instalacije;</li>
+  <li>pojedinačni događaji i oznaka brisanja (u njoj je broj instalacije) brišu se sami posle 3
+      meseca.</li>
+</ul>
+<p>Ako telefon nije na mreži, igra ponovo traži brisanje pri svakom sledećem pokretanju. Pošto ne
+znamo ko si, statistiku možemo da pronađemo samo preko tog dugmeta u igri; e-poštom je ne možemo
+pronaći ni obrisati. Napredak u igri ostaje.</p>
+<p>Ako imaš manje od 16 godina (u Srbiji 15), statistiku uključi samo uz saglasnost roditelja.</p>
 
-<h2>7. Tvoja prava</h2>
+<h2>7. Deca</h2>
+<p>KVIZKO je igra za opštu publiku i nije namenjen deci mlađoj od 13 godina. Svesno ne prikupljamo
+podatke dece mlađe od 13 godina. Rejting 4+ u App Store-u opisuje sadržaj igre, ne publiku kojoj je
+namenjena. Aplikacija sadrži reklame, što je označeno u App Store rejtingu. Ako roditelj vidi da je
+dete koristilo KVIZKO, neka nam piše na adresu ispod: obrisaćemo sve što možemo da pronađemo
+(profil za Duel, po nadimku). Statistiku igre ne možemo da pronađemo po e-pošti; nju briše dugme
+„Obriši podatke statistike“ u Podešavanjima KVIZKO-a na telefonu deteta. U Duelu nema četa. Drugi
+igrači vide samo nadimak, koji prolazi kroz filter. Svaki nadimak se može prijaviti, a svakog igrača
+blokirati.</p>
+
+<h2>8. Tvoja prava</h2>
 <p>Možeš tražiti uvid u podatke iz Duela koji se odnose na tebe. Možeš tražiti i njihovu
 ispravku (na primer, promenu nadimka, koju na zahtev radimo mi), brisanje ili ograničenje
-obrade, i možeš uložiti prigovor. Piši nam na adresu ispod i navedi svoj nadimak, jer drugi
-podatak po kome bismo te prepoznali ne postoji. Imaš pravo i na pritužbu Povereniku za
-informacije od javnog značaja i zaštitu podataka o ličnosti (Srbija), ili nadzornom organu u
-svojoj zemlji.</p>
+obrade, i možeš uložiti prigovor. Za Duel nam piši na adresu ispod i navedi svoj nadimak.
+Statistiku igre (odeljak 6) ne možemo da pronađemo po e-pošti ni po nadimku, jer je vezana samo
+za slučajni broj instalacije: isključuje je prekidač „Statistika igre“, a briše dugme „Obriši
+podatke statistike“, oba u Podešavanjima. Imaš pravo i na pritužbu Povereniku za informacije od
+javnog značaja i zaštitu podataka o ličnosti (Srbija), ili nadzornom organu u svojoj zemlji.</p>
 
-<h2>8. Promene</h2>
+<h2>9. Promene</h2>
 <p>Ako se politika promeni, izmenićemo ovu stranicu i datum na vrhu.</p>
 
-<h2>9. Kontakt</h2>
-<p>Rukovalac podacima iz Duela je Noqyris. Pitanja o privatnosti i zahtevi:
+<h2>10. Kontakt</h2>
+<p>Rukovalac podacima iz Duela i statistike igre je Noqyris. Pitanja o privatnosti i zahtevi:
 <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
 
 </section>
@@ -230,7 +305,7 @@ svojoj zemlji.</p>
 <section lang="en" id="en">
 
 <h1>Privacy Policy — KVIZKO</h1>
-<p class="sub">Last updated: 11 October 2026 (version 1.3.1)</p>
+<p class="sub">Last updated: 3 November 2026 (version 1.3.4)</p>
 <p class="lang"><a href="#sr">Srpska verzija gore</a></p>
 
 <p>KVIZKO is a quiz game developed by <strong>Noqyris</strong>. This policy explains what
@@ -240,19 +315,24 @@ to delete it.</p>
 <div class="box">
 <ul>
   <li>The quiz, "Survive", the daily challenge, quests, the streak, statistics, žetoni (coins)
-      and purchases work on your device. That data stays on the device.</li>
-  <li>Only <strong>Duel</strong> (a live match against another player) sends data to our
-      server. It sends an anonymous player ID, the nickname you choose and the course of your
-      duels. It never sends a name, e-mail or phone number.</li>
-  <li>Ads are shown by Unity LevelPlay, and only if you consent to them.</li>
+      and purchases work on your device and are stored there.</li>
+  <li><strong>Duel</strong> (a live match against another player) sends data to our Duel
+      server: an anonymous player ID, the nickname you choose and the course of your duels. It
+      never sends a name, e-mail or phone number.</li>
+  <li>The game also sends us <strong>statistics about how it is played</strong>, without your
+      name (section 6). In the EU, EEA, United Kingdom, Switzerland and Serbia only once you
+      allow it; everywhere you can turn it off in Settings.</li>
+  <li>Ads are shown by Unity LevelPlay. In the EU, EEA, United Kingdom, Switzerland and Serbia,
+      and on Android everywhere, only if you consent to them (section 4).</li>
 </ul>
 </div>
 
-<h2>1. What stays on your device only</h2>
+<h2>1. What is stored on your device</h2>
 <p>Scores, statistics, progress, levels, medals, the streak, quests, žetoni, the piggy bank,
-settings and purchases are stored only on your device. Reminders are scheduled locally on the
-phone and never pass through our server. We cannot see this data. If you delete the app, it
-goes with it.</p>
+settings and purchases are stored on your device. Reminders are scheduled locally on the phone
+and never pass through our server. The game sends none of this data anywhere; the game
+statistics (section 6) send only what that section lists. If you delete the app, it goes with
+it.</p>
 
 <h2>2. Duel: what is sent to our server</h2>
 <p>Duel runs on a server operated for us by <strong>Supabase</strong> (Supabase, Inc.). The
@@ -361,6 +441,9 @@ on your device.</p>
   <li><strong>Supabase</strong> is the server for Duel (section 2). It processes data on our
       behalf, only to run Duel. <a href="https://supabase.com/privacy">Supabase privacy
       policy</a></li>
+  <li><strong>Cloudflare</strong> (Cloudflare, Inc.) receives and stores the game statistics for
+      us (section 6). It processes the data on our behalf, under its data processing agreement.
+      <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a></li>
   <li><strong>Unity LevelPlay (ironSource)</strong> shows ads and mediates between several ad
       networks. It collects technical data about the device and the ad shown ("Services
       Data"): the advertising identifier, device type, OS version, approximate location
@@ -382,16 +465,25 @@ on your device.</p>
 </ul>
 
 <h2>4. Ads, tracking and your choice</h2>
-<p>The game asks for your consent to ads after your first finished game, or earlier if you tap
-an offer to watch an ad for a reward yourself. The prompt says who shows the ads, what data
-Unity receives and why. Until you answer, and if you do not consent, the ad system never
-starts: there are no ads and no rewards for watching them, and žetoni still come from
-playing. After a refusal the game asks again only when you tap an ad offer yourself, and not
-sooner than 180 days later. You can change your decision at any time in the app's settings,
-on the "Privacy and ads" row.</p>
-<p>On iOS, Apple's "App Tracking Transparency" prompt appears only if you consent. If you
-<strong>do not allow</strong> tracking, ads are requested as <em>non-personalised</em>. You can
-change that at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
+<p>At launch the game asks nothing and the ad system does not start. What follows depends on
+where the phone is (by its time zone):</p>
+<p><strong>In the EU, EEA, United Kingdom, Switzerland and Serbia, and on Android
+everywhere:</strong> the game asks for your consent to ads after your first finished game, or
+earlier if you tap an offer to watch an ad for a reward yourself. The prompt says who shows the
+ads, what data Unity receives and why. Until you answer, and if you do not consent, the ad
+system never starts: there are no ads and no rewards for watching them, and žetoni still come
+from playing. After a refusal the game asks again only when you tap an ad offer yourself, and
+not sooner than 180 days later. You can change your decision at any time in the app's settings,
+on the "Privacy and ads" row. On iOS, Apple's "App Tracking Transparency" prompt appears only if
+you consent.</p>
+<p><strong>On iOS in other countries</strong> the game asks no question of its own: at the same
+moments (after your first finished game, or when you tap an offer) one screen says what comes
+next, and then Apple's "App Tracking Transparency" prompt asks whether the game may track you.
+Ads are shown on either answer. There, the "Privacy and ads" row in the settings only explains
+and leads to the phone's settings.</p>
+<p>If you <strong>do not allow</strong> tracking on iOS, ads are requested as
+<em>non-personalised</em>, and Unity is told not to sell or share your data. You can change
+that at any time in <em>Settings → Privacy &amp; Security → Tracking</em>.</p>
 <p>On Android there is no second prompt: if you consent, Unity also receives the device's
 advertising ID along with the other data. You can reset or delete it at any time in the phone's
 settings, in the ads section (usually <em>Settings → Privacy → Ads</em> or
@@ -414,24 +506,85 @@ contains the app version and room to describe the ad. Nothing is sent until you 
 e-mail. We use the report only to check the ad, report it to Unity and block it, and to
 answer you.</p>
 
-<h2>6. Children</h2>
-<p>KVIZKO is not intended for children under 13 and does not knowingly collect their data. The
-app contains ads, as shown in its App Store rating. Duel has no chat. Other players see only a
-nickname, which is filtered. Any nickname can be reported and any player blocked.</p>
+<h2>6. Game statistics (Noqyris)</h2>
+<p>The game sends us statistics about how it is played, so we can see where players get stuck or
+stop, what is too hard and what does not work. Only we (Noqyris) make and read these statistics;
+they are not used for advertising and we do not sell them.</p>
+<h3>What data</h3>
+<ul>
+  <li>A random install number: a random ID the game creates on your phone. It is not the advertising
+      identifier, not a device ID, and it is never given to anyone, including our ad network (Unity
+      LevelPlay).</li>
+  <li>How you play: start and end of play, screens, levels and attempts, tutorial steps, ad offers and
+      ad views with revenue per view, errors in the game and loading time.</li>
+  <li>Game version, platform (iOS or Android), system version, language and time-zone offset.</li>
+  <li>Country: Cloudflare processes your IP address to deliver requests and limit their number; we do
+      not store it and keep only the country derived from it.</li>
+</ul>
+<p>We do not send your name, email, phone model, advertising identifier or purchases.</p>
+<h3>Legal basis</h3>
+<ul>
+  <li>In the EU, EEA, United Kingdom, Switzerland and Serbia: your consent (GDPR Art. 6(1)(a), Serbian
+      Personal Data Protection Act Art. 12, Electronic Communications Act Art. 160). The game asks you
+      before anything is sent and stores or sends nothing until you choose "Dozvoli" (Allow).</li>
+  <li>In other countries: our legitimate interest in improving the game, and you can turn statistics
+      off at any time.</li>
+</ul>
+<h3>Who processes the data</h3>
+<p>Cloudflare, Inc. processes the data for us under its data processing agreement. Individual events
+with the random install number are stored at Cloudflare, possibly outside the EU (USA), under the
+EU-U.S. Data Privacy Framework and standard contractual clauses. Daily totals without the install
+number are stored in the EU.</p>
+<h3>How long</h3>
+<ul>
+  <li>individual events: 3 months, then deleted automatically;</li>
+  <li>daily totals (without the install number, cannot be linked to you): as long as the game exists;</li>
+  <li>the daily limit counter (a hashed form of the install number): 2 days.</li>
+</ul>
+<h3>How to turn it off and delete</h3>
+<p>In the game's Settings, turn off "Statistika igre" (game statistics): from then on the game sends
+nothing, also after a restart. "Obriši podatke statistike" (delete game statistics data) turns
+statistics off, deletes what statistics stored on your phone and asks our server to delete your
+data. The install number stays on your phone only until the server confirms the deletion. Once the
+server receives the request:</p>
+<ul>
+  <li>this install's data is no longer shown in the per-player view, right away;</li>
+  <li>the daily totals of the last 8 days are recalculated without it within one day;</li>
+  <li>older daily totals still include it, but only as part of a total (for example, one more
+      player), without the install number;</li>
+  <li>individual events and the deletion mark (which contains the install number) are deleted
+      automatically after 3 months.</li>
+</ul>
+<p>If your phone is offline, the game asks again at every later start. Because we do not know who
+you are, we can find your statistics only through that button in the game; we cannot find or delete
+them by email. Your game progress stays.</p>
+<p>If you are under 16 (15 in Serbia), turn statistics on only with a parent's consent.</p>
 
-<h2>7. Your rights</h2>
+<h2>7. Children</h2>
+<p>KVIZKO is for a general audience and is not directed at children under 13. We do not knowingly
+collect data from children under 13. The 4+ App Store rating describes the game's content, not the
+audience it is made for. The app contains ads, as shown in its App Store rating. If a parent finds
+that a child has used KVIZKO, please write to us at the address below and we will delete whatever
+we can find (the Duel profile, by its nickname). We cannot find game statistics by e-mail; the
+"Obriši podatke statistike" (delete game statistics data) button in KVIZKO's Settings on the
+child's phone deletes them. Duel has no chat. Other players see only a nickname, which is filtered.
+Any nickname can be reported and any player blocked.</p>
+
+<h2>8. Your rights</h2>
 <p>You can ask for access to the Duel data about you. You can also ask for it to be corrected
 (for example, a nickname change, which we make on request), deleted or restricted, and you can
-object to its processing. Write to the address below and include your nickname: there is no
-other detail by which we could recognise you. You also have the right to lodge a complaint with
-the Serbian Commissioner for Information of Public Importance and Personal Data Protection, or
-with the supervisory authority of your own country.</p>
+object to its processing. For Duel, write to the address below and include your nickname. We
+cannot find your game statistics (section 6) by e-mail or nickname, because they are tied only to
+a random install number: the "Statistika igre" (game statistics) switch turns them off and the
+"Obriši podatke statistike" button deletes them, both in Settings. You also have the right to lodge
+a complaint with the Serbian Commissioner for Information of Public Importance and Personal Data
+Protection, or with the supervisory authority of your own country.</p>
 
-<h2>8. Changes</h2>
+<h2>9. Changes</h2>
 <p>If this policy changes, we will update this page and the date at the top.</p>
 
-<h2>9. Contact</h2>
-<p>The controller of Duel data is Noqyris. Privacy questions and requests:
+<h2>10. Contact</h2>
+<p>The controller of Duel data and game statistics is Noqyris. Privacy questions and requests:
 <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a></p>
 
 </section>
