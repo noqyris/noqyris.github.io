@@ -32,6 +32,11 @@
         margin: 28px 0 8px;
         color: #e8b64c;
       }
+      h3 {
+        font-size: 16px;
+        margin: 18px 0 6px;
+        color: #f2ecdf;
+      }
       p,
       li {
         color: #d9d2c4;
@@ -48,36 +53,50 @@
   <body>
     <main>
       <h1>🗞️ Politika privatnosti — Dnevnjak</h1>
-      <p class="datum">Poslednje ažuriranje: 11. oktobar 2026. (verzija 1.0.1)</p>
+      <p class="datum">Poslednje ažuriranje: 6. novembar 2026. (verzija 1.0.4)</p>
+      <p>
+        Ovaj opis važi od verzije 1.0.4: verzija 1.0.3 i starije ne šalju statistiku igre i u svim
+        zemljama pre reklama pitaju „Prihvatam / Ne prihvatam".
+      </p>
       <p>
         Dnevnjak („aplikacija") je igra sa šest dnevnih izazova iz balkanske kulture koju razvija
         Noqyris. Ova politika objašnjava koje podatke aplikacija koristi i zašto. Kratko:
         <strong
-          >nemamo naloge ni svoje servere i ne tražimo tvoje ime, e-mail ni bilo koji lični
-          podatak.</strong
+          >nemamo naloge i ne tražimo tvoje ime, e-mail ni bilo šta po čemu bismo znali ko
+          si.</strong
         >
-        Jedini deo aplikacije koji šalje podatke o uređaju su reklame (vidi ispod), i to tek kada na
-        to pristaneš.
+        Podatke o uređaju i igri šalju dva dela aplikacije: reklame (vidi ispod) i naša statistika
+        igre, bez tvog imena (vidi „Statistika igre (Noqyris)"). U Evropi (po vremenskoj zoni
+        telefona) oba počinju tek kad na to pristaneš. U ostalim zemljama reklame na iPhone-u
+        počinju posle Apple-ovog pitanja o praćenju (ili bez njega, kad ga iOS ne prikaže), kakav
+        god da je odgovor, a statistiku igre isključuješ u Podešavanjima kad god hoćeš. Pored toga,
+        tri rezultata na rang listama Apple Game Center-a aplikacija šalje Apple-u samo uz tvoju
+        prijavu u Game Center (vidi „Rang liste (Apple Game Center, opciono)").
       </p>
 
       <h2>Šta aplikacija čuva i gde</h2>
       <ul>
         <li>
-          Napredak (rešene rubrike i poeni po danu), niz, statistika, dukati, kupljeni paketi i
-          podešavanja (zvuk, vibracija, podsetnik, izbor o reklamama i kada je pitanje o reklamama
-          poslednji put postavljeno) čuvaju se
-          <strong>isključivo lokalno na tvom uređaju</strong>.
+          Napredak (rešene rubrike i poeni po danu), niz, lična statistika (ekran „Statistika"),
+          dukati, kupljeni paketi i podešavanja (zvuk, vibracija, podsetnik, izbor o reklamama i
+          kada je pitanje o reklamama poslednji put postavljeno, izbor o statistici igre) čuvaju se
+          <strong>lokalno na tvom uređaju</strong>.
         </li>
         <li>
-          Nema naloga, prijave ni našeg servera. Ovi podaci ne napuštaju uređaj — osim rezultata
-          koje, ako to želiš, šalješ na rang liste u Apple Game Center-u (opisano ispod).
+          Nema naloga ni prijave. Ovi podaci se ne šalju nikome kao takvi, osim rezultata koje, ako
+          to želiš, šalješ na rang liste u Apple Game Center-u (opisano ispod). Ako je statistika
+          igre uključena, na naš server stižu i događaji iz igre (npr. završena rubrika i njeni
+          poeni, dužina niza), opisani u odeljku „Statistika igre (Noqyris)".
         </li>
         <li>
-          <em>Podešavanja → Obriši napredak</em> briše rešene rubrike i poene po danu, niz i
+          <em>Podešavanja → Obriši napredak</em> briše rešene rubrike i poene po danu, niz i ličnu
           statistiku. Tada ostaju: dukati i zamrzivači, kupovine (i evidencija o njima), osvojena
           odlikovanja i titula, otključani dani arhive i iskorišćene pomoći, evidencija isplaćenih
           nagrada po danu (koje rubrike su već donele dukate — da se ista nagrada ne bi isplatila
-          dvaput), podešavanja i izbor o reklamama. Sve ove podatke briše brisanje aplikacije.
+          dvaput), podešavanja, izbor o reklamama i izbor o statistici igre. Sve ove podatke sa
+          uređaja briše brisanje aplikacije. Ni „Obriši napredak" ni brisanje aplikacije ne brišu
+          statistiku igre koja je već poslata; nju briše dugme „Obriši podatke statistike" (opisano
+          ispod), a pojedinačni događaji se i bez njega brišu sami posle 3 meseca.
         </li>
       </ul>
 
@@ -88,21 +107,26 @@
           <strong>Unity LevelPlay-a (ironSource)</strong>, posrednika koji prostor za reklamu nudi
           reklamnim mrežama; danas su to <strong>ironSource Ads</strong> i
           <strong>Unity Ads</strong>, obe usluge kompanije Unity. Reklame su preko celog ekrana i
-          nagradne video reklame koje sam pokrećeš da bi dobio nagradu u igri.
+          nagradne video reklame koje pokrećeš ti, kad želiš nagradu u igri.
         </li>
         <li>
           Kada se reklama učitava i prikazuje, Unity prikuplja i obrađuje tehničke podatke o uređaju
           i o prikazanoj reklami — <strong>reklamni identifikator uređaja</strong> (ako ga
           dozvoliš), model uređaja, verziju sistema, jezik, približnu državu (po IP adresi) i
           podatke o prikazu i dodiru reklame. Unity te podatke koristi kao samostalni rukovalac, za
-          prikazivanje i merenje reklama, sprečavanje prevara i unapređenje svojih usluga. Mi te
-          podatke ne dobijamo i ne čuvamo.
+          prikazivanje i merenje reklama, sprečavanje prevara i unapređenje svojih usluga. Reklamni
+          identifikator i te podatke o uređaju od Unity-ja ne dobijamo. Ako je statistika igre
+          uključena, ona beleži ponude i prikaze reklama i zaradu po prikazu koju LevelPlay javlja
+          aplikaciji (vidi „Statistika igre (Noqyris)").
         </li>
         <li>
-          <strong>Aplikacija te pita za saglasnost pre ijedne reklame — nikad pri pokretanju</strong
+          <strong>U Evropi</strong> — po vremenskoj zoni telefona: EU, EEA, Ujedinjeno Kraljevstvo,
+          Švajcarska, Srbija i ostale evropske zemlje (i BiH, Crna Gora, S. Makedonija), kao i kad
+          se zona ne može pročitati —
+          <strong>aplikacija te pita za saglasnost pre ijedne reklame — nikad pri pokretanju</strong
           >, već posle prve završene rubrike ili kad sam/a dodirneš ponudu za nagradu uz reklamu.
-          Pitanje kaže ko prikazuje reklame i ko dobija koje podatke, a odgovori „Prihvatam" i „Ne
-          prihvatam" su ravnopravni. Ako ne prihvatiš, reklamni SDK se
+          Pitanje „Reklame i tvoji podaci" kaže ko prikazuje reklame i ko dobija koje podatke, a
+          odgovori „Prihvatam" i „Ne prihvatam" su ravnopravni. Ako ne prihvatiš, reklamni SDK se
           <strong>uopšte ne pokreće</strong>: reklame se ne prikazuju i nema nagrada za gledanje
           reklama; dukati i dalje stižu igrom, a pomoć, arhivski dan i vraćanje niza mogu da se
           plate i dukatima. Posle „Ne prihvatam" aplikacija te sama ne pita ponovo — pitanje se
@@ -111,11 +135,34 @@
           povlačenje odmah zaustavlja učitavanje i prikaz reklama.
         </li>
         <li>
-          Na iOS-u, <strong>tek ako prihvatiš reklame</strong>, sistem te pita i za dozvolu praćenja
-          (<strong>App Tracking Transparency</strong>); ako ih ne prihvatiš, ta dozvola se i ne
-          traži. Ako praćenje odbiješ, reklamni identifikator se ne deli (iOS ga daje kao nule) i
-          reklame nisu personalizovane. Izbor menjaš i u
-          <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.
+          <strong>U ostalim zemljama</strong> (van Evrope po vremenskoj zoni telefona) aplikacija ne
+          postavlja svoje pitanje „Prihvatam / Ne prihvatam". U istim trenucima (posle prve završene
+          rubrike ili na dodir ponude, nikad pri pokretanju) dobijaš kratko objašnjenje sa jednim
+          dugmetom „Nastavi", posle kog iOS traži dozvolu za praćenje (sledeća stavka). Tada se
+          reklamni SDK pokreće i reklame se prikazuju, kakav god da je odgovor; od njega zavisi samo
+          da li se deli reklamni identifikator. Ranije pitanje o reklamama u tim zemljama ukinuto je
+          u verziji 1.0.4, pa raniji odgovor „Ne prihvatam" tamo više ne sprečava reklame;
+          aplikacija ga i dalje predaje reklamnom SDK-u kao odbijanje saglasnosti, a da li se deli
+          reklamni identifikator zavisi samo od tvog odgovora u Apple-ovom prozoru (sledeća stavka).
+          Ako je ranija verzija aplikacije već tražila dozvolu za praćenje, objašnjenja „Nastavi"
+          može da ne bude, a iOS raniji odgovor daje bez prozora; ako je praćenje tada dozvoljeno,
+          reklamni SDK kreće već pri pokretanju. <em>Podešavanja → Privatnost i reklame</em> tamo
+          otvara objašnjenje sa prečicom do podešavanja telefona.
+        </li>
+        <li>
+          Na iOS-u Apple-ov prozor za dozvolu praćenja (<strong>App Tracking Transparency</strong>)
+          dolazi u Evropi <strong>tek ako prihvatiš reklame</strong> (ako ih ne prihvatiš, ta
+          dozvola se i ne traži), a u ostalim zemljama posle dugmeta „Nastavi". Reklamni SDK se
+          pokreće posle tvog odgovora u tom prozoru. Ako iOS prozor ne prikaže (npr. praćenje je
+          isključeno u Podešavanjima telefona ili je odgovor već dat), reklamni SDK kreće bez njega,
+          a reklamni identifikator se deli samo ako je praćenje dozvoljeno. Ako praćenje odbiješ,
+          reklamni identifikator se ne deli (iOS ga daje kao nule) i reklame nisu personalizovane.
+          Izbor menjaš i u <em>Podešavanja → Privatnost i bezbednost → Praćenje</em>.
+        </li>
+        <li>
+          Ko kupi „Bez reklama" ili Početni paket, od tada ne dobija ni reklame, ni pitanje o
+          reklamama, ni objašnjenje „Nastavi", ni Apple-ov prozor za praćenje; reklamni SDK se tada
+          ne pokreće.
         </li>
         <li>
           Neprimerenu reklamu (ili reklamu za uzrast iznad oznake aplikacije) prijavljuješ u
@@ -123,8 +170,8 @@
           Šalješ je samo ako želiš, i tada dobijamo ono što u nju upišeš i adresu sa koje je šalješ.
         </li>
         <li>
-          I kada odbiješ praćenje, a pristaneš na reklame, Unity-jev SDK (uključujući njegov modul
-          za kvalitet reklama, Unity Ad Quality) koristi tehničke podatke potrebne da se reklama
+          I kada odbiješ praćenje, Unity-jev SDK, kad je pokrenut (uključujući njegov modul za
+          kvalitet reklama, Unity Ad Quality), koristi tehničke podatke potrebne da se reklama
           prikaže i izmeri: iOS identifikator za aplikacije istog izdavača (IDFV — isti u svim
           Noqyris aplikacijama na tvom uređaju), identifikator koji Unity dodeljuje instalaciji,
           model uređaja, verziju sistema i podatke o performansama i greškama. Unity-jev modul za
@@ -140,6 +187,97 @@
           <a href="https://unity.com/legal/privacy-policy">unity.com/legal/privacy-policy</a>
         </li>
       </ul>
+
+      <h2>Statistika igre (Noqyris)</h2>
+      <p>
+        Od verzije 1.0.4 igra nam šalje statistiku o tome kako se igra, da bismo videli gde igrači
+        zapnu ili odustanu, šta je preteško i šta ne radi. Statistiku pravimo i čitamo samo mi
+        (Noqyris); nije reklamna i ne prodajemo je.
+      </p>
+      <h3>Koji podaci</h3>
+      <ul>
+        <li>
+          Slučajni broj instalacije: nasumičan ID koji igra napravi na tvom telefonu. Nije reklamni
+          identifikator, nije ID uređaja i ne daje se nikome, ni našoj reklamnoj mreži (Unity
+          LevelPlay).
+        </li>
+        <li>
+          Kako igraš: početak i kraj igranja, ekrani, rubrike (početak, kraj, poeni i trajanje),
+          koraci uvoda, niz, molba za ocenu, ponude za kupovinu (u Trafici, kartica „Bez reklama" na
+          naslovnoj, veza „Bez reklama" kod zaključanog arhivskog dana i dopuna dukata: prikaz,
+          dodir ili odbijanje; nikad kupovina), tvoji odgovori na pitanja o reklamama i praćenju,
+          ponude i prikazi reklama sa zaradom po prikazu, greške u igri i vreme učitavanja.
+        </li>
+        <li>
+          Verzija igre, platforma (iOS ili Android), verzija sistema, jezik i razlika vremenske
+          zone.
+        </li>
+        <li>
+          Zemlja: Cloudflare obrađuje IP adresu radi prenosa i ograničenja broja zahteva; mi je ne
+          upisujemo i iz nje čuvamo samo zemlju.
+        </li>
+      </ul>
+      <p>Ne šaljemo ime, e-poštu, model telefona, reklamni identifikator ni kupovine.</p>
+      <h3>Pravni osnov</h3>
+      <ul>
+        <li>
+          U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji: tvoj pristanak (GDPR čl.
+          6(1)(a), ZZPL čl. 12, Zakon o elektronskim komunikacijama čl. 160). Igra te pita pre nego
+          što išta pošalje i dok ne kažeš „Dozvoli" ništa ne čuva ni ne šalje. Pitanje „Statistika
+          igre", sa jednakim dugmadima „Dozvoli" i „Ne dozvoli", dolazi posle prve završene rubrike,
+          posle pitanja o reklamama i Apple-ovog pitanja o praćenju (kad se ona postavljaju) i
+          odvojeno od njih; odgovor ništa ne menja u igri. Zemlju igra određuje po vremenskoj zoni
+          telefona, pa isto pitanje dobijaju i ostale evropske zemlje (i BiH, Crna Gora, S.
+          Makedonija), kao i telefon čija se zona ne može pročitati.
+        </li>
+        <li>
+          U ostalim zemljama (van Evrope po vremenskoj zoni telefona): naš legitimni interes da
+          popravljamo igru, uz mogućnost da statistiku isključiš kad god hoćeš.
+        </li>
+      </ul>
+      <h3>Ko obrađuje podatke</h3>
+      <p>
+        Podatke za nas obrađuje Cloudflare, Inc., po svom ugovoru o obradi podataka. Pojedinačni
+        događaji sa slučajnim brojem instalacije čuvaju se kod Cloudflare-a, moguće i van EU (SAD),
+        uz EU-U.S. Data Privacy Framework i standardne ugovorne klauzule. Dnevni zbirovi bez broja
+        instalacije čuvaju se u EU.
+      </p>
+      <h3>Koliko dugo</h3>
+      <ul>
+        <li>pojedinačni događaji: 3 meseca, pa se brišu sami;</li>
+        <li>
+          dnevni zbirovi (bez broja instalacije, ne mogu se povezati sa tobom): dok postoji igra;
+        </li>
+        <li>brojač dnevnog ograničenja (šifrovan otisak broja instalacije): 2 dana.</li>
+      </ul>
+      <h3>Kako da isključiš i obrišeš</h3>
+      <p>
+        U Podešavanjima igre (⚙️ na naslovnoj) isključi „Slanje statistike igre": od tada igra ne
+        šalje ništa, ni posle ponovnog pokretanja. Dugme „Obriši podatke statistike" isključuje
+        statistiku, briše sa telefona ono što je statistika upisala i traži od servera brisanje.
+        Broj instalacije ostaje na telefonu samo dok server ne potvrdi brisanje. Kad server primi
+        zahtev:
+      </p>
+      <ul>
+        <li>podaci te instalacije odmah se više ne prikazuju u pregledu po igraču;</li>
+        <li>dnevni zbirovi poslednjih 8 dana računaju se ponovo bez nje u roku od jednog dana;</li>
+        <li>
+          stariji dnevni zbirovi je i dalje sadrže, ali samo kao deo zbira (npr. jedan igrač više),
+          bez broja instalacije;
+        </li>
+        <li>
+          pojedinačni događaji i oznaka brisanja (u njoj je broj instalacije) brišu se sami posle 3
+          meseca.
+        </li>
+      </ul>
+      <p>
+        Ako telefon nije na mreži, igra ponovo traži brisanje pri svakom sledećem pokretanju. Pošto
+        ne znamo ko si, statistiku možemo da pronađemo samo preko tog dugmeta u igri; e-poštom je ne
+        možemo pronaći ni obrisati. Napredak u igri ostaje.
+      </p>
+      <p>
+        Ako imaš manje od 16 godina (u Srbiji 15), statistiku uključi samo uz saglasnost roditelja.
+      </p>
 
       <h2>Rang liste (Apple Game Center, opciono)</h2>
       <ul>
@@ -178,6 +316,10 @@
           Aplikacija na uređaju pamti samo šta je kupljeno, da bi ti isporučila kupljeno i da bi
           „Vrati kupovine" radilo.
         </li>
+        <li>
+          Statistika igre ne šalje kupovine: beleži samo da je ponuda za kupovinu prikazana,
+          dodirnuta ili odbijena.
+        </li>
       </ul>
 
       <h2>Podsetnik (opciono)</h2>
@@ -197,8 +339,10 @@
       <h2>Šta aplikacija ne radi</h2>
       <ul>
         <li>
-          Nema naše analitike ni praćenja; podatke o uređaju šalje samo reklamni SDK opisan gore, a
-          rezultate na rang liste — Apple Game Center, samo uz prijavu u Game Center.
+          Naša statistika igre nije praćenje: ne spaja se sa podacima drugih kompanija, ne koristi
+          se za reklame i ne prati te van Dnevnjaka. Reklamni identifikator (samo ako dozvoliš
+          praćenje) i podatke o uređaju za reklame dobija samo Unity, preko reklamnog SDK-a opisanog
+          gore; rezultate na rang liste dobija Apple Game Center, samo uz prijavu u Game Center.
         </li>
         <li>
           Ne traži pristup lokaciji, kontaktima, kameri ni fotografijama. Mapa u rubrici „Pogodi
@@ -208,7 +352,26 @@
 
       <h2>Deca</h2>
       <p>
-        Aplikacija nije namenjena deci mlađoj od 13 godina i ne prikuplja svesno njihove podatke.
+        Dnevnjak je za opštu publiku i nije namenjen deci mlađoj od 13 godina. Svesno ne prikupljamo
+        podatke dece mlađe od 13 godina. Ako roditelj vidi da je dete koristilo igru, neka nam piše
+        na subotic.djo@gmail.com: obrisaćemo sve što možemo da pronađemo. Statistiku igre ne možemo
+        da pronađemo po e-pošti; nju briše dugme „Obriši podatke statistike" u Podešavanjima igre na
+        telefonu deteta.
+      </p>
+
+      <h2>Tvoja prava</h2>
+      <p>
+        Za prepisku sa nama (npr. prijavu reklame) možeš tražiti uvid, ispravku, brisanje,
+        ograničenje obrade ili prenos podataka, i možeš uložiti prigovor: piši nam na
+        subotic.djo@gmail.com. Statistiku igre ne možemo da pronađemo po e-pošti, jer je vezana samo
+        za slučajni broj instalacije, pa za nju ne možemo da pružimo uvid ni ispravku: slanje
+        zaustavlja prekidač „Slanje statistike igre", a podatke briše dugme „Obriši podatke
+        statistike", oba u Podešavanjima igre. U Evropi pristanak na statistiku igre i na reklame
+        možeš povući kad god hoćeš („Slanje statistike igre" i „Privatnost i reklame" u
+        Podešavanjima igre); povlačenje ne utiče na zakonitost obrade pre njega. Van Evrope
+        statistiku isključuješ istim prekidačem, a dozvolu za praćenje u Podešavanjima telefona.
+        Imaš pravo i na pritužbu Povereniku za informacije od javnog značaja i zaštitu podataka o
+        ličnosti (Srbija) ili nadzornom organu u svojoj zemlji.
       </p>
 
       <h2>Izmene</h2>
@@ -218,7 +381,10 @@
       </p>
 
       <h2>Kontakt</h2>
-      <p>Noqyris — subotic.djo@gmail.com</p>
+      <p>
+        Rukovalac podacima statistike igre i prepiske sa nama je Noqyris (Đorđe Subotić). Pitanja o
+        privatnosti i zahtevi: subotic.djo@gmail.com
+      </p>
     </main>
   </body>
 </html>
