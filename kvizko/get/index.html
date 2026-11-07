@@ -7,16 +7,17 @@
 <title>KVIZKO — Preuzmi</title>
 <script>
 // One link for every post: route by device. iPhone/iPad → the App Store page;
-// Android → the landing page's "Android: uskoro" line (there is no Play link
-// until Play production exists — replace the branch then); desktop → the landing page.
+// Android → the Google Play page (KVIZKO is in Play production since 2026-10-21);
+// desktop → the landing page.
 (function () {
   var APP_STORE = 'https://apps.apple.com/app/id6793550562';
+  var PLAY = 'https://play.google.com/store/apps/details?id=com.noqyris.kvizko';
   var LANDING = '../';
   var ua = navigator.userAgent || '';
   var isIOS = /iPhone|iPad|iPod/.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
   var isAndroid = /Android/.test(ua);
   if (isIOS) location.replace(APP_STORE);
-  else if (isAndroid) location.replace(LANDING + '#android');
+  else if (isAndroid) location.replace(PLAY);
   else location.replace(LANDING);
 })();
 </script>
@@ -31,9 +32,9 @@
 </head>
 <body><div class="wrap">
 <h1>KVIZKO</h1>
-<p>Kviz znanja sa 4.600+ pitanja i objašnjenjem uz svaki odgovor.</p>
+<p>Kviz znanja sa 6.000+ pitanja i objašnjenjem uz svaki odgovor.</p>
 <p>iPhone: <a href="https://apps.apple.com/app/id6793550562">App Store</a></p>
-<p>Android: <strong>uskoro</strong>.</p>
+<p>Android: <a href="https://play.google.com/store/apps/details?id=com.noqyris.kvizko">Google Play</a></p>
 <p><a href="../">Sve o igri, podrška i česta pitanja</a></p>
 </div></body>
 </html>
