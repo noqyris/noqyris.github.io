@@ -1,11 +1,14 @@
 <!doctype html>
 <!--
-  DUELKO privacy policy (2026-10-28). Source copy; published at
+  DUELKO privacy policy (2026-10-28; wording 2026-11-01; rewritten 2026-11-09 for the online 1.0:
+  generated names, photos reviewed by hand, friends and online status, no trening, recordings no
+  longer replayed, and the Noqyris game statistics that replace the Supabase usage events).
+  Source copy; published at
   https://noqyris.github.io/duelko/privacy.html (repository/web/noqyris.github.io/duelko/), only
   on the owner's word — that repository is public. Written from the code: the regional consent in
   src/services/adConsent.ts, cordova-plugin-purchase, and the online half on Supabase — profiles,
   set_profile (0013), finish_match, recordings, reports and blocks, the retention job (0014).
-  It covers a build with play against others as well as one without it (1.0 ships without).
+  1.0 ships online (owner, 2026-11-09, DECISIONS 0083).
   docs/APP_PRIVACY.md holds the App Store Connect answers; change both together.
 -->
 <html lang="sr-Latn">
@@ -138,7 +141,7 @@
 <header>
   <p class="brand">DUELKO</p>
   <h1>Politika privatnosti</h1>
-  <p class="meta">Poslednja izmena: <time datetime="2026-10-28">28. oktobra 2026.</time></p>
+  <p class="meta">Poslednja izmena: <time datetime="2026-11-09">9. novembra 2026.</time></p>
   <p class="lead">Ova stranica objašnjava koje podatke aplikacija DUELKO obrađuje, ko ih dobija i kako
     to kontrolišeš. Opisujemo ono što ova verzija aplikacije zaista radi. <a href="#en">English below.</a></p>
 </header>
@@ -146,12 +149,15 @@
 <section class="summary" aria-labelledby="ukratko">
   <h2 id="ukratko">Ukratko</h2>
   <ul>
-    <li>Nema imejla, lozinke ni broja telefona. Igra protiv bota i trening rade i bez interneta, a
-      napredak i podešavanja čuvaju se na telefonu.</li>
-    <li>Za igru protiv drugih igrača, rang-liste i dnevni duel aplikacija koristi anonimni nalog na
-      našem serveru (Supabase, u EU). Drugi igrači vide ime i avatar koje izabereš, rang i
-      rezultate — ime tek kad prihvatiš Uslove korišćenja.</li>
-    <li>Ono što ne treba više brišemo sami, po rokovima iz odeljka 5. „Obriši nalog” u Profilu
+    <li>Nema imejla, lozinke ni broja telefona. Igra protiv bota radi i bez interneta, a napredak i
+      podešavanja čuvaju se na telefonu.</li>
+    <li>Za igru protiv drugih igrača, prijatelje, rang-liste i dnevni duel aplikacija koristi
+      anonimni nalog na našem serveru (Supabase, u EU). Drugi igrači vide tvoje ime, avatar ili
+      fotografiju, rang i rezultate — ime tek kad prihvatiš Uslove korišćenja, a fotografiju tek
+      kad je mi pregledamo.</li>
+    <li>Statistiku igre (Noqyris) šaljemo bez naloga i bez imena, pod nasumičnim brojem
+      instalacije; u Evropi i Srbiji tek kad je dozvoliš.</li>
+    <li>Ono što ne treba više brišemo sami, po rokovima iz odeljka 5. „Obriši nalog“ u Profilu
       briše sve odmah.</li>
     <li>Reklame prikazuje Unity (Unity Ads i ironSource Exchange). U Evropi samo ako to prihvatiš;
       drugde posle Apple-ovog pitanja o praćenju.</li>
@@ -167,6 +173,7 @@
     <li><a href="#server">Nalog i server</a></li>
     <li><a href="#drugi">Šta vide drugi igrači</a></li>
     <li><a href="#rokovi">Koliko čuvamo</a></li>
+    <li><a href="#statistika">Statistika igre (Noqyris)</a></li>
     <li><a href="#reklame">Reklame</a></li>
     <li><a href="#kupovine">Kupovine</a></li>
     <li><a href="#obavestenja">Podsetnici i linkovi</a></li>
@@ -185,11 +192,11 @@
 
 <section aria-labelledby="telefon">
   <h2 id="telefon"><span class="n">2.</span>Na telefonu</h2>
-  <p>Ime i avatar koje izabereš, rang, žetoni, niz dana, dnevni zadaci, rezultat dnevnog duela,
-    pitanja koja si nedavno dobio (da se ne ponavljaju) i podešavanja čuvaju se u memoriji
-    aplikacije na tvom uređaju. Igra protiv bota i trening rade bez interneta i ništa od toga ne
-    šalju nama. Verzija aplikacije bez igre protiv drugih igrača nema ni nalog ni server.</p>
-  <p>Ako obrišeš aplikaciju ili u Profilu izabereš „Obriši nalog”, ti podaci se brišu i ne mogu
+  <p>Ime i avatar, rang, žetoni, niz dana, dnevni zadaci, rezultat dnevnog duela, pitanja koja si
+    nedavno dobio (da se ne ponavljaju) i podešavanja čuvaju se u memoriji aplikacije na tvom
+    uređaju. Igra protiv bota radi i bez interneta; kad ima veze, i meč protiv bota ide na server
+    kao svaki drugi (odeljak 3). Statistika igre je opisana posebno, u odeljku 6.</p>
+  <p>Ako obrišeš aplikaciju ili u Profilu izabereš „Obriši nalog“, ti podaci se brišu i ne mogu
     da se vrate.</p>
 </section>
 
@@ -198,34 +205,37 @@
   <p>Kad aplikacija ima vezu, pravi <strong>anonimni nalog</strong>: nasumični identifikator, bez
     imejla, lozinke i imena. Za njega na našem serveru čuvamo:</p>
   <ul>
-    <li><strong>Profil:</strong> avatar, rang, RP, žetone, niz i broj pobeda i poraza; ime koje
-      izabereš tek kad prihvatiš Uslove korišćenja, i pošto prođe proveru imena.</li>
+    <li><strong>Profil:</strong> avatar, rang, RP, žetone (i ulog za meč koji je u toku), niz i
+      broj pobeda i poraza; ime tek kad prihvatiš Uslove korišćenja. Ime ti aplikacija na početku
+      sama izabere, a jednom možeš da ga promeniš; svako ime prolazi proveru imena.</li>
+    <li><strong>Fotografiju</strong>, ako je dodaš: telefon je iseče na mali kvadrat i pošalje u
+      zatvorenu fasciklu koju vidimo samo mi. Drugi igrači je vide tek kad je ručno pregledamo i
+      odobrimo; odbijenu brišemo. Ukloniti je možeš kad hoćeš, u Profilu.</li>
     <li><strong>Mečeve:</strong> koja su pitanja bila u meču, tvoje odgovore i poteze s vremenom
       kad su odigrani, i rezultat. Server svaki meč odigra ponovo iz tih poteza i upisuje svoj
       rezultat, ne onaj koji telefon prijavi — zato ih šaljemo.</li>
-    <li><strong>Rang-liste</strong> (nedeljnu i dnevnu), <strong>prijatelje</strong> i
-      <strong>nagrade</strong> koje ti pripadaju.</li>
+    <li><strong>Rang-liste</strong> (nedeljnu, dnevnu i ukupnu), <strong>prijatelje</strong> (i
+      tvoj kod za dodavanje), izazove, i <strong>nagrade</strong> koje ti pripadaju.</li>
     <li><strong>Prijave i blokade</strong> koje napraviš, i one koje se odnose na tebe, s imenom na
       koje se prijava odnosi.</li>
-    <li><strong>Događaje o korišćenju</strong>: počeo meč, čekanje u redu, soba, iskorišćena pomoć,
-      ponuđena i odgledana reklama i slično. To su nazivi, brojevi i oznake; ništa što si napisao.</li>
   </ul>
   <p>Tokom meča uživo tvoji potezi idu preko servera drugom igraču u realnom vremenu. Server
     vodi <strong>Supabase</strong> u Evropskoj uniji (Irska), kao obrađivač za nas; kao i svaki
     server, u svojim tehničkim zapisima vidi IP adresu uređaja. Te podatke koristimo samo da bi
-    igra radila, da bismo proverili rezultate, sprečili varanje i zloupotrebu i videli kako se
-    aplikacija koristi. Ne prodajemo ih i ne dajemo ih nikome za reklame.</p>
+    igra radila, da bismo proverili rezultate i sprečili varanje i zloupotrebu. Ne prodajemo ih i
+    ne dajemo ih nikome za reklame.</p>
 </section>
 
 <section aria-labelledby="drugi">
   <h2 id="drugi"><span class="n">4.</span>Šta vide drugi igrači</h2>
   <ul>
-    <li><strong>Ime i avatar</strong> koje izabereš, rang i rezultat — u predvorju meča, na
-      rezultatu, među skorašnjim protivnicima i prijateljima, i na rang-listama. Ime tek kad
+    <li><strong>Ime i avatar ili odobrenu fotografiju</strong>, rang i rezultat — u predvorju meča,
+      na rezultatu, među skorašnjim protivnicima i prijateljima, i na rang-listama. Ime tek kad
       prihvatiš uslove.</li>
-    <li><strong>Snimak tvoje partije.</strong> Tvoji potezi iz meča protiv drugog igrača mogu kasnije
-      da se puste nekom drugom kao protivnik, s tvojim imenom i rangom. Isključuješ u
-      <span class="path">Profil → „Ne koristi moje snimke za duele”</span>.</li>
+    <li><strong>Da li si u igri:</strong> tvoji prijatelji vide da li si upravo u aplikaciji, da bi
+      mogli da te izazovu.</li>
+    <li><strong>Tvoje poteze ne vidi niko drugi</strong> osim protivnika u meču koji igrate. Ova
+      verzija ne pušta snimke tuđih partija kao protivnika.</li>
     <li><strong>Prijave i blokade se ne najavljuju.</strong> Igrač kog prijaviš ne vidi da si ga
       prijavio, a onaj kog blokiraš ne dobija obaveštenje.</li>
   </ul>
@@ -236,61 +246,119 @@
   <p>Ono što više ne treba brišemo sami, jednom dnevno:</p>
   <ul>
     <li>potezi meča: 90 dana; sam meč i rezultat: 13 meseci;</li>
-    <li>događaji o korišćenju: 13 meseci;</li>
     <li>nedeljna rang-lista i isplaćene nagrade: 8 nedelja; neisplaćene nagrade: 13 meseci;</li>
     <li>dnevni duel: 35 dana;</li>
     <li>prijave: 12 meseci;</li>
     <li>nalog koji niko nije koristio 13 meseci, sa svim što je vezano za njega.</li>
   </ul>
-  <p>Profil, prijatelji, blokade i imena oduzeta prijavama traju koliko i nalog.
-    <span class="path">Profil → „Obriši nalog”</span> briše nalog i sve vezano za njega odmah; u
+  <p>Profil, fotografija, prijatelji, blokade i imena oduzeta prijavama traju koliko i nalog (ili
+    dok fotografiju ne ukloniš).
+    <span class="path">Profil → „Obriši nalog“</span> briše nalog i sve vezano za njega odmah; u
     meču protiv drugog igrača tvoja strana ostaje bez imena, a protivnik zadržava svoj rezultat.</p>
 </section>
 
+<section aria-labelledby="statistika">
+  <h2 id="statistika"><span class="n">6.</span>Statistika igre (Noqyris)</h2>
+  <p>Igra nam šalje statistiku o tome kako se igra, da bismo videli gde igrači zapnu ili odustanu,
+    šta je preteško i šta ne radi. Statistiku pravimo i čitamo samo mi (Noqyris); nije reklamna i
+    ne prodajemo je. Odvojena je od naloga iz odeljka 3: ne nosi ni ID naloga, ni ime, ni podatke o
+    protivnicima i prijateljima.</p>
+  <h3>Koji podaci</h3>
+  <ul>
+    <li>Slučajni broj instalacije: nasumičan ID koji igra napravi na tvom telefonu. Nije reklamni
+      identifikator, nije ID uređaja ni naloga i ne daje se nikome, ni našoj reklamnoj mreži (Unity
+      LevelPlay).</li>
+    <li>Kako igraš: početak i kraj igranja, ekrani, vrsta meča i njegov ishod, koraci prvog meča,
+      ponude i prikazi reklama sa zaradom po prikazu, greške u igri i vreme učitavanja.</li>
+    <li>Verzija igre, platforma, verzija sistema, jezik i razlika vremenske zone.</li>
+    <li>Zemlja: Cloudflare obrađuje IP adresu radi prenosa i ograničenja broja zahteva; mi je ne
+      upisujemo i iz nje čuvamo samo zemlju.</li>
+  </ul>
+  <p>Ne šaljemo ime, e-poštu, model telefona, reklamni identifikator ni kupovine.</p>
+  <h3>Pravni osnov</h3>
+  <ul>
+    <li>U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji: tvoj pristanak (GDPR čl. 6(1)(a),
+      ZZPL čl. 12, Zakon o elektronskim komunikacijama čl. 160). Igra te pita na početnom ekranu
+      posle prvog završenog meča, posebno od pitanja o reklamama, i dok ne kažeš „Dozvoli“ ništa ne
+      čuva ni ne šalje.</li>
+    <li>U ostalim zemljama: naš legitimni interes da popravljamo igru, uz mogućnost da statistiku
+      isključiš kad god hoćeš.</li>
+  </ul>
+  <h3>Ko obrađuje podatke</h3>
+  <p>Podatke za nas obrađuje Cloudflare, Inc., po svom ugovoru o obradi podataka. Pojedinačni
+    događaji sa slučajnim brojem instalacije čuvaju se kod Cloudflare-a, moguće i van EU (SAD), uz
+    EU-U.S. Data Privacy Framework i standardne ugovorne klauzule. Dnevni zbirovi bez broja
+    instalacije čuvaju se u EU.</p>
+  <h3>Koliko dugo</h3>
+  <ul>
+    <li>pojedinačni događaji: 3 meseca, pa se brišu sami;</li>
+    <li>dnevni zbirovi (bez broja instalacije, ne mogu se povezati sa tobom): dok postoji igra;</li>
+    <li>brojač dnevnog ograničenja (šifrovan otisak broja instalacije): 2 dana.</li>
+  </ul>
+  <h3>Kako da isključiš i obrišeš</h3>
+  <p>U <span class="path">Profil → Podešavanja</span> isključi „Statistika igre“: od tada igra ne
+    šalje ništa, ni posle ponovnog pokretanja. Dugme „Obriši nalog“ u Profilu, osim naloga,
+    isključuje statistiku, briše sa telefona ono što je statistika upisala i traži od servera
+    brisanje. Broj instalacije ostaje na telefonu samo dok server ne potvrdi brisanje. Kad server
+    primi zahtev:</p>
+  <ul>
+    <li>podaci te instalacije odmah se više ne prikazuju u pregledu po igraču;</li>
+    <li>dnevni zbirovi poslednjih 8 dana računaju se ponovo bez nje u roku od jednog dana;</li>
+    <li>stariji dnevni zbirovi je i dalje sadrže, ali samo kao deo zbira (npr. jedan igrač više), bez
+      broja instalacije;</li>
+    <li>pojedinačni događaji i oznaka brisanja (u njoj je broj instalacije) brišu se sami posle 3
+      meseca.</li>
+  </ul>
+  <p>Ako telefon nije na mreži, igra ponovo traži brisanje pri svakom sledećem pokretanju. Pošto ne
+    znamo ko si, statistiku možemo da pronađemo samo preko tog dugmeta u igri; e-poštom je ne možemo
+    pronaći ni obrisati.</p>
+  <p>Ako imaš manje od 16 godina (u Srbiji 15), statistiku uključi samo uz saglasnost roditelja.</p>
+</section>
+
 <section aria-labelledby="reklame">
-  <h2 id="reklame"><span class="n">6.</span>Reklame</h2>
+  <h2 id="reklame"><span class="n">7.</span>Reklame</h2>
   <p>Reklame u aplikaciji prikazuje <strong>Unity Technologies</strong> kroz Unity LevelPlay; reklame
     dolaze iz mreža <strong>Unity Ads</strong> i <strong>ironSource Exchange</strong>. Ništa o reklamama
-    se ne pita i nijedna reklamna biblioteka se ne pokreće dok ne završiš drugi meč u ligi ili sam
+    se ne pita i nijedna reklamna biblioteka se ne pokreće dok ne završiš drugi meč ili sam
     ne dodirneš ponudu za reklamu.</p>
 
   <h3>U Evropi</h3>
   <p>Kada telefon koristi evropsku vremensku zonu (to je i Srbija, i ceo region), aplikacija te
     pita da li prihvataš reklame — kad napuštaš rezultat drugog završenog meča, ili kad sam dodirneš
-    ponudu „Pogledaj reklamu”. Samo ako dodirneš „Prihvatam”, iOS zatim prikazuje svoje pitanje o
+    ponudu „Pogledaj reklamu“. Samo ako dodirneš „Prihvatam“, iOS zatim prikazuje svoje pitanje o
     praćenju i pokreće se Unity LevelPlay.</p>
   <div class="note">
     <p><strong>Ako odbiješ:</strong> reklamna biblioteka se ne pokreće i ništa se ne šalje Unity-ju;
-      nema reklama, pa ni onih koje donose žetone. Žetone i dalje dobijaš igranjem. Odbijanje te
-      ponovo pitamo samo kad sam dodirneš ponudu za reklamu, i najviše jednom u 180 dana.</p>
+      nema reklama, pa ni onih koje donose žetone. Žetone i dalje dobijaš igranjem. Posle odbijanja
+      te ponovo pitamo samo kad sam dodirneš ponudu za reklamu, i to najviše jednom u 180 dana.</p>
   </div>
 
   <h3>Van Evrope</h3>
   <p>Aplikacija ne postavlja svoje pitanje. U istim trenucima iOS prikazuje Apple-ovo pitanje o
     praćenju, a Unity LevelPlay se pokreće posle bilo kog odgovora. Ako ne dozvoliš praćenje,
     mreža ne dobija oglasni identifikator uređaja i označena je opcija „ne prodaj i ne deli moje
-    podatke” (CCPA).</p>
+    podatke“ (CCPA).</p>
 
   <h3>Šta Unity dobija kada se pokrene</h3>
   <p>Prema Unity-jevim objavama: podatke o uređaju i aplikaciji (model, jezik, vrsta veze, IP
     adresa, približna lokacija na nivou države), podatke o reklamama koje vidiš i dodirneš, podatke
     o performansama i dijagnostici, i oglasni identifikator (IDFA) — samo ako dozvoliš praćenje.
     Mi Unity-ju ne šaljemo tvoje ime. Šaljemo mu tvoj izbor o saglasnosti, oznaku „ne prodaj moje
-    podatke” kad važi i oznaku da aplikacija nije namenjena deci.</p>
+    podatke“ kad važi i oznaku da aplikacija nije namenjena deci.</p>
   <p>Više: <a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
     rel="noopener">Unity politika privatnosti za igrače</a>.</p>
 
   <h3>Kada se reklame prikazuju</h3>
-  <p>Nikad usred meča. Kratka reklama može da se pojavi kad napuštaš rezultat završenog meča u ligi
-    (najviše posle svakog drugog meča, nikad prvog dana), uz najavu „Kratka pauza za reklamu”.
+  <p>Nikad usred meča. Kratka reklama može da se pojavi kad napuštaš rezultat završenog meča
+    (najviše posle svakog drugog meča, nikad prvog dana), uz najavu „Kratka pauza za reklamu“.
     Reklamu za nagradu gledaš samo ako je sam izabereš, i uvek piše koju nagradu donosi. Kupovina
-    „Bez reklama” uklanja reklame posle mečeva, a nagrade daje bez gledanja.</p>
+    „Bez reklama“ uklanja reklame posle mečeva, a nagrade daje bez gledanja.</p>
 
   <h3>Kako da promeniš izbor i prijaviš reklamu</h3>
-  <p>U Evropi: <span class="path">Profil → Reklame → „Promeni izbor”</span>. Van Evrope praćenje menjaš
-    u iOS podešavanjima, kod aplikacije DUELKO; <span class="path">Profil → Reklame → „Više o tome”</span>
+  <p>U Evropi: <span class="path">Profil → Reklame → „Promeni izbor“</span>. Van Evrope praćenje menjaš
+    u iOS podešavanjima, kod aplikacije DUELKO; <span class="path">Profil → Reklame → „Više o tome“</span>
     vodi tamo. Neprikladnu reklamu prijavljuješ iz <span class="path">Profil → Reklame → „Prijavi
-    reklamu”</span>: otvara se imejl koji šalješ ti.</p>
+    reklamu“</span>: otvara se imejl koji šalješ ti.</p>
 
   <h3>Merenje instalacija</h3>
   <p>Ako preko neke reklame instaliraš drugu aplikaciju, iOS može toj reklamnoj mreži da pošalje
@@ -298,29 +366,34 @@
 </section>
 
 <section aria-labelledby="kupovine">
-  <h2 id="kupovine"><span class="n">7.</span>Kupovine</h2>
-  <p>Sve kupovine („Bez reklama”, paketi žetona) idu isključivo kroz Apple App Store i plaćanje
+  <h2 id="kupovine"><span class="n">8.</span>Kupovine</h2>
+  <p>Sve kupovine („Bez reklama“, paketi žetona) idu isključivo kroz Apple App Store i plaćanje
     obrađuje Apple. Mi nikad ne vidimo podatke o kartici ni o tvom Apple nalogu, i nema posrednika.
     Aplikacija na telefonu pamti identifikatore transakcija kupljenih paketa, da bi svaki paket
-    dodala samo jednom. „Vrati kupovine” u Prodavnici traži od App Store-a tvoje ranije kupovine.</p>
+    dodala samo jednom. „Vrati kupovine“ u Prodavnici traži od App Store-a tvoje ranije kupovine.</p>
 </section>
 
 <section aria-labelledby="obavestenja">
-  <h2 id="obavestenja"><span class="n">8.</span>Podsetnici i linkovi</h2>
-  <p>Ako dozvoliš obaveštenja, aplikacija na samom telefonu zakazuje podsetnike (dnevni duel,
-    čuvanje niza). Ne šalju se preko servera i možeš ih isključiti u Profilu. Linkovi iz Profila
+  <h2 id="obavestenja"><span class="n">9.</span>Podsetnici i linkovi</h2>
+  <p>Ako dozvoliš obaveštenja, aplikacija na samom telefonu zakazuje podsetnike (za dnevni duel i za
+    niz dana). Ne šalju se preko servera i možeš ih isključiti u Profilu, pod Podešavanja. Linkovi iz Profila
     (ova stranica, podrška, uslovi) otvaraju se u pregledaču.</p>
 </section>
 
 <section aria-labelledby="deca">
-  <h2 id="deca"><span class="n">9.</span>Deca</h2>
-  <p>DUELKO je kviz za opštu publiku i nije namenjen deci. Ne prikupljamo svesno podatke dece;
-    reklamnoj mreži šaljemo oznaku da aplikacija nije namenjena deci.</p>
+  <h2 id="deca"><span class="n">10.</span>Deca</h2>
+  <p>DUELKO je za opštu publiku i nije namenjen deci mlađoj od 13 godina. Svesno ne prikupljamo
+    podatke dece mlađe od 13 godina; reklamnoj mreži šaljemo oznaku da aplikacija nije namenjena
+    deci. Rejting 4+ u App Store-u opisuje sadržaj igre, ne publiku kojoj je namenjena. Ako
+    roditelj vidi da je dete koristilo igru, neka nam piše na
+    <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>: obrisaćemo sve što možemo da
+    pronađemo. Statistiku igre ne možemo da pronađemo po e-pošti; nju briše dugme „Obriši nalog“ u
+    Profilu na telefonu deteta.</p>
 </section>
 
 <section aria-labelledby="prava">
-  <h2 id="prava"><span class="n">10.</span>Tvoja prava</h2>
-  <p>Nalog sa svim podacima brišeš sam, odmah, u <span class="path">Profil → „Obriši nalog”</span>.
+  <h2 id="prava"><span class="n">11.</span>Tvoja prava</h2>
+  <p>Nalog sa svim podacima brišeš sam, odmah, u <span class="path">Profil → „Obriši nalog“</span>.
     Uvid u podatke ili njihovu ispravku traži imejlom na adresu iz odeljka 1; pošto je nalog
     anoniman, napiši nam ime i rang iz Profila i kad si poslednji put igrao, da bismo ga našli. Za podatke
     koje obrađuje Unity obrati se Unity-ju preko njihove stranice o privatnosti; saglasnost
@@ -330,7 +403,7 @@
 </section>
 
 <section aria-labelledby="izmene">
-  <h2 id="izmene"><span class="n">11.</span>Izmene ove politike</h2>
+  <h2 id="izmene"><span class="n">12.</span>Izmene ove politike</h2>
   <p>Kad aplikacija dobije nove mogućnosti koje menjaju ovo što piše, ova stranica se menja pre
     nego što takva verzija stigne do tebe, a datum gore se ažurira. Pravila igre protiv drugih
     igrača su u <a href="terms.html">Uslovima korišćenja</a>.</p>
@@ -344,43 +417,83 @@
     <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</p>
   <ul>
     <li><strong>On your device.</strong> Your name, avatar, rank, coins, streak, missions, recently
-      served questions and settings are kept on your device; bot matches and trening work offline
-      and send us nothing. A version without play against others has no account and no server.</li>
+      served questions and settings are kept on your device. Bot matches work offline; when
+      connected, a bot match goes to the server like any other.</li>
     <li><strong>Account and server.</strong> When connected, the app creates an anonymous account
       (a random id; no e-mail, password or name). On our server (Supabase, EU — Ireland — as our
       processor, which also sees IP addresses in its logs) we keep your profile (avatar, rank, RP,
-      coins, streak, win/loss counts, and the name you chose only once you accept the Terms and
-      it passes the name check), every match (its questions, your answers and moves with their
-      timing, the result — the server replays each match from them and records its own result),
-      leaderboards, friends, rewards owed to you, the reports and blocks you make or that concern
-      you, and usage events (names, numbers and flags; nothing you typed). In a live match your moves
-      reach the other player through the server. We use this only to run the game, verify scores,
-      prevent cheating and abuse, and understand how the app is used; we do not sell it or share it
-      for advertising.</li>
-    <li><strong>What other players see:</strong> your chosen name and avatar, rank, scores and
-      leaderboard place; and a recording of your moves may be replayed to another player as an
-      opponent, with your name and rank (turn off in Profil → “Ne koristi moje snimke za duele”).
-      Reports and blocks are never announced.</li>
-    <li><strong>Retention:</strong> match moves 90 days; matches and results, and usage events,
-      13 months; weekly leaderboard and paid rewards 8 weeks, unpaid rewards 13 months; daily duel
-      35 days; reports 12 months; an account unused for 13 months is deleted with everything tied
-      to it. Profil → “Obriši nalog” deletes your account and everything tied to it at once. You
-      may ask us by e-mail for access to, correction or deletion of your data.</li>
+      coins and the stake of a match in progress, streak, win/loss counts, and your name only once
+      you accept the Terms — the app picks one for you and you may change it once; every name
+      passes the name check), your photo if you add one (cropped on the phone and sent to a private
+      folder only we see; others see it only after we review and approve it by hand; a rejected
+      one is deleted; you can remove it any time), every match (its questions, your answers and
+      moves with their timing, the result — the server replays each match from them and records
+      its own result), leaderboards, friends and your friend code, challenges, rewards owed to you,
+      and the reports and blocks you make or that concern you. In a live match your moves reach
+      the other player through the server. We use this only to run the game, verify scores and
+      prevent cheating and abuse; we do not sell it or share it for advertising.</li>
+    <li><strong>What other players see:</strong> your name and avatar or approved photo, rank, scores
+      and leaderboard place; your friends see whether you are in the app, so they can challenge you.
+      Nobody but your opponent in that match sees your moves; this version does not replay
+      recordings of other players' matches. Reports and blocks are never announced.</li>
+    <li><strong>Retention:</strong> match moves 90 days; matches and results 13 months; weekly
+      leaderboard and paid rewards 8 weeks, unpaid rewards 13 months; daily duel 35 days; reports
+      12 months; an account unused for 13 months is deleted with everything tied to it. Profil →
+      “Obriši nalog” (delete account) deletes your account, your photo and everything tied to it at
+      once. You may ask us by e-mail for access to, correction or deletion of your data.</li>
+    <li><strong>Game statistics (Noqyris).</strong> Separate from the account, the game sends us
+      statistics about how it is played, so we can see where players get stuck or stop, what is too
+      hard and what does not work. Only we (Noqyris) make and read them; they are not used for
+      advertising and we do not sell them. <em>What:</em> a random install number the game creates
+      on your phone (not the advertising identifier, not a device or account ID, never given to
+      anyone, including Unity LevelPlay); how you play (start and end of play, screens, the kind of
+      match and its outcome, the first match's steps, ad offers and ad views with revenue per view,
+      errors, loading time); game version, platform, system version, language and time-zone
+      offset; the country, derived by Cloudflare from your IP address, which we do not store. We
+      do not send your name, account ID, opponents, friends, email, phone model, advertising
+      identifier or purchases. <em>Legal basis:</em> in the EU, EEA, United Kingdom, Switzerland
+      and Serbia, your consent (GDPR Art. 6(1)(a), Serbian Personal Data Protection Act Art. 12,
+      Electronic Communications Act Art. 160): the game asks on the home screen after your first
+      finished match, separately from the ads question, and stores or sends nothing until you
+      choose “Dozvoli” (allow). Elsewhere, our legitimate interest in improving the game, and you
+      can turn statistics off at any time. <em>Who:</em> Cloudflare, Inc. processes the data for us
+      under its data processing agreement; individual events with the install number are stored
+      at Cloudflare, possibly outside the EU (USA), under the EU-U.S. Data Privacy Framework and
+      standard contractual clauses; daily totals without the install number are stored in the EU.
+      <em>How long:</em> individual events 3 months; daily totals (without the install number,
+      cannot be linked to you) as long as the game exists; the daily limit counter (a hashed form
+      of the install number) 2 days. <em>Turn off and delete:</em> Profil → Podešavanja →
+      “Statistika igre” (game statistics) turns it off, also after a restart. “Obriši nalog”
+      (delete account) in Profil also turns statistics off, deletes what statistics stored on your
+      phone and asks our server to delete the data; the install number stays on your phone only
+      until the server confirms. Once the server receives the request, this install's data is no
+      longer shown in the per-player view; the daily totals of the last 8 days are recalculated
+      without it within one day; older daily totals still include it only as part of a total,
+      without the install number; individual events and the deletion mark are deleted
+      automatically after 3 months. If your phone is offline, the game asks again at every later
+      start. Because we do not know who you are, we can find your statistics only through that
+      button; we cannot find or delete them by email. If you are under 16 (15 in Serbia), turn
+      statistics on only with a parent's consent.</li>
     <li><strong>Ads</strong> are shown by Unity Technologies through Unity LevelPlay (Unity Ads,
-      ironSource Exchange). Nothing ad-related starts before your second finished league match, or before you tap an ad offer yourself. In a
+      ironSource Exchange). Nothing ad-related starts before your second finished match, or before you tap an ad offer yourself. In a
       European time zone the app first asks whether you accept ads; only after “Prihvatam” (accept)
       does iOS ask about tracking and the SDK start — a refusal starts nothing. Elsewhere there is no
       question of ours: Apple’s tracking prompt is shown at those moments and the SDK starts after any
       answer; without tracking permission it gets no advertising identifier and the CCPA “do not
       sell or share” flag is set. Unity receives device and app data, ad interactions, diagnostics and,
       only with permission, the IDFA (<a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s player privacy policy</a>).
-      Interstitials appear only when leaving a finished league match’s results, at most after every
+      Interstitials appear only when leaving a finished match’s results, at most after every
       second match and never on the first day; rewarded ads are opt-in. Profil → Reklame changes your
       choice or reports an ad.</li>
     <li><strong>Purchases</strong> go through Apple only; we never see payment data. The app keeps the
       transaction ids of coin packs on the device so each is granted once.</li>
     <li><strong>Reminders</strong> are local notifications scheduled on the device, if you allow them.</li>
-    <li>The app is for a general audience and not directed at children.</li>
+    <li><strong>Children.</strong> DUELKO is for a general audience and is not directed at children
+      under 13. We do not knowingly collect data from children under 13. The 4+ App Store rating
+      describes the game's content, not the audience it is made for. If a parent finds that a child
+      has used the game, please write to us at subotic.djo@gmail.com and we will delete whatever we
+      can find. We cannot find game statistics by email; the “Obriši nalog” (delete account) button
+      in Profil on the child's phone deletes them.</li>
   </ul>
 </section>
 
