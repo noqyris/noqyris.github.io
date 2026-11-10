@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="hr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#FAF5EE">
+<title>Mesolla — Politika privatnosti / Privacy policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #FAF5EE; --raised: #FFFFFF; --text: #2A1F18; --dim: #5F5046; --accent: #B4441F;
+    --line: #E6DCCF;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17110C; --raised: #221A14; --text: #F3EAE0; --dim: #C8B6A6; --accent: #F08A5D;
+            --line: #3A2E25; }
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; padding: 2rem 1rem 4rem; background: var(--bg); color: var(--text);
+         font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 44rem; margin: 0 auto; }
+  h1 { color: var(--accent); font: italic 600 1.9rem/1.25 Georgia, "Times New Roman", serif;
+       margin: 0 0 .5rem; }
+  h2 { color: var(--accent); font-size: 1.15rem; line-height: 1.35; margin: 2rem 0 .5rem; }
+  h3 { font-size: 1rem; margin: 1.25rem 0 .35rem; }
+  .nav { color: var(--dim); margin: 0 0 1.5rem; font-size: .95rem; }
+  a { color: var(--accent); text-underline-offset: 2px; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .35rem 0; }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .9rem; background: var(--raised); }
+  th, td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left;
+           vertical-align: top; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 3.5rem 0 2.5rem; }
+  .foot { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+          color: var(--dim); font-size: .9rem; }
+</style>
+</head>
+<body><div class="wrap">
+
+<section lang="hr" id="hr">
+<h1>Politika privatnosti aplikacije Mesolla</h1>
+<p class="nav"><a href="#en">English version</a> · <a href="terms.html#hr">Uvjeti korištenja</a> · <a href="index.html#hr">Podrška</a></p>
+<p>Verzija 1.1 · vrijedi od 10. 11. 2026.</p>
+<h2>Ukratko</h2>
+<ul>
+  <li><strong>Bez računa i prijave.</strong> Mesolla ne traži ni e-poštu, ni lozinku, ni broj telefona.</li>
+  <li><strong>Vaše kućanstvo ostaje na vašem mobitelu.</strong> Ukućani, dob, alergije, post, plan obroka i popis za kupnju spremljeni su samo na mobitelu, šifrirani. Mi te podatke ne primamo i ne možemo ih vidjeti.</li>
+  <li><strong>Bez oglasa, praćenja i umjetne inteligencije.</strong> Statistiku korištenja aplikacija šalje samo ako je dopustite (odjeljak 4.2).</li>
+  <li><strong>Podsjetnici i tajmeri</strong> su lokalne obavijesti koje zakazuje sam mobitel. Ne šaljemo vam obavijesti s poslužitelja.</li>
+  <li><strong>Recepti i cijene dolaze s aplikacijom.</strong> U ovoj verziji aplikacija ništa ne preuzima s interneta. Preko interneta šalje samo statistiku korištenja, i to samo ako je dopustite.</li>
+  <li><strong>Sve brišete sami:</strong> u aplikaciji (<strong>Postavke → Izbriši sve podatke s ovog mobitela</strong>) ili brisanjem aplikacije s mobitela.</li>
+</ul>
+<h2>1. Tko je odgovoran za podatke</h2>
+<p>Voditelj obrade je Noqyris, koji razvija Mesollu. Za sva pitanja o privatnosti i za ostvarivanje svojih prava pišite na <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</p>
+<p>Ova politika vrijedi za aplikaciju Mesolla za iPhone i iPad, uključujući beta verziju u TestFlightu. Objašnjava što se s vašim podacima događa, u skladu s Općom uredbom o zaštiti podataka (Uredba (EU) 2016/679, „GDPR”) i Zakonom o provedbi Opće uredbe o zaštiti podataka (NN 42/18). U aplikaciji je nalazite u <strong>Postavke → Privatnost i uvjeti</strong>.</p>
+<h2>2. Podaci koji ostaju na vašem mobitelu</h2>
+<p>Da bi napravila plan obroka, Mesolla pamti ono što joj kažete:</p>
+<ul>
+  <li><strong>ukućane:</strong> ime (nije obavezno), dob i je li riječ o djetetu;</li>
+  <li><strong>alergije i namirnice koje netko ne jede.</strong> Alergije su podaci o zdravlju;</li>
+  <li><strong>vjersku prehranu i post:</strong> prehranu bez svinjetine i alkohola te, kad aplikacija ponudi kalendare posta, kalendar posta, koliko strogo netko posti i datume pričesti. Ti podaci mogu otkriti vjersko uvjerenje;</li>
+  <li><strong>kupnju:</strong> trgovine u kojima kupujete, dan velike kupnje i, ako ga upišete, tjedni budžet;</li>
+  <li><strong>plan:</strong> tko jede koji obrok i kada, posne dane, zaključane i preskočene obroke, goste i vrijeme koje imate za kuhanje radnim danima;</li>
+  <li><strong>popis za kupnju i ono što imate kod kuće;</strong></li>
+  <li><strong>podsjetnike i tajmere</strong> koje ste uključili;</li>
+  <li><strong>vaše odluke o privolama</strong> (vidi niže).</li>
+</ul>
+<p><strong>Gdje i kako.</strong> Sve to aplikacija drži u jednoj šifriranoj bazi podataka na mobitelu (SQLCipher, AES-256). Ključ je nasumičan broj od 256 bitova koji aplikacija napravi pri prvom pokretanju, a novi kad izbrišete sve podatke. Čuva se u zaštićenoj pohrani mobitela (iOS privjesak ključeva), ali ne u iCloud privjesku ključeva.</p>
+<p>Nešifrirano ostaje samo nekoliko postavki koje ništa ne govore o vašem kućanstvu: odabrani jezik, je li prvo postavljanje završeno, je li aplikacija već tražila dopuštenje za obavijesti, datum zadnje provjere novih recepata i cijena te dvije nasumične lokalne oznake koje nikad ne napuštaju mobitel. Ako dopustite statistiku korištenja, nešifrirano je i njezino stanje: nasumični broj instalacije i događaji koji čekaju slanje (odjeljak 4.2). Recepti i cijene javni su podaci i također nisu šifrirani.</p>
+<p><strong>Tko ih vidi.</strong> Samo onaj tko koristi vaš mobitel. Mi ih ne primamo i ne vidimo, pa ih ne možemo ni ispraviti, ni vratiti, ni nekome dati.</p>
+<p><strong>Zašto i na kojoj osnovi.</strong> Aplikacija te podatke koristi samo za plan obroka, popis za kupnju i podsjetnike, dakle za ono što od nje tražite (čl. 6. st. 1. t. (b) GDPR-a).</p>
+<p><strong>Alergije i post: samo uz vašu izričitu privolu.</strong> Podatke o alergijama i podatke o postu i vjerskoj prehrani aplikacija koristi samo ako za to date izričitu privolu (čl. 9. st. 2. t. (a) GDPR-a). Privolu dajete pri prvom postavljanju ili u <strong>Postavke → Privole</strong>, posebno za alergije i posebno za post. Ti podaci služe samo za to da plan izostavi ono što netko ne smije ili ne želi jesti i poštuje dane posta. Nikad se ne pojavljuju u obavijestima.</p>
+<p>Privolu možete povući kad god želite, u <strong>Postavke → Privole</strong>. Tada aplikacija odmah briše podatke na koje se privola odnosi, a plan ih više ne uzima u obzir. Povlačenje ne utječe na ono što je aplikacija s njima radila prije toga.</p>
+<p><strong>Obavijesti.</strong> Podsjetnici (na primjer da večer prije treba nešto namočiti) i tajmeri za kuhanje zakazuju se na samom mobitelu. Za njih ne postoji naš poslužitelj. Na zaključanom zaslonu piše samo radnja, obrok i dan, na primjer „Za sutrašnju večeru nešto treba pripremiti već sada.”, a nikad jelo, namirnica ni pravilo posta. Dopuštenje za obavijesti aplikacija traži tek kad prvi put uključite podsjetnik ili pokrenete tajmer.</p>
+<p><strong>Sigurnosne kopije.</strong> Ako na mobitelu imate uključenu sigurnosnu kopiju u iCloudu ili šifriranu sigurnosnu kopiju na računalu, u njoj su i šifrirana baza i njezin ključ, pa vaše kućanstvo prelazi na novi mobitel. Ta kopija je kod Applea ili na vašem računalu, prema vašem ugovoru s Appleom, i mi joj nemamo pristup. Tko ima pristup toj kopiji i njezinoj lozinki, može pročitati i kućanstvo. Nešifrirana kopija na računalu ne nosi ključ, pa se kućanstvo iz nje ne može otvoriti.</p>
+<p><strong>Kad podijelite popis.</strong> Kad na popisu za kupnju dodirnete <strong>Pošalji</strong>, popis odlazi kao običan tekst onamo gdje sami odaberete, na primjer u poruku. Ako se prozor za dijeljenje ne može otvoriti, aplikacija kopira popis u međuspremnik. Što se s tekstom dalje događa, ovisi o aplikaciji koju odaberete.</p>
+<h2>3. Djeca i drugi ukućani</h2>
+<p>Mesolla je namijenjena odraslima koji planiraju obroke za kućanstvo. Djeca je ne koriste sama i nemaju svoj račun. Roditelj ili skrbnik dijete upisuje kao ukućanina: dob, po želji ime, alergije i, ako dijete posti, post. Ti podaci, kao i svi ostali, ostaju samo na mobitelu. Privolu za djetetove alergije i post daje roditelj ili skrbnik.</p>
+<p>Za djecu vrijede posebna pravila: dobivaju dječje porcije, za bebe mlađe od godinu dana ne planiramo obroke, a post tijekom dana (ramazan) nikad ne planiramo za mlađe od 18 godina. Djeci ne prikazujemo oglase, ne šaljemo im ništa i ne izrađujemo njihove profile.</p>
+<p>Mesolla nije namijenjena djeci mlađoj od 13 godina i svjesno ne prikupljamo njihove podatke. Ocjena 4+ u App Storeu opisuje sadržaj aplikacije, a ne publiku kojoj je namijenjena. Ako je dijete koristilo aplikaciju, pišite nam i izbrisat ćemo sve što možemo pronaći. Statistiku korištenja ne možemo pronaći po e-pošti: nju briše gumb <strong>Obriši statistiku</strong> u <strong>Postavke → Privole</strong> na djetetovu mobitelu.</p>
+<p>Ako upisujete druge odrasle ukućane, recite im to. Ako netko ne želi da se njegove alergije ili post upisuju, poštujte to.</p>
+<h2>4. Podaci koji napuštaju vaš mobitel</h2>
+<h3>4.1 Recepti i cijene</h3>
+<p>Recepte, namirnice i cijene aplikacija nosi sa sobom, kao javni paket podataka ugrađen u aplikaciju. U ovoj verziji ništa ne preuzima s interneta: nove recepte i cijene donosi ažuriranje aplikacije. Kad uvedemo preuzimanje, ovdje ćemo opisati kamo ide zahtjev i što nosi, prije nego što počne vrijediti.</p>
+<h3>4.2 Statistika korištenja (Noqyris)</h3>
+<p>Ako to dopustite, aplikacija nam šalje statistiku o tome kako se koristi, da bismo vidjeli gdje ljudi zapnu ili odustanu i što ne radi. Statistiku izrađujemo i čitamo samo mi (Noqyris). Nije za oglase i ne prodajemo je.</p>
+<p><strong>Kada.</strong> Aplikacija pita jednom, na zaslonu <strong>Danas</strong> nakon prvog plana, s dva jednaka gumba: <strong>Dopusti</strong> i <strong>Ne dopusti</strong>. Dok ne odaberete <strong>Dopusti</strong>, ništa ne sprema ni ne šalje. Ništa u aplikaciji ne ovisi o odgovoru.</p>
+<p><strong>Koji podaci.</strong></p>
+<ul>
+  <li>nasumični broj instalacije: nasumična oznaka koju aplikacija napravi na vašem mobitelu. Nije oglasni identifikator ni oznaka uređaja i ne dajemo je nikome;</li>
+  <li>kako koristite aplikaciju: početak i kraj korištenja, zasloni (Danas, Tjedan, Popis, Recepti, recept, kuhanje, Postavke), koraci prvog postavljanja, početak i kraj kuhanja, slanje popisa, zamjena obroka i vrijeme učitavanja;</li>
+  <li>verzija aplikacije, sustav (iOS) i njegova verzija, jezik i razlika vremenske zone;</li>
+  <li>država: Cloudflare obrađuje IP adresu radi prijenosa i ograničenja broja zahtjeva. Mi je ne upisujemo i iz nje čuvamo samo državu.</li>
+</ul>
+<p>Statistika nikad ne sadrži ništa o vašem kućanstvu: ni ukućane, ni alergije, ni post, ni prehranu, ni recepte, ni plan. Ne šaljemo ime, e-poštu, model mobitela ni oglasni identifikator.</p>
+<p><strong>Pravna osnova.</strong> Vaša privola (čl. 6. st. 1. t. (a) GDPR-a). Bez nje aplikacija ništa ne sprema ni ne šalje.</p>
+<p><strong>Tko obrađuje podatke.</strong> Podatke za nas obrađuje Cloudflare, Inc., prema svom ugovoru o obradi podataka. Pojedinačni događaji s nasumičnim brojem instalacije spremaju se kod Cloudflarea, moguće i izvan EU-a (SAD), uz okvir EU-SAD za privatnost podataka (EU-U.S. Data Privacy Framework) i standardne ugovorne klauzule. Dnevni zbrojevi bez broja instalacije čuvaju se u EU-u.</p>
+<p><strong>Koliko dugo.</strong></p>
+<ul>
+  <li>pojedinačni događaji: 3 mjeseca, zatim se sami brišu;</li>
+  <li>dnevni zbrojevi (bez broja instalacije, ne mogu se povezati s vama): dok postoji aplikacija;</li>
+  <li>brojač dnevnog ograničenja (šifrirani otisak broja instalacije): 2 dana.</li>
+</ul>
+<p><strong>Kako isključiti i obrisati.</strong> U <strong>Postavke → Privole</strong> isključite <strong>Statistika korištenja</strong>. Od tada aplikacija ne šalje ništa, ni nakon ponovnog pokretanja. Gumb <strong>Obriši statistiku</strong> isključuje statistiku, briše s mobitela ono što je statistika spremila i traži od poslužitelja brisanje. Broj instalacije ostaje na mobitelu samo dok poslužitelj ne potvrdi brisanje. Kad poslužitelj primi zahtjev:</p>
+<ul>
+  <li>podaci te instalacije odmah se više ne prikazuju u pregledu po korisniku;</li>
+  <li>dnevni zbrojevi zadnjih 8 dana ponovno se računaju bez nje u roku od jednog dana;</li>
+  <li>stariji dnevni zbrojevi i dalje je sadrže, ali samo kao dio zbroja (na primjer jedan korisnik više), bez broja instalacije;</li>
+  <li>pojedinačni događaji i oznaka brisanja (u njoj je broj instalacije) brišu se sami nakon 3 mjeseca.</li>
+</ul>
+<p>Ako mobitel nije na mreži, aplikacija ponovno traži brisanje pri svakom sljedećem pokretanju. <strong>Izbriši sve podatke s ovog mobitela</strong> također traži brisanje statistike. Budući da ne znamo tko ste, statistiku možemo pronaći samo preko tog gumba u aplikaciji. E-poštom je ne možemo pronaći ni obrisati.</p>
+<p>Ako imate manje od 16 godina (u Srbiji 15), statistiku uključite samo uz suglasnost roditelja.</p>
+<h3>4.3 Kad nam pišete</h3>
+<p>Ako nam pišete e-poštom, imamo vašu adresu e-pošte, ime ako ga navedete, sadržaj poruke i ono što priložite. Koristimo ih samo da vam odgovorimo i riješimo ono zbog čega ste pisali (čl. 6. st. 1. t. (f) GDPR-a). Poruke čuvamo dok je to potrebno, a najdulje 12 mjeseci od zadnje poruke, osim ako zakon traži dulje. Poruke se nalaze kod pružatelja usluge e-pošte koju koristimo za tu adresu.</p>
+<p>Ne šaljite nam podatke o zdravlju ako to nije potrebno. Ako nam pišete o nečijoj alergiji, koristimo to samo za odgovor.</p>
+<h3>4.4 Apple: App Store i TestFlight</h3>
+<p>Kad aplikaciju preuzmete iz App Storea ili je testirate u TestFlightu, Apple obrađuje podatke prema vlastitoj politici privatnosti, kao zaseban voditelj obrade. Od Applea dobivamo:</p>
+<ul>
+  <li><strong>iz App Storea:</strong> zbirne, anonimne brojke (na primjer broj preuzimanja) i izvještaje o rušenju aplikacije, ali samo ako ste u postavkama mobitela dopustili dijeljenje analitike s razvojnim programerima (Postavke → Privatnost i sigurnost → Analitika i poboljšanja). Izvještaj o rušenju sadrži tehničke podatke (model uređaja, verziju sustava, mjesto u kodu gdje se aplikacija srušila), a ne podatke o vašem kućanstvu;</li>
+  <li><strong>iz TestFlighta (beta):</strong> ime i adresu e-pošte na koju smo vas pozvali, broj instalacija, pokretanja i rušenja te, ako nam pošaljete povratnu informaciju, vaš tekst, snimku zaslona ako je priložite i tehničke podatke o uređaju (na primjer model, verziju sustava, jezik i vremensku zonu).</li>
+</ul>
+<p>Te podatke koristimo samo za ispravljanje grešaka i poboljšanje aplikacije (čl. 6. st. 1. t. (f) GDPR-a). Podatke iz TestFlighta čuvamo do kraja beta testiranja, a najdulje 12 mjeseci. Pazite: snimka zaslona koju pošaljete može pokazivati imena, alergije ili post. Pogledajte je prije slanja.</p>
+<h2>5. Što ne radimo</h2>
+<ul>
+  <li>Nemamo račun ni prijavu.</li>
+  <li>Nemamo oglase, alate za praćenje ni kolačiće. Jedina analitika je naša statistika korištenja, i to samo uz vašu privolu (odjeljak 4.2).</li>
+  <li>Ne koristimo umjetnu inteligenciju.</li>
+  <li>Ne prodajemo podatke i ne dijelimo ih s oglašivačima ni posrednicima podataka.</li>
+  <li>Ne šaljemo push obavijesti s poslužitelja.</li>
+  <li>Ne tražimo pristup lokaciji, kontaktima, kameri, mikrofonu, fotografijama ni aplikaciji Zdravlje.</li>
+  <li>Ne donosimo automatizirane odluke s pravnim ili sličnim učinkom: planer samo predlaže jelovnik, a vi odlučujete.</li>
+</ul>
+<h2>6. Pregled: što, gdje, zašto i koliko dugo</h2>
+<div class="table"><table>
+<tr><th>Podaci</th><th>Gdje</th><th>Zašto</th><th>Pravna osnova</th><th>Koliko dugo</th></tr>
+<tr><td>Kućanstvo, plan, popis za kupnju, podsjetnici</td><td>samo na vašem mobitelu, šifrirano</td><td>plan obroka i kupnja</td><td>čl. 6. st. 1. t. (b)</td><td>dok ih ne izbrišete</td></tr>
+<tr><td>Alergije</td><td>samo na vašem mobitelu, šifrirano</td><td>izostaviti namirnice iz plana</td><td>izričita privola, čl. 9. st. 2. t. (a)</td><td>dok ne povučete privolu ili ih ne izbrišete</td></tr>
+<tr><td>Post i vjerska prehrana</td><td>samo na vašem mobitelu, šifrirano</td><td>poštovati dane posta i prehranu</td><td>izričita privola, čl. 9. st. 2. t. (a)</td><td>dok ne povučete privolu ili ih ne izbrišete</td></tr>
+<tr><td>Statistika korištenja: nasumični broj instalacije i događaji</td><td>Cloudflare (izvršitelj obrade), moguće SAD; dnevni zbrojevi u EU-u</td><td>poboljšanje aplikacije</td><td>privola, čl. 6. st. 1. t. (a)</td><td>pojedinačni događaji 3 mjeseca; dnevni zbrojevi bez broja instalacije dok postoji aplikacija</td></tr>
+<tr><td>Vaše poruke e-pošte</td><td>pružatelj usluge e-pošte</td><td>odgovor na vaš upit</td><td>legitimni interes, čl. 6. st. 1. t. (f)</td><td>najdulje 12 mjeseci od zadnje poruke</td></tr>
+<tr><td>Podaci iz TestFlighta i izvještaji o rušenju</td><td>Apple</td><td>ispravljanje grešaka</td><td>legitimni interes, čl. 6. st. 1. t. (f)</td><td>do kraja bete, najdulje 12 mjeseci</td></tr>
+</table></div>
+<h2>7. Vaša prava</h2>
+<p>Imate pravo na pristup svojim podacima, ispravak, brisanje, ograničenje obrade i prenosivost, pravo na prigovor obradi koja se temelji na legitimnom interesu te pravo da u svakom trenutku povučete privolu.</p>
+<ul>
+  <li><strong>Podaci na mobitelu:</strong> ta prava ostvarujete sami, izravno u aplikaciji, jer mi te podatke nemamo. Ukućane, alergije i post pregledavate i mijenjate u <strong>Postavkama</strong>, privole povlačite u <strong>Postavke → Privole</strong>, a sve brišete kako je opisano u sljedećem odjeljku.</li>
+  <li><strong>Statistika korištenja:</strong> isključujete je i brišete u aplikaciji (odjeljak 4.2). E-poštom je ne možemo pronaći, jer ne znamo čiji je koji broj instalacije.</li>
+  <li><strong>Poruke i podaci iz TestFlighta:</strong> pišite nam na <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>. Odgovorit ćemo u roku od mjesec dana.</li>
+</ul>
+<p>Ako smatrate da vaše podatke obrađujemo protivno propisima, možete podnijeti pritužbu Agenciji za zaštitu osobnih podataka (AZOP), Ulica Metela Ožegovića 16, 10000 Zagreb, <a href="mailto:azop@azop.hr">azop@azop.hr</a>, <a href="https://azop.hr">azop.hr</a>, ili nadzornom tijelu u državi EU-a u kojoj živite. Bit će nam drago ako nam se prije toga javite, da pokušamo riješiti problem.</p>
+<h2>8. Kako sve izbrisati</h2>
+<ul>
+  <li><strong>Izbrišite aplikaciju s mobitela.</strong> iOS tada briše aplikaciju i sve što je u njoj spremljeno, uključujući šifrirano kućanstvo. Ključ za šifriranje, nasumičan broj koji ništa ne govori o vama, može ostati u privjesku ključeva; bez datoteke kućanstva ne otvara ništa.</li>
+  <li><strong>U aplikaciji: Postavke → Izbriši sve podatke s ovog mobitela.</strong> Briše sve što je aplikacija spremila o vašem kućanstvu: ukućane, alergije, post, privole, plan, popis za kupnju, ono što imate kod kuće, podsjetnike i tajmere. Briše i sve zakazane obavijesti te preuzete recepte i cijene, a od našeg poslužitelja traži brisanje statistike korištenja. Šifrirana baza ostaje prazna, a stari ključ za šifriranje aplikacija zamjenjuje novim, nasumičnim, koji nikad nije šifrirao vaše podatke. Zatim se vraća na prvo postavljanje. Ostaje samo odabrani jezik.</li>
+  <li><strong>Počni ispočetka.</strong> Ako se kućanstvo ne može otvoriti (na primjer nakon vraćanja mobitela iz nešifrirane sigurnosne kopije), aplikacija nudi <strong>Počni ispočetka</strong>. To briše zaključano kućanstvo na mobitelu i njegov ključ.</li>
+  <li><strong>Povlačenje privole</strong> briše podatke o alergijama, odnosno o postu i prehrani.</li>
+  <li><strong>Sigurnosne kopije:</strong> starije kopije u iCloudu ili na računalu mogu još sadržavati kućanstvo. Izbrišite ih u postavkama iClouda ili na računalu.</li>
+  <li><strong>Kod nas:</strong> statistiku korištenja brišete gumbom <strong>Obriši statistiku</strong> (odjeljak 4.2). Za brisanje poruka ili podataka iz TestFlighta pišite nam.</li>
+</ul>
+<h2>9. Sigurnost</h2>
+<p>Kućanstvo je šifrirano na mobitelu, a ključ je u zaštićenoj pohrani mobitela. Aplikacija prije korištenja provjerava kontrolni zbroj (SHA-256) paketa s receptima i cijenama, a statistiku šalje samo preko HTTPS-a. Nikad vas nećemo tražiti lozinku, kod ni podatke o plaćanju.</p>
+<h2>10. Izmjene ove politike</h2>
+<p>Kad politiku promijenimo, ovdje objavljujemo novu verziju s novim datumom. Prije važnih promjena, na primjer ako uvedemo račun, sinkronizaciju između mobitela, plaćanje ili preuzimanje recepata i cijena s interneta, obavijestit ćemo vas u aplikaciji prije nego što promjena počne vrijediti i, gdje je potrebno, tražiti vašu privolu. Ranije verzije šaljemo na zahtjev.</p>
+<p>Ove stranice poslužuje GitHub Pages (GitHub, Inc.), koji kao i svaki web-poslužitelj bilježi tehničke zapise o posjetima. Na njima ne koristimo kolačiće ni analitiku.</p>
+<p>Verzija 1.1 · vrijedi od 10. 11. 2026.</p>
+</section>
+<hr>
+<section lang="en" id="en">
+<h1>Mesolla privacy policy</h1>
+<p class="nav"><a href="#hr">Hrvatska verzija</a> · <a href="terms.html#en">Terms of use</a> · <a href="index.html#en">Support</a></p>
+<p>Version 1.1 · effective from 10 November 2026</p>
+<h2>In short</h2>
+<ul>
+  <li><strong>No account, no sign-in.</strong> Mesolla never asks for an email address, a password or a phone number.</li>
+  <li><strong>Your household stays on your phone.</strong> Household members, ages, allergies, fasting, the meal plan and the shopping list are stored only on the phone, encrypted. We never receive this data and cannot see it.</li>
+  <li><strong>No ads, no tracking, no AI.</strong> The app sends usage statistics only if you allow them (section 4.2).</li>
+  <li><strong>Reminders and timers</strong> are local notifications scheduled by the phone itself. We send no notifications from a server.</li>
+  <li><strong>Recipes and prices come with the app.</strong> In this version the app downloads nothing from the internet. The only thing it sends over the internet is usage statistics, and only if you allow them.</li>
+  <li><strong>You delete everything yourself:</strong> in the app (<strong>Settings → Delete all data on this phone</strong>), or by deleting the app from the phone.</li>
+</ul>
+<h2>1. Who is responsible for the data</h2>
+<p>The controller is Noqyris, which makes Mesolla. For any privacy question and to exercise your rights, write to <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>.</p>
+<p>This policy covers the Mesolla app for iPhone and iPad, including the beta in TestFlight. It explains what happens to your data under the General Data Protection Regulation (Regulation (EU) 2016/679, "GDPR") and the Croatian Act on the Implementation of the GDPR (NN 42/18). In the app you find it under <strong>Settings → Privacy and terms</strong>.</p>
+<h2>2. Data that stays on your phone</h2>
+<p>To make a meal plan, Mesolla remembers what you tell it:</p>
+<ul>
+  <li><strong>household members:</strong> a name (optional), age, and whether the person is a child;</li>
+  <li><strong>allergies and foods someone never eats.</strong> Allergies are health data;</li>
+  <li><strong>religious diet and fasting:</strong> a diet without pork and alcohol and, when the app offers fasting calendars, the fasting calendar, how strictly someone fasts and communion dates. This data can reveal a religious belief;</li>
+  <li><strong>shopping:</strong> the shops you use, your big-shop day and, if you enter one, a weekly budget;</li>
+  <li><strong>the plan:</strong> who eats which meal and when, fasting days, locked and skipped meals, guests, and the time you have for cooking on weekdays;</li>
+  <li><strong>the shopping list and what you have at home;</strong></li>
+  <li><strong>the reminders and timers</strong> you turned on;</li>
+  <li><strong>your consent decisions</strong> (see below).</li>
+</ul>
+<p><strong>Where and how.</strong> The app keeps all of this in one encrypted database on the phone (SQLCipher, AES-256). The key is a random 256-bit number the app creates on first launch, and anew when you delete all data. It is kept in the phone's protected storage (the iOS keychain), not in iCloud Keychain.</p>
+<p>Only a few settings that say nothing about your household stay unencrypted: the chosen language, whether the first setup is finished, whether the app has asked for notification permission, the date it last checked for new recipes and prices, and two random local identifiers that never leave the phone. If you allow usage statistics, their state is unencrypted too: the random install number and the events waiting to be sent (section 4.2). Recipes and prices are public data and are not encrypted either.</p>
+<p><strong>Who can see it.</strong> Only whoever uses your phone. We don't receive it and can't see it, so we can't correct it, restore it or hand it to anyone.</p>
+<p><strong>Why, and on what basis.</strong> The app uses this data only for the meal plan, the shopping list and reminders, which is what you ask it to do (Art. 6(1)(b) GDPR).</p>
+<p><strong>Allergies and fasting: only with your explicit consent.</strong> The app uses allergy data, and fasting and religious-diet data, only if you give explicit consent (Art. 9(2)(a) GDPR). You give it during the first setup or in <strong>Settings → Consents</strong>, separately for allergies and for fasting. The data is used only so that the plan leaves out what someone must not or does not want to eat, and respects their fasting days. It never appears in notifications.</p>
+<p>You can withdraw consent at any time in <strong>Settings → Consents</strong>. The app then deletes the data that consent covers straight away, and the plan no longer takes it into account. Withdrawing does not affect what the app did with it before.</p>
+<p><strong>Notifications.</strong> Reminders (for example that something needs soaking the evening before) and cooking timers are scheduled on the phone itself. There is no server of ours behind them. The lock screen shows only the action, the meal and the day, for example "Tomorrow's dinner needs some prep now.", never a dish, an ingredient or a fasting rule. The app asks for notification permission only when you first turn on a reminder or start a timer.</p>
+<p><strong>Backups.</strong> If iCloud Backup or an encrypted computer backup is turned on, it contains the encrypted database and its key, so your household moves to a new phone. That copy is with Apple or on your computer, under your agreement with Apple, and we have no access to it. Whoever has access to that backup and its password can read the household too. An unencrypted computer backup does not carry the key, so a household restored from it cannot be opened.</p>
+<p><strong>When you share the list.</strong> When you tap <strong>Share</strong> on the shopping list, the list goes as plain text wherever you choose, for example into a message. If the share sheet cannot open, the app copies the list to the clipboard. What happens to the text next depends on the app you choose.</p>
+<h2>3. Children and other household members</h2>
+<p>Mesolla is meant for adults who plan meals for a household. Children don't use it themselves and have no account. A parent or guardian adds a child as a household member: age, a name if they like, allergies and, if the child fasts, fasting. Like everything else, this data stays only on the phone. Consent for a child's allergies and fasting is given by the parent or guardian.</p>
+<p>Special rules apply to children: they get children's portions, we don't plan meals for babies under one year, and we never plan daytime fasting (Ramadan) for anyone under 18. We show children no ads, send them nothing and build no profiles of them.</p>
+<p>Mesolla is not directed at children under 13, and we do not knowingly collect their data. The 4+ App Store rating describes the app's content, not the audience it is made for. If a child has used the app, write to us and we will delete whatever we can find. We cannot find usage statistics by email: <strong>Delete statistics</strong> in <strong>Settings → Consents</strong> on the child's phone deletes them.</p>
+<p>If you add other adults in your household, tell them. If someone doesn't want their allergies or fasting entered, respect that.</p>
+<h2>4. Data that leaves your phone</h2>
+<h3>4.1 Recipes and prices</h3>
+<p>The app carries recipes, ingredients and prices with it, as a public data pack built into the app. In this version it downloads nothing from the internet: new recipes and prices come with an app update. When we introduce downloads, we will describe here where the request goes and what it carries before it applies.</p>
+<h3>4.2 Usage statistics (Noqyris)</h3>
+<p>If you allow it, the app sends us statistics about how it is used, so we can see where people get stuck or give up and what does not work. Only we (Noqyris) make and read these statistics. They are not used for advertising and we do not sell them.</p>
+<p><strong>When.</strong> The app asks once, on the <strong>Today</strong> screen after the first plan, with two equal buttons: <strong>Allow</strong> and <strong>Don't allow</strong>. Until you choose <strong>Allow</strong>, it stores and sends nothing. Nothing in the app depends on your answer.</p>
+<p><strong>What data.</strong></p>
+<ul>
+  <li>a random install number: a random ID the app creates on your phone. It is not the advertising identifier or a device ID, and we never give it to anyone;</li>
+  <li>how you use the app: start and end of use, screens (Today, Week, List, Recipes, a recipe, cooking, Settings), the steps of the first setup, starting and finishing cooking, sending the list, swapping a meal, and loading time;</li>
+  <li>the app version, the system (iOS) and its version, language and time-zone offset;</li>
+  <li>country: Cloudflare processes your IP address to deliver requests and limit their number. We do not store it and keep only the country derived from it.</li>
+</ul>
+<p>The statistics never contain anything about your household: no household members, allergies, fasting, diet, recipes or plan. We do not send your name, email, phone model or advertising identifier.</p>
+<p><strong>Legal basis.</strong> Your consent (Art. 6(1)(a) GDPR). Without it the app stores and sends nothing.</p>
+<p><strong>Who processes the data.</strong> Cloudflare, Inc. processes the data for us under its data processing agreement. Individual events with the random install number are stored at Cloudflare, possibly outside the EU (USA), under the EU-U.S. Data Privacy Framework and standard contractual clauses. Daily totals without the install number are stored in the EU.</p>
+<p><strong>How long.</strong></p>
+<ul>
+  <li>individual events: 3 months, then deleted automatically;</li>
+  <li>daily totals (without the install number, cannot be linked to you): as long as the app exists;</li>
+  <li>the daily limit counter (a hashed form of the install number): 2 days.</li>
+</ul>
+<p><strong>How to turn it off and delete.</strong> In <strong>Settings → Consents</strong>, turn off <strong>Usage statistics</strong>. From then on the app sends nothing, also after a restart. <strong>Delete statistics</strong> turns statistics off, deletes what statistics stored on your phone and asks our server to delete your data. The install number stays on your phone only until the server confirms the deletion. Once the server receives the request:</p>
+<ul>
+  <li>this install's data is no longer shown in the per-user view, right away;</li>
+  <li>the daily totals of the last 8 days are recalculated without it within one day;</li>
+  <li>older daily totals still include it, but only as part of a total (for example, one more user), without the install number;</li>
+  <li>individual events and the deletion mark (which contains the install number) are deleted automatically after 3 months.</li>
+</ul>
+<p>If your phone is offline, the app asks again at every later start. <strong>Delete all data on this phone</strong> also asks for the statistics to be deleted. Because we do not know who you are, we can find your statistics only through that button in the app. We cannot find or delete them by email.</p>
+<p>If you are under 16 (15 in Serbia), turn statistics on only with a parent's consent.</p>
+<h3>4.3 When you write to us</h3>
+<p>If you email us, we have your email address, your name if you give it, the message and whatever you attach. We use them only to answer you and sort out what you wrote about (Art. 6(1)(f) GDPR). We keep messages as long as needed, and at most 12 months after the last message, unless the law requires longer. The messages are held by the email provider we use for that address.</p>
+<p>Please don't send us health data unless it's needed. If you write to us about someone's allergy, we use it only to answer you.</p>
+<h3>4.4 Apple: the App Store and TestFlight</h3>
+<p>When you download the app from the App Store or test it in TestFlight, Apple processes data under its own privacy policy, as a separate controller. From Apple we receive:</p>
+<ul>
+  <li><strong>from the App Store:</strong> aggregated, anonymous figures (such as the number of downloads) and crash reports, but only if you allowed sharing analytics with app developers in the phone's settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements). A crash report holds technical data (device model, system version, the place in the code where the app crashed), not data about your household;</li>
+  <li><strong>from TestFlight (beta):</strong> the name and email address we invited you with, the number of installs, sessions and crashes and, if you send us feedback, your text, a screenshot if you attach one, and technical data about the device (for example the model, system version, language and time zone).</li>
+</ul>
+<p>We use this data only to fix bugs and improve the app (Art. 6(1)(f) GDPR). We keep TestFlight data until the end of beta testing, and at most 12 months. Note: a screenshot you send can show names, allergies or fasting. Look at it before you send it.</p>
+<h2>5. What we don't do</h2>
+<ul>
+  <li>We have no account or sign-in.</li>
+  <li>We have no ads, tracking tools or cookies. Our only analytics are our own usage statistics, and only with your consent (section 4.2).</li>
+  <li>We don't use artificial intelligence.</li>
+  <li>We don't sell data or share it with advertisers or data brokers.</li>
+  <li>We send no push notifications from a server.</li>
+  <li>We don't ask for access to location, contacts, camera, microphone, photos or the Health app.</li>
+  <li>We make no automated decisions with legal or similarly significant effects: the planner only suggests a menu, and you decide.</li>
+</ul>
+<h2>6. Overview: what, where, why and for how long</h2>
+<div class="table"><table>
+<tr><th>Data</th><th>Where</th><th>Why</th><th>Legal basis</th><th>How long</th></tr>
+<tr><td>Household, plan, shopping list, reminders</td><td>only on your phone, encrypted</td><td>meal plan and shopping</td><td>Art. 6(1)(b)</td><td>until you delete it</td></tr>
+<tr><td>Allergies</td><td>only on your phone, encrypted</td><td>leave foods out of the plan</td><td>explicit consent, Art. 9(2)(a)</td><td>until you withdraw consent or delete it</td></tr>
+<tr><td>Fasting and religious diet</td><td>only on your phone, encrypted</td><td>respect fasting days and diet</td><td>explicit consent, Art. 9(2)(a)</td><td>until you withdraw consent or delete it</td></tr>
+<tr><td>Usage statistics: random install number and events</td><td>Cloudflare (processor), possibly USA; daily totals in the EU</td><td>improving the app</td><td>consent, Art. 6(1)(a)</td><td>individual events 3 months; daily totals without the install number as long as the app exists</td></tr>
+<tr><td>Your emails</td><td>email provider</td><td>answering you</td><td>legitimate interest, Art. 6(1)(f)</td><td>at most 12 months after the last message</td></tr>
+<tr><td>TestFlight data and crash reports</td><td>Apple</td><td>fixing bugs</td><td>legitimate interest, Art. 6(1)(f)</td><td>until the end of the beta, at most 12 months</td></tr>
+</table></div>
+<h2>7. Your rights</h2>
+<p>You have the right to access your data, to rectification, erasure, restriction of processing and portability, the right to object to processing based on legitimate interest, and the right to withdraw consent at any time.</p>
+<ul>
+  <li><strong>Data on the phone:</strong> you exercise these rights yourself, directly in the app, because we don't have this data. You view and change household members, allergies and fasting in <strong>Settings</strong>, withdraw consent in <strong>Settings → Consents</strong>, and delete everything as described in the next section.</li>
+  <li><strong>Usage statistics:</strong> you turn them off and delete them in the app (section 4.2). We can't find them by email, because we don't know whose install number is whose.</li>
+  <li><strong>Emails and TestFlight data:</strong> write to us at <a href="mailto:subotic.djo@gmail.com">subotic.djo@gmail.com</a>. We'll answer within one month.</li>
+</ul>
+<p>If you believe we process your data unlawfully, you can lodge a complaint with the Croatian Personal Data Protection Agency (Agencija za zaštitu osobnih podataka, AZOP), Ulica Metela Ožegovića 16, 10000 Zagreb, Croatia, <a href="mailto:azop@azop.hr">azop@azop.hr</a>, <a href="https://azop.hr">azop.hr</a>, or with the supervisory authority of the EU country you live in. We'd be glad if you contacted us first, so we can try to fix the problem.</p>
+<h2>8. How to delete everything</h2>
+<ul>
+  <li><strong>Delete the app from the phone.</strong> iOS then deletes the app and everything stored in it, including the encrypted household. The encryption key, a random number that says nothing about you, may stay in the keychain; without the household file it opens nothing.</li>
+  <li><strong>In the app: Settings → Delete all data on this phone.</strong> Deletes everything the app has stored about your household: household members, allergies, fasting, consents, the plan, the shopping list, what you have at home, reminders and timers. It also deletes every scheduled notification and the recipes and prices the app downloaded, and asks our server to delete the usage statistics. The encrypted database is left empty, and the app replaces the old encryption key with a new random one that has never encrypted your data. The app then goes back to the first setup. Only the chosen language stays.</li>
+  <li><strong>Start over.</strong> If the household cannot be opened (for example after restoring the phone from an unencrypted backup), the app offers <strong>Start over</strong>. It deletes the locked household on the phone and its key.</li>
+  <li><strong>Withdrawing consent</strong> deletes the allergy data, or the fasting and diet data.</li>
+  <li><strong>Backups:</strong> older backups in iCloud or on a computer may still contain the household. Delete them in the iCloud settings or on the computer.</li>
+  <li><strong>With us:</strong> you delete usage statistics with <strong>Delete statistics</strong> (section 4.2). To have emails or TestFlight data deleted, write to us.</li>
+</ul>
+<h2>9. Security</h2>
+<p>The household is encrypted on the phone, and the key is in the phone's protected storage. The app checks the checksum (SHA-256) of the recipe and price pack before using it, and sends statistics over HTTPS only. We will never ask you for a password, a code or payment details.</p>
+<h2>10. Changes to this policy</h2>
+<p>When we change the policy, we publish the new version here with a new date. Before important changes, for example if we introduce an account, syncing between phones, payment or downloading recipes and prices, we'll tell you in the app before the change applies and, where needed, ask for your consent. Earlier versions are available on request.</p>
+<p>These pages are served by GitHub Pages (GitHub, Inc.), which, like any web server, keeps technical logs of visits. We use no cookies or analytics on them.</p>
+<p>Version 1.1 · effective from 10 November 2026</p>
+</section>
+
+<div class="foot">Mesolla © 2026 Noqyris · <a href="privacy.html">Politika privatnosti / Privacy policy</a> · <a href="terms.html">Uvjeti korištenja / Terms of use</a> · <a href="index.html">Podrška / Support</a></div>
+
+</div></body>
+</html>
