@@ -290,3 +290,6 @@ rubiconproject.com, 28409, RESELLER, 0bfd66d529a55807
 # 2026-11-10 (Exchange back on after Unity confirmed the category blocks): the one
 # row that Unity's list ("last updated 20 days ago") gained since the 2026-10-10 fetch.
 monetrix.ai, 10697, RESELLER
+
+# 2026-11-10 Liftoff Monetize (Vungle) publisher Noqyris, direct (Vintagia 2.8 bidding through LevelPlay)
+vungle.com, 6af3376f008cfe5bdcf10240, DIRECT, c107d686becd2d77
