@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0F172A">
+<meta name="robots" content="noindex">
+<title>LAKO — Poziv</title>
+<meta property="og:title" content="Poziv u LAKO">
+<meta property="og:description" content="Učimo strane jezike zajedno. Otvori poziv u aplikaciji LAKO.">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0F172A; --raised: #172033; --text: #F1F5F9; --dim: #94A3B8;
+    --lime: #B8F000; --line: #263247;
+  }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin:0; padding:2.5rem 1rem 4rem; background:var(--bg); color:var(--text);
+         font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  .wrap { max-width:30rem; margin:0 auto; }
+  h1 { color:var(--lime); font-size:1.7rem; line-height:1.25; margin:0 0 .75rem; }
+  p { margin:.5rem 0; }
+  .dim { color:var(--dim); }
+  .code { background:var(--raised); border:1px solid var(--line); border-radius:14px;
+          padding:1rem; margin:1.5rem 0; text-align:center; }
+  .code b { display:block; font:700 2.2rem/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;
+            letter-spacing:.18em; color:var(--text); margin:.25rem 0; }
+  .btn { display:block; box-sizing:border-box; text-align:center; text-decoration:none; font-weight:700;
+         border-radius:14px; padding:.95rem 1rem; margin:.75rem 0; }
+  .primary { background:var(--lime); color:#0F172A; }
+  .secondary { border:1px solid var(--line); color:var(--text); background:transparent; width:100%;
+               font:inherit; font-weight:700; cursor:pointer; }
+  ol { padding-left:1.3rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--lime); }
+  .foot { margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--dim); font-size:.9rem; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body><div class="wrap">
+
+<h1>Poziv u LAKO</h1>
+<p>Prijatelj te zove da učite strane jezike zajedno. Kad postanete prijatelji u aplikaciji LAKO,
+vidite jedno drugom niz dana i dokle ste stigli, i šaljete jedno drugom kamenčiće.</p>
+
+<div class="code" id="has-code" hidden>
+  <span class="dim">Kod poziva</span>
+  <b id="code"></b>
+  <span class="dim">Poziv važi 30 dana od kada je napravljen.</span>
+</div>
+
+<a class="btn primary" id="open" href="#" hidden>Otvori u aplikaciji LAKO</a>
+<a class="btn secondary" href="https://apps.apple.com/app/id6826278302">Preuzmi LAKO u App Store-u</a>
+<button class="btn secondary" id="copy" type="button" hidden>Kopiraj kod</button>
+
+<div id="steps" hidden>
+  <p class="dim">Još nemaš LAKO?</p>
+  <ol>
+    <li>Preuzmi LAKO iz App Store-a.</li>
+    <li>Na početnom ekranu otvori „Prijatelji“ i dodirni „Prijavi se uz Apple“.</li>
+    <li>Dodirni „Imam kod“ i upiši kod sa ove stranice.</li>
+  </ol>
+  <p class="dim">Ili se, kad instaliraš LAKO, vrati na ovu stranicu i dodirni „Otvori u aplikaciji
+  LAKO“.</p>
+</div>
+
+<p class="foot">LAKO je aplikacija za učenje stranih jezika iz srpskog, za iPhone. Učenje radi i
+bez prijave; prijava je potrebna samo za prijatelje.<br>
+<a href="../">Podrška</a> · <a href="../privacy.html">Politika privatnosti</a> · <a href="../terms.html">Uslovi korišćenja</a></p>
+
+</div>
+<script>
+  // The code comes from ?c=…; only the six characters an invite can have are shown or used.
+  (function () {
+    var raw = new URLSearchParams(location.search).get('c') || '';
+    var code = raw.toUpperCase().replace(/[\s-]/g, '');
+    if (!/^[23456789ABCDEFGHJKMNPQRSTUVWXYZ]{6}$/.test(code)) return;
+    document.getElementById('code').textContent = code.slice(0, 3) + ' ' + code.slice(3);
+    var open = document.getElementById('open');
+    open.href = 'lako://friend/' + code;
+    ['has-code', 'open', 'steps'].forEach(function (id) { document.getElementById(id).hidden = false; });
+    var copy = document.getElementById('copy');
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      copy.hidden = false;
+      copy.addEventListener('click', function () {
+        navigator.clipboard.writeText(code).then(function () { copy.textContent = 'Kod je kopiran'; }, function () {});
+      });
+    }
+  })();
+</script>
+</body>
+</html>
