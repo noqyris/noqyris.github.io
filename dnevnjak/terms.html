@@ -1,0 +1,307 @@
+<!doctype html>
+<!--
+  DNEVNJAK terms of use (11.11.2026). DRAFT, written in games/dnevnjak/store/pages/; to be
+  published at https://noqyris.github.io/dnevnjak/terms.html
+  (repository/web/noqyris.github.io/dnevnjak/terms.html) by the Releases session, on the
+  submission day of version 1.0.5 — not before (noqyris.github.io stays public and the owner's
+  rule is to ask first for any push there).
+
+  The app links here from the first-launch welcome window ("Dobro došli u Dnevnjak!",
+  src/ui/tekstovi.ts UVOD / the owner's "like Block Blast" rule of 11.11.2026), next to
+  privacy.html, with one button "Prihvatam". Structure follows DUELKO's and KVIZKO's terms.html
+  (Apple standard EULA, license, free + ads + purchases, ads/invalid-traffic, content accuracy,
+  progress on phone, changes, liability, law, contact, English summary), trimmed to what Dnevnjak
+  actually has: no multiplayer, no chat, no user-submitted names or photos, so there is no
+  "zero tolerance" section like Duelko/Kvizko's duel — Dnevnjak is solitaire play against the
+  daily puzzle, optionally compared via Apple Game Center leaderboards.
+
+  Facts below are taken from the repo, not invented: six rubrics and their scoring/day model
+  (CLAUDE.md §§3–5), the in-app purchase catalogue (src/core/katalog.ts: dukati packs "Kesa",
+  "Ćup", "Sanduk", "Bez reklama", "Početni paket" — product ids under com.noqyris.dnevnjak),
+  ads via Unity LevelPlay and the consent/ATT regime (src/core/pristanak.ts, D100/D119/D132,
+  CLAUDE.md "Reklame, ATT i statistika"), Game Center leaderboards (src/platform/rang.ts,
+  store/pages/privacy.html "Rang liste"), the content rule against lyrics/audio/film frames/
+  photos (CLAUDE.md §6), and progress stored on device (store/PRIVACY_POLICY.md "Šta aplikacija
+  čuva i gde"). Palette and CSS tokens copied from store/pages/privacy.html (Dnevnjak's own dark
+  "kafana u ponoć" look), not Duelko's/Kvizko's teal.
+-->
+<html lang="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Uslovi korišćenja aplikacije Dnevnjak: besplatne dnevne igre, dukati i kupovine, reklame, Game Center rang liste, sadržaj."
+    />
+    <title>Dnevnjak — Uslovi korišćenja</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        padding: 32px 20px 48px;
+        background: #16121d;
+        color: #f2ecdf;
+        font:
+          16px/1.6 system-ui,
+          -apple-system,
+          'Segoe UI',
+          sans-serif;
+      }
+      main {
+        max-width: 680px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 28px;
+        margin: 0 0 4px;
+      }
+      h2 {
+        font-size: 19px;
+        margin: 28px 0 8px;
+        color: #e8b64c;
+      }
+      h2 .n {
+        color: #e8b64c;
+        opacity: 0.7;
+        margin-right: 0.3em;
+        font-variant-numeric: tabular-nums;
+      }
+      h3 {
+        font-size: 16px;
+        margin: 18px 0 6px;
+        color: #f2ecdf;
+      }
+      p,
+      li {
+        color: #d9d2c4;
+      }
+      .datum {
+        color: #9c93ab;
+        margin: 0 0 8px;
+      }
+      .lead {
+        color: #d9d2c4;
+      }
+      .lang {
+        color: #9c93ab;
+        margin: 0 0 24px;
+        font-size: 14px;
+      }
+      a {
+        color: #e8b64c;
+      }
+      hr {
+        border: 0;
+        border-top: 1px solid #2a2433;
+        margin: 40px 0 28px;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin: 6px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>🗞️ Uslovi korišćenja — Dnevnjak</h1>
+      <p class="datum">Poslednja izmena: 11. novembra 2026. (verzija 1.0.5)</p>
+      <p class="lang"><a href="#en">English summary below</a></p>
+      <p class="lead">
+        Ovi uslovi važe kada koristiš Dnevnjak, dnevne balkanske igre koje razvija studio
+        <strong>Noqyris</strong>. Kako postupamo s podacima, piše u
+        <a href="privacy.html">Politici privatnosti</a>; tamo je i tačan redosled pitanja pri
+        prvom pokretanju (prozor dobrodošlice, pa pitanje o reklamama ili Apple-ov upit o
+        praćenju, pa dozvola za obaveštenja).
+      </p>
+
+      <section aria-labelledby="apple">
+        <h2 id="apple"><span class="n">1.</span>Ugovor prodavnice</h2>
+        <p>
+          Ako Dnevnjak preuzmeš iz Apple-ovog App Store-a, važi Apple-ov standardni licencni
+          ugovor za krajnjeg korisnika
+          (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+            >Licensed Application End User License Agreement</a
+          >); ako ga jednog dana preuzmeš sa Google Play-a, važe uslovi Google Play-a. Ovi uslovi
+          ih dopunjuju. Ako se nešto u njima razlikuje od ugovora prodavnice, važi ugovor
+          prodavnice.
+        </p>
+      </section>
+
+      <section aria-labelledby="dozvola">
+        <h2 id="dozvola"><span class="n">2.</span>Šta smeš da radiš s aplikacijom</h2>
+        <p>
+          Dobijaš ličnu dozvolu da Dnevnjak koristiš na uređajima koje poseduješ ili koristiš, po
+          pravilima prodavnice iz koje ga preuzimaš. Zagonetke, tekstovi, crteži (npr. mapa
+          Balkana u rubrici „Pogodi grad"), ikonice i ostali sadržaj aplikacije pripadaju
+          Noqyris-u. Ne smeš ih kopirati, prodavati ni objavljivati van aplikacije.
+        </p>
+      </section>
+
+      <section aria-labelledby="igra">
+        <h2 id="igra"><span class="n">3.</span>Šest rubrika, jedan dan</h2>
+        <p>
+          Svakog dana u ponoć (po lokalnom vremenu tvog telefona) Dnevnjak otključava novo
+          izdanje od šest kratkih igara — isto izdanje za sve igrače tog dana: 🎵 Pogodi hit, 🕵️
+          Muzički detektiv, 🗺️ Pogodi grad, 🎬 Domaći bioskop, 👤 Ličnost dana i ⏳ Vremeplov. Niz
+          (streak) raste kad rešiš svih šest istog dana; dugme „Podeli" pravi tekst sa rezultatom
+          u emodži kvadratićima, bez otkrivanja odgovora — šta ćeš i kome poslati biraš ti.
+          Starija izdanja čine arhivu: poslednjih sedam je uvek besplatno otvoreno, a starija
+          otključavaš dukatima, nagradnom reklamom ili kupovinom „Bez reklama".
+        </p>
+      </section>
+
+      <section aria-labelledby="sadrzaj">
+        <h2 id="sadrzaj"><span class="n">4.</span>Tačnost sadržaja</h2>
+        <p>
+          Zagonetke pišemo pažljivo, svojim rečima: nikad tekstovi pesama, audio snimci, kadrovi
+          iz filmova ni tuđe fotografije. I pored toga ne garantujemo da je svaka činjenica ili
+          svaki tačan odgovor besprekoran. Grešku nam javi e-poštom (odeljak 11) i ispravićemo
+          je.
+        </p>
+      </section>
+
+      <section aria-labelledby="kupovine">
+        <h2 id="kupovine"><span class="n">5.</span>Besplatno, dukati i kupovine</h2>
+        <p>
+          Dnevnjak je besplatan i svih šest dnevnih rubrika igraš svakog dana bez ijedne kupovine.
+          Dukati (valuta u igri) se zarađuju igranjem ili kupuju, a zamrzivači niza se kupuju
+          dukatima ili dolaze u Početnom paketu. Ni dukati ni zamrzivači nemaju
+          novčanu vrednost i ne mogu se prodati, preneti ni zameniti za novac. Kupovine u Trafici
+          — paketi dukata, „Bez reklama" (uklanja sve reklame i otključava celu arhivu) i Početni
+          paket — idu isključivo preko prodavnice iz koje preuzimaš aplikaciju (Apple App
+          Store ili, na Androidu, Google Play), po njenim pravilima i cenama prikazanim pre
+          kupovine. Mi ne vidimo i ne čuvamo tvoje podatke o plaćanju. „Vrati kupovine" u
+          aplikaciji vraća trajne kupovine koje ne nestaju (npr. „Bez reklama").
+        </p>
+      </section>
+
+      <section aria-labelledby="reklame">
+        <h2 id="reklame"><span class="n">6.</span>Reklame</h2>
+        <p>
+          Dnevnjak prikazuje reklame preko Unity LevelPlay-a (celoekranske i nagradne video
+          reklame koje pokrećeš po svom izboru), kako detaljno piše u
+          <a href="privacy.html">Politici privatnosti</a> — uključujući tačan redosled pitanja o
+          reklamama i Apple-ovom praćenju pri prvom pokretanju. Ne gledaj i ne dodiruj reklame
+          lažno ni automatski; reklamne mreže to smatraju nevažećim saobraćajem (invalid traffic)
+          i mogu nas, i tebe, isključiti iz prikazivanja reklama. Ko kupi „Bez reklama" ili
+          Početni paket, reklame više ne vidi.
+        </p>
+      </section>
+
+      <section aria-labelledby="game-center">
+        <h2 id="game-center"><span class="n">7.</span>Rang liste (Apple Game Center, opciono)</h2>
+        <p>
+          Na iPhone-u Dnevnjak ima tri rang liste u Apple Game Center-u: poeni današnjeg izdanja,
+          ukupno osvojeni poeni i najduži niz. Rang liste su opcione — igra radi isto i bez njih.
+          Ako se prijaviš u Game Center na svom uređaju, tvoj Game Center nadimak i ta tri
+          rezultata postaju vidljivi drugim igračima na tim rang listama; to obrađuje Apple, po
+          svojoj politici privatnosti za Game Center. Mi ne dobijamo i ne čuvamo Game Center
+          identifikatore. Prijavu i vidljivost menjaš u <em>Podešavanja → Game Center</em>, i u
+          sistemskim podešavanjima telefona.
+        </p>
+      </section>
+
+      <section aria-labelledby="napredak">
+        <h2 id="napredak"><span class="n">8.</span>Tvoj napredak</h2>
+        <p>
+          Napredak (rešene rubrike, poeni, niz, dukati, kupovine, podešavanja) čuva se lokalno na
+          tvom telefonu; nema naloga ni prijave. <em>Podešavanja → Obriši napredak</em> briše
+          rešene rubrike, poene po danu, niz i ličnu statistiku; dukati, kupovine i podešavanja
+          ostaju. Brisanje aplikacije briše sve sa uređaja. Rezultati već poslati na Apple Game
+          Center rang liste ostaju tamo i posle brisanja napretka u aplikaciji.
+        </p>
+      </section>
+
+      <section aria-labelledby="promene">
+        <h2 id="promene"><span class="n">9.</span>Promene aplikacije i uslova</h2>
+        <p>
+          Dnevnjak možemo menjati: dodavati, menjati ili ukidati rubrike i funkcije. Ne obećavamo
+          da će aplikacija uvek biti dostupna niti da će raditi na svakom uređaju. Kad bitno
+          promenimo ove uslove, menjamo ovu stranicu i datum gore.
+        </p>
+      </section>
+
+      <section aria-labelledby="odgovornost">
+        <h2 id="odgovornost"><span class="n">10.</span>Odgovornost</h2>
+        <p>
+          U meri u kojoj to zakon dozvoljava, Noqyris ne odgovara za posrednu štetu nastalu
+          korišćenjem aplikacije. Ništa u ovim uslovima ne ograničava prava koja ti kao
+          potrošaču daje zakon.
+        </p>
+      </section>
+
+      <section aria-labelledby="kontakt">
+        <h2 id="kontakt"><span class="n">11.</span>Kontakt</h2>
+        <p>Noqyris — <a href="mailto:support@noqyris.com">support@noqyris.com</a></p>
+      </section>
+
+      <hr />
+
+      <section id="en" lang="en" aria-labelledby="en-title">
+        <h2 id="en-title">Terms of Use — English summary</h2>
+        <p>
+          These terms apply when you use Dnevnjak, daily Balkan puzzle games developed by
+          <strong>Noqyris</strong>. If you got the app from Apple's App Store, Apple's standard
+          <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+            >Licensed Application End User License Agreement</a
+          >
+          applies; from Google Play, Google Play's terms apply. These terms supplement them;
+          where they differ, the store's agreement prevails. How we handle data is in the
+          <a href="privacy.html">Privacy Policy</a>, including the exact order of the first-launch
+          questions.
+        </p>
+        <ul>
+          <li>
+            You get a personal licence to use the app on devices you own or use. The puzzles,
+            text, artwork and other content belong to Noqyris and may not be copied, sold or
+            published outside the app.
+          </li>
+          <li>
+            Every day at local midnight a new edition unlocks — six short puzzles, the same for
+            every player that day. The streak grows when you solve all six on the same day; the
+            Share button builds an emoji-grid result text with no spoilers. The last seven
+            editions are always free in the archive; older ones unlock with coins, a rewarded ad,
+            or the "Bez reklama" purchase.
+          </li>
+          <li>
+            Content is written carefully, in our own words — never song lyrics, audio, film
+            frames or other people's photos. We take care but do not guarantee every fact or
+            answer is perfect; report a mistake by email.
+          </li>
+          <li>
+            The game is free and fully playable without purchases. Coins have no monetary value
+            and cannot be sold, transferred or exchanged. Purchases (coin packs, "Bez reklama",
+            the starter pack) go through the store only, at its displayed price; we never see
+            your payment details. "Restore purchases" restores non-consumable purchases.
+          </li>
+          <li>
+            The app shows ads via Unity LevelPlay, as the Privacy Policy describes, including the
+            first-launch consent/tracking flow. Do not view or tap ads artificially; ad networks
+            treat that as invalid traffic. Buying "Bez reklama" or the starter pack removes ads.
+          </li>
+          <li>
+            On iPhone, Dnevnjak has three optional Apple Game Center leaderboards (today's score,
+            total score, longest streak). Signing in makes your Game Center nickname and those
+            scores visible to other players on the leaderboards; Apple processes that under its
+            own Game Center privacy policy. We never receive or store Game Center identifiers.
+          </li>
+          <li>
+            Progress is kept on your device only; there is no account. "Obriši napredak" in the
+            app deletes solved editions, daily scores, streak and personal stats, but keeps coins
+            and purchases; deleting the app deletes everything from the device.
+          </li>
+          <li>
+            We may change the app and these terms; after a material change we update this page
+            and the date above. To the extent the law allows, Noqyris is not liable for indirect
+            loss; nothing here limits your rights as a consumer.
+          </li>
+          <li>Contact: <a href="mailto:support@noqyris.com">support@noqyris.com</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
