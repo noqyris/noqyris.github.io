@@ -11,6 +11,7 @@
   .wrap { max-width:760px; margin:0 auto; padding:48px 22px 90px; }
   h1 { font-size:30px; margin:0 0 4px; }
   h2 { font-size:19px; margin:36px 0 8px; color:#5eead4; }
+  h3 { font-size:16px; margin:22px 0 6px; color:#e6edf6; }
   .upd { color:#8b98b3; font-size:14px; margin-bottom:26px; }
   a { color:#5eead4; overflow-wrap:anywhere; }
   ul { padding-left:20px; } li { margin:6px 0; }
@@ -25,11 +26,29 @@
 <body>
 <div class="wrap">
   <h1>Privacy Policy — Quadshot</h1>
-  <div class="upd">Last updated: 11 October 2026 · applies to Quadshot v1.5.1 and later</div>
+  <div class="upd">Last updated: 11 November 2026 · applies to Quadshot v1.5.4 and later</div>
 
   <p>Quadshot (“the app”) is a single-player arcade game published by Noqyris
   (Djordje Subotic). This policy explains exactly what data leaves your device,
   who receives it, and how to stop it.</p>
+
+  <div class="note">
+    <strong>What changed in v1.5.4:</strong> Quadshot now opens with a short welcome
+    screen, right after the splash and before your first game, asking you to accept
+    these Terms of Use and this Privacy Policy. In the <strong>EU, the EEA, the United
+    Kingdom and Switzerland</strong> (“the consent zone”, decided from your phone’s
+    time zone) it then asks its own ads question, with equal <em>Accept</em> and
+    <em>Decline</em> buttons; <em>Decline</em> no longer turns ads off — ads still show,
+    just not personalised to you. Apple’s tracking prompt follows, with no screen of
+    ours in front of it: always outside the consent zone, only after <em>Accept</em>
+    inside it. iOS may then ask about notifications, for the optional reminders. Quadshot
+    also sends <strong>game statistics</strong> to us (Noqyris), so we can see how the
+    game is played and fix what does not work (see <em>Game statistics (Noqyris)</em>
+    below); in the consent zone nothing is sent until you allow it, on a card that comes
+    later, on the main menu. Settings → PRIVACY &amp; ADS now opens a page with a <em>Personalised
+    ads</em> switch that works in every country, and Settings has two further rows,
+    <em>GAME STATISTICS</em> and <em>DELETE MY DATA</em>.
+  </div>
 
   <div class="note">
     <strong>What changed in v1.5.1:</strong> Quadshot no longer asks about ads when you
@@ -47,8 +66,78 @@
   </div>
 
   <h2>What we collect ourselves</h2>
-  <p><strong>Nothing.</strong> Noqyris operates no servers, no accounts and no
-  analytics. We never receive your data.</p>
+  <p>Only the <strong>game statistics</strong> described in the next section: a
+  random install number the game creates and how the game is played, sent to our
+  own server at Cloudflare. In the EU, EEA, United Kingdom and Switzerland (“the
+  consent zone”) nothing is sent until you allow it, and everywhere you can turn it off in
+  <em>Settings → GAME STATISTICS</em>. Quadshot has no accounts, and we never receive
+  your name, your advertising identifier, your payment details or a record of what you
+  buy. We see
+  your e-mail address only if you write to us.</p>
+
+  <h2>Game statistics (Noqyris)</h2>
+  <p>The game sends us statistics about how it is played, so we can see where players get stuck or
+  stop, what is too hard and what does not work. Only we (Noqyris) make and read these statistics;
+  they are not used for advertising and we do not sell them.</p>
+  <h3>What data</h3>
+  <ul>
+    <li>A random install number: a random ID the game creates on your phone. It is not the advertising
+        identifier, not a device ID, and it is never given to anyone, including our ad network (Unity
+        LevelPlay).</li>
+    <li>How you play: start and end of play, screens, levels and attempts, tutorial steps, ad offers and
+        ad views with revenue per view, errors in the game and loading time. In Quadshot also: your
+        answers to the ads question and to Apple’s tracking prompt (never the advertising identifier
+        itself), requests for a rating, and whether the game was opened from a link to its
+        leaderboards.</li>
+    <li>Game version, platform (iOS or Android), system version, language and time-zone offset.</li>
+    <li>Country: Cloudflare processes your IP address to deliver requests and limit their number; we do
+        not store it and keep only the country derived from it.</li>
+  </ul>
+  <p>We do not send your name, email, phone model, advertising identifier or purchases.</p>
+  <h3>Legal basis</h3>
+  <ul>
+    <li>In the consent zone (the EU, EEA, United Kingdom and Switzerland): your consent (GDPR Art.
+        6(1)(a)). The game asks you before anything is sent and stores or sends nothing until you
+        choose "Allow".</li>
+    <li>In other countries: our legitimate interest in improving the game, and you can turn statistics
+        off at any time.</li>
+  </ul>
+  <p>Which applies is decided by your phone’s time zone; a time zone the game cannot
+  read counts as inside the consent zone. There, once the first-launch screens below
+  are done — never on top of them — Quadshot asks with its own <em>Game statistics</em>
+  card on the main menu, with two equal buttons, <em>Allow</em> and <em>Don't allow</em>,
+  and nothing chosen in advance. It asks only until you answer. Nothing in the game
+  depends on your answer.</p>
+  <h3>Who processes the data</h3>
+  <p>Cloudflare, Inc. processes the data for us under its data processing agreement. Individual events
+  with the random install number are stored at Cloudflare, possibly outside the EU (USA), under the
+  EU-U.S. Data Privacy Framework and standard contractual clauses. Daily totals without the install
+  number are stored in the EU.</p>
+  <h3>How long</h3>
+  <ul>
+    <li>individual events: 3 months, then deleted automatically;</li>
+    <li>daily totals (without the install number, cannot be linked to you): as long as the game exists;</li>
+    <li>the daily limit counter (a hashed form of the install number): 2 days.</li>
+  </ul>
+  <h3>How to turn it off and delete</h3>
+  <p>In the game’s Settings (the gear in the top-right corner of the main menu), turn off
+  "GAME STATISTICS": from then on the game sends nothing, also after a restart.
+  "DELETE MY DATA", the row below it, turns statistics off, deletes what statistics
+  stored on your phone and asks our server to delete your data. The install number
+  stays on your phone only until the server confirms the deletion. Once the server
+  receives the request:</p>
+  <ul>
+    <li>this install’s data is no longer shown in the per-player view, right away;</li>
+    <li>the daily totals of the last 8 days are recalculated without it within one day;</li>
+    <li>older daily totals still include it, but only as part of a total (for example, one more
+        player), without the install number;</li>
+    <li>individual events and the deletion mark (which contains the install number) are deleted
+        automatically after 3 months.</li>
+  </ul>
+  <p>If your phone is offline, the game asks again at every later start. Because we do not know who
+  you are, we can find your statistics only through that button in the game; we cannot find or delete
+  them by email. Your game progress stays.</p>
+  <p>If you are under 16, turn statistics on only with a parent’s consent.</p>
 
   <h2>Our advertising partner: Unity LevelPlay</h2>
   <p>Quadshot shows ads using <strong>Unity LevelPlay</strong>, the ad mediation
@@ -80,44 +169,74 @@
   user-generated content.</p>
 
   <h2>Your choices</h2>
-  <p><strong>1. Ads consent (Quadshot’s own question).</strong> Quadshot never asks
-  when you open it. It asks whether you accept ads after your first finished game,
-  when you leave its results — or earlier, if you tap an offer to watch an ad for a
-  reward yourself. The question says who shows the ads, what data Unity receives and
-  why, what a no means and where to change your answer.
-  <strong>The ad software is not started until you accept</strong>: until you answer,
-  and if you decline, nothing is sent to any ad partner.</p>
-  <ul>
-    <li><strong>Accept</strong>: LevelPlay starts, and ads may be shown — an ad
-        between some runs, and optional ads you can choose to watch for a named reward:
-        continue a run, double the shards a run earned, or double the daily gift.</li>
-    <li><strong>Decline</strong>: the ad software is <strong>never started</strong>,
-        so no data is sent to any ad partner. No ads are shown, and there are no
-        rewards for watching them; shards still come from playing.</li>
-  </ul>
-  <p>If you leave without answering, the question comes again after a finished game
-  in a later session. After you decline, Quadshot asks again only when you tap an ad
-  offer yourself, and not sooner than 180 days later; until then those offers are not
-  shown.</p>
-  <p>Change your answer any time in the game: <em>Settings → PRIVACY &amp; ADS</em>
-  (not shown once you own Remove Ads — the ad software is then never started, so
-  there is nothing to change).
-  If you withdraw consent, it takes effect <strong>straight away</strong>, in the
-  session you are playing: Quadshot stops loading and showing ads, and tells
-  LevelPlay that you do not consent and that your data must not be sold or shared.
-  From the next launch the ad software is not started at all.</p>
+  <p>On first launch, right after the splash screen and before your first game, Quadshot
+  runs through its onboarding screens in this order: <strong>(1)</strong> a welcome
+  screen; <strong>(2)</strong>, only in the consent zone, Quadshot’s own ads question;
+  <strong>(3)</strong> Apple’s tracking prompt; <strong>(4)</strong> iOS’s own prompt
+  about notifications, for the optional reminders below. Quadshot shows no screen of its
+  own in front of Apple’s prompt. A player who has played before sees only whichever of
+  these they have not yet answered; the welcome screen appears at most once.</p>
 
-  <p><strong>2. Tracking (Apple’s prompt).</strong> Only if you accept ads, iOS then
-  asks once: <em>“Allow Quadshot to track your activity across other companies’ apps
-  and websites?”</em> If you decline ads, this prompt never appears.</p>
+  <p><strong>1. Welcome.</strong> One button, <em>Accept</em>: “Welcome to Quadshot!
+  Please accept our Terms of Use and read our Privacy Policy,” with links to the
+  <a href="https://noqyris.github.io/quadshot/terms.html">Terms of Use</a> and to this
+  policy. Nothing else happens on this screen.</p>
+
+  <p><strong>2. In the consent zone — the EU, the EEA, the United Kingdom and
+  Switzerland (“the consent zone”, read from your phone’s time zone; a time zone the
+  game cannot read counts as inside it) — Quadshot’s own ads question.</strong>
+  Two equal buttons, <em>Accept</em> and <em>Decline</em>, nothing chosen in advance. It
+  says who shows the ads, what data Unity receives and why, and what each answer means.
+  <strong>No ad software starts until you answer.</strong></p>
   <ul>
-    <li><strong>“Ask App Not to Track”</strong> (or no answer): iOS does not give
-        your advertising identifier to the app or its ad partners. Ads you see are
-        not based on tracking across other apps.</li>
+    <li><strong>Accept</strong>: Apple’s tracking prompt (3) follows. Ads may then be
+        personalised to you, and the usual rewarded offers remain available: continue a
+        run, double the shards a run earned, or double the daily gift.</li>
+    <li><strong>Decline</strong>: Apple’s tracking prompt is not shown. Ads still show —
+        declining does <strong>not</strong> turn ads off — but they are
+        <strong>not personalised</strong>: LevelPlay is told you do not consent (GDPR
+        consent “no”) before its software starts, and your advertising identifier is not
+        used. The rewarded offers are unaffected.</li>
+  </ul>
+  <p>Change your answer any time: <em>Settings → PRIVACY &amp; ADS → Change my answer</em>
+  (shown only in the consent zone, and not once you own Remove Ads, since there are no
+  ads to ask about). A changed answer takes effect <strong>straight away</strong>, in the
+  session you are playing.</p>
+
+  <p><strong>3. Outside the consent zone: no question of ours.</strong> Ads are shown to
+  every player on either answer to Apple’s tracking prompt below; what differs is only
+  whether they may be personalised.</p>
+
+  <p><strong>4. Apple’s tracking prompt.</strong> iOS asks once: <em>“Allow Quadshot to
+  track your activity across other companies’ apps and websites?”</em> Outside the
+  consent zone it appears at first launch, before your first game; inside the zone it
+  appears only after you <em>Accept</em> ads above. There is no screen of ours in front
+  of it.</p>
+  <ul>
     <li><strong>“Allow”</strong>: the advertising identifier may be used to
         personalise and measure ads.</li>
+    <li><strong>“Ask App Not to Track”</strong> (or no answer): the advertising
+        identifier stays at zero; ads are not personalised, and LevelPlay is told your
+        data must not be sold or shared.</li>
   </ul>
-  <p>Change it any time: <em>iOS Settings → Privacy &amp; Security → Tracking</em>.</p>
+  <p>If “Allow Apps to Request to Track” is off in iOS Settings, iOS shows no prompt and
+  answers “Ask App Not to Track” for you. Change it any time: <em>iOS Settings → Privacy
+  &amp; Security → Tracking</em>, or <em>iOS Settings → Quadshot → Allow Tracking</em>;
+  <em>Settings → PRIVACY &amp; ADS</em> also has a button that opens it.</p>
+
+  <p><strong>Personalised ads, in every country.</strong> <em>Settings → PRIVACY &amp;
+  ADS → Personalised ads</em> is a switch everywhere — outside the consent zone too, and
+  for players who were never asked a question of ours. Off: LevelPlay is told you do not
+  consent and that your data must not be sold or shared, so ads stop being personalised;
+  ads keep showing either way. In the consent zone, the same screen also has
+  <em>Change my answer</em> (above), which shows the ads question again. The row is not
+  shown once you own Remove Ads, since there are no ads to ask about.</p>
+
+  <p><strong>If you declined Quadshot’s own ads question in an earlier version</strong>
+  (1.4.0 to 1.5.3, where a <em>Decline</em> meant no ads at all): your “no” to
+  personalisation stands, and you are not asked again. From the 1.5.4 update you see
+  ads — simply not personalised ones — and the game shows a one-time note: “Ads keep
+  Quadshot free. They don’t track you.”</p>
 
   <h2>Purchases and Remove Ads</h2>
   <p>Quadshot sells one-time purchases, all processed entirely by <strong>Apple</strong>:
@@ -127,15 +246,16 @@
   playing only; it is never sold.</p>
   <p>After buying Remove Ads you see <strong>no ads at all</strong> — neither the ad between
   runs nor any watch-an-ad reward: the continue becomes free and every run's shards
-  are doubled automatically. Quadshot does not ask you the questions above, and from
-  the next launch it does not start the ad software.
+  are doubled automatically. Quadshot does not ask its own ads question or show
+  Apple’s tracking prompt, and from the next launch it does not start the ad software.
   The app stores the list of your purchases on your device. After reinstalling
-  Quadshot, or on a new device, open Settings (or the Shop) and tap <em>Restore
-  purchases</em> once — until then the app cannot know what you own.</p>
+  Quadshot, or on a new device, open Settings (or the Shop) and tap <em>RESTORE
+  PURCHASES</em> once — until then the app cannot know what you own.</p>
 
   <h2>Daily reminders (optional)</h2>
   <p>Quadshot can remind you when a new Daily Challenge is ready — only if you turn
-  reminders on in the game, and only after you allow notifications in iOS’s own prompt.
+  reminders on in the game, and only if you allowed notifications in iOS’s own prompt
+  (at first launch, step 4 above, or later in iOS Settings).
   Reminders are <strong>local notifications</strong>: the game schedules them on your
   device and iOS delivers them. Nothing is sent to us or to any server. There is at
   most one a day, timed to the hour you usually start playing (that hour is worked out
@@ -148,7 +268,7 @@
   to Apple together with your Game Center nickname, so they can be ranked, and the
   game shows other players’ nicknames and scores. Apple runs Game Center under
   <a href="https://www.apple.com/legal/privacy/">Apple’s privacy policy</a>; Noqyris
-  receives nothing. If you are not signed in, nothing is sent: your best scores are
+  receives nothing from Game Center. If you are not signed in, nothing is sent: your best scores are
   kept on your device and sent only if you sign in later. You can sign out, hide your
   profile or stop sharing in <em>iOS Settings → Game Center</em>.</p>
 
@@ -164,35 +284,57 @@
   <p>Pre-release builds handed to testers through Apple’s TestFlight carry a small
   label in the top-left corner of the screen: <strong>ADS OFF</strong> (the ad
   software is never started) or <strong>FAKE ADS + IAP</strong> (placeholder ads, a
-  placeholder consent question and a pretend store, all drawn by the game itself;
-  nothing is sent to anyone and nothing is charged). A build without such a label is the
-  App Store version and works exactly as this policy describes.</p>
+  placeholder of the welcome screen, the ads question in the consent zone, and
+  Apple’s tracking prompt, and a pretend store, all drawn by the
+  game itself; nothing is sent to any ad partner and nothing is charged). Test builds
+  send the game statistics described above like the App Store version, marked as
+  coming from a test build, so they are not counted with players’. A build without such
+  a label is the App Store version and works exactly as this policy describes.</p>
 
   <h2>Data stored on your device only</h2>
   <ul>
     <li>Your best score and local high-score table</li>
-    <li>Game statistics (games played, best combo, highest phase)</li>
+    <li>Your play record (games played, symbols destroyed, best combo, highest phase),
+        shown on the STATS tab of the PROGRESS screen</li>
     <li>Your progress: shards, level, daily missions, Daily Challenge results, play
         streak, awards and the looks you own or have equipped</li>
-    <li>Settings (sound, haptics, reminders), your purchases, your ads-consent answer and
-        when that question was last asked</li>
+    <li>Settings (sound, music, haptics, reminders), your purchases, whether you have
+        accepted the welcome screen, your ads-consent and personalised-ads answers and
+        when that question was last asked, and Apple’s tracking answer as the game last
+        read it</li>
     <li>The hours you recently started playing, used only to time reminders</li>
     <li>Your best leaderboard scores (sent to Game Center only while you are signed in)</li>
+    <li>Your answer about game statistics and, while they are on, the random install
+        number and what the statistics need to send it (see <em>Game statistics
+        (Noqyris)</em>)</li>
   </ul>
   <p>Apart from the leaderboard scores sent to Game Center while you are signed in,
-  this never leaves your device, and it is deleted when you delete the app.</p>
+  and the game statistics described above, this never leaves your device, and it is
+  deleted when you delete the app.</p>
 
   <h2>Children</h2>
-  <p>Quadshot is rated 4+ but is not directed to children and is not in the Kids
-  Category. We do not knowingly collect data from children under 13.</p>
+  <p>Quadshot is for a general audience and is not directed at children under 13. We do not knowingly
+  collect data from children under 13. The 4+ App Store rating describes the game’s content, not the
+  audience it is made for. If a parent finds that a child has used the game, please write to us at
+  <a href="mailto:support@noqyris.com">support@noqyris.com</a> and we will delete whatever we can
+  find. We cannot find game statistics by email; the "DELETE MY DATA" button in the game’s Settings on
+  the child’s phone deletes them.</p>
+  <p>Quadshot is not in the App Store’s Kids Category.</p>
 
   <h2>Your rights</h2>
-  <p>Because we hold no data about you, there is nothing for us to export or delete.
-  For data Unity and its ad partners hold, see
+  <p><strong>Game statistics.</strong> We do not know whose install number is whose, so
+  your statistics can be found only from the game itself: <em>Settings → DELETE MY
+  DATA</em> deletes them (see <em>How to turn it off and delete</em> above), and
+  <em>Settings → GAME STATISTICS</em> turns them off at any time. We cannot find or
+  delete them by e-mail.</p>
+  <p><strong>E-mails you send us</strong> (an ad report, or any other message) we can
+  find by your address: write to us and we will delete them.</p>
+  <p><strong>Ads.</strong> For data Unity and its ad partners hold, see
   <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s
   Game Player and App User Privacy Policy</a>, which explains how to make a request
-  to Unity. You can also decline or withdraw consent in Settings → PRIVACY &amp; ADS
-  (while ads can still show), and limit tracking in iOS Settings.</p>
+  to Unity. In the consent zone you can change your answer, and everywhere you can turn
+  off personalised ads, in Settings → PRIVACY &amp; ADS; ads keep showing either way.
+  Everywhere you can also limit tracking in iOS Settings.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes materially, the “last updated” date above changes and

@@ -1,4 +1,21 @@
 <!doctype html>
+<!--
+  SOURCE COPY of https://noqyris.github.io/foldwing/privacy.html, the page App
+  Review, the store listing (store/metadata/*/privacy_url.txt) and the ads
+  question's "Privacy policy" link (src/core/AdConsent.ts) all point at.
+
+  Edit the policy HERE. The release copies this file, unchanged, to
+  repository/web/noqyris.github.io/foldwing/privacy.html in phase 2 of the
+  statistics release (1.5.1), on the owner's word only: noqyris.github.io is a
+  public repo, and a push there publishes on GitHub Pages. It goes live before
+  the build is submitted, never after. Until then the live page still describes
+  1.5.0.
+
+  The studio's repo check (events_privacy_page) reads both copies for the
+  "Game statistics" heading and the word "Cloudflare", and the release's curl
+  checks want "Unity LevelPlay" on it and no word of the old ad network.
+  scripts/privacyDeclarations.test.ts pins this file to the code.
+-->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -15,6 +32,7 @@
       }
       h1 { font-family: Georgia, serif; font-size: 2rem; margin-bottom: 0.25rem; }
       h2 { font-size: 1.1rem; margin-top: 2.25rem; }
+      h3 { font-size: 1rem; margin: 1.5rem 0 0.25rem; }
       .updated { opacity: 0.55; font-size: 0.9rem; margin-top: 0; }
       a { color: #8e3b62; }
       ul { padding-left: 1.2rem; }
@@ -23,7 +41,7 @@
   </head>
   <body>
     <h1>Foldwing — Privacy Policy</h1>
-    <p class="updated">Last updated 11 October 2026 (version 1.4.1 and later)</p>
+    <p class="updated">Last updated 11 November 2026 (version 1.5.1 and later)</p>
 
     <p>
       Foldwing is a puzzle game published by Djordje Subotic. This policy explains
@@ -32,14 +50,111 @@
 
     <h2>What Foldwing itself collects</h2>
     <p>
-      <strong>Nothing.</strong> The app has no account, no login and no server of
-      its own. Your progress, your settings and the drawings you save are stored
-      only on your device, and are deleted when you delete the app. Nothing you
-      draw is uploaded anywhere. If you tap Share, the image is handed to your
-      device's own share sheet and you choose where it goes — Foldwing does not
-      send it anywhere itself. The daily reminder, if you allow it, is scheduled
-      on your device; no server is involved.
+      Foldwing has no account and no login. Your progress, your settings and the
+      drawings you save are stored only on your device, and are deleted when you
+      delete the app. Nothing you draw is uploaded anywhere. If you tap Share, the
+      image is handed to your device's own share sheet and you choose where it goes —
+      Foldwing does not send it anywhere itself. The daily reminder, if you allow it,
+      is scheduled on your device; no server is involved.
     </p>
+    <p>
+      The one thing Foldwing itself sends is the game statistics described in the
+      next section, to our own server. You can turn them off, and delete them, in
+      the game: <code>Settings → Privacy &amp; data</code> (Settings is the •••
+      button at the top right of the home screen).
+    </p>
+
+    <h2>Game statistics (Noqyris)</h2>
+    <p>
+      The game sends us statistics about how it is played, so we can see where
+      players get stuck or stop, what is too hard and what does not work. Only we
+      (Noqyris) make and read these statistics; they are not used for advertising
+      and we do not sell them.
+    </p>
+    <h3>What data</h3>
+    <ul>
+      <li>
+        A random install number: a random ID the game creates on your phone. It is
+        not the advertising identifier, not a device ID, and it is never given to
+        anyone, including our ad network (Unity LevelPlay).
+      </li>
+      <li>
+        How you play: start and end of play, screens, each maze you start and finish
+        or leave (with the number of strokes and stars), tutorial steps, ad offers
+        and ad views with revenue per view, your answers to the ads question and to
+        Apple's tracking prompt, whether you turned reminders on, rating prompts,
+        store offers shown or tapped, streaks, whether a reminder opened the game,
+        errors in the game and loading time.
+      </li>
+      <li>Game version, platform (iOS), language and time-zone offset.</li>
+      <li>
+        Country: Cloudflare processes your IP address to deliver requests and limit
+        their number; we do not store it and keep only the country derived from it.
+      </li>
+    </ul>
+    <p>
+      We do not send your name, email, phone model, advertising identifier or
+      purchases: whether or what you buy is never part of the statistics.
+    </p>
+    <h3>Legal basis</h3>
+    <ul>
+      <li>
+        In the EU, EEA, United Kingdom and Switzerland — and wherever your phone's
+        time zone names no place at all: your consent (GDPR and UK GDPR Art. 6(1)(a),
+        Swiss FADP). The game asks you before anything is sent and stores or sends
+        nothing until you choose "Allow". The question, "Game statistics", comes with
+        two equal answers, Allow and Don't allow, after the questions of the first
+        launch (below), the next time you come back to the home screen.
+      </li>
+      <li>
+        In other countries: our legitimate interest in improving the game, and you
+        can turn statistics off at any time.
+      </li>
+    </ul>
+    <h3>Who processes the data</h3>
+    <p>
+      Cloudflare, Inc. processes the data for us under its data processing
+      agreement. Individual events with the random install number are stored at
+      Cloudflare, possibly outside the EU (USA), under the EU-U.S. Data Privacy
+      Framework and standard contractual clauses. Daily totals without the install
+      number are stored in the EU.
+    </p>
+    <h3>How long</h3>
+    <ul>
+      <li>individual events: 3 months, then deleted automatically;</li>
+      <li>
+        daily totals (without the install number, cannot be linked to you): as long
+        as the game exists;
+      </li>
+      <li>the daily limit counter (a hashed form of the install number): 2 days.</li>
+    </ul>
+    <h3>How to turn it off and delete</h3>
+    <p>
+      In the game's Settings, under <code>Privacy &amp; data</code>, turn off
+      "Game statistics": from then on the game sends nothing, also after a restart.
+      "Delete my data" turns statistics off, deletes what statistics stored on your
+      phone and asks our server to delete your data. The install number stays on
+      your phone only until the server confirms the deletion. Once the server
+      receives the request:
+    </p>
+    <ul>
+      <li>this install's data is no longer shown in the per-player view, right away;</li>
+      <li>the daily totals of the last 8 days are recalculated without it within one day;</li>
+      <li>
+        older daily totals still include it, but only as part of a total (for
+        example, one more player), without the install number;
+      </li>
+      <li>
+        individual events and the deletion mark (which contains the install number)
+        are deleted automatically after 3 months.
+      </li>
+    </ul>
+    <p>
+      If your phone is offline, the game asks again at every later start. Because we
+      do not know who you are, we can find your statistics only through that button
+      in the game; we cannot find or delete them by email. Your game progress stays.
+    </p>
+    <p>If you are under 16, turn statistics on only with a parent's consent.</p>
 
     <h2>Advertising</h2>
     <p>
@@ -62,47 +177,71 @@
       <a href="https://unity.com/legal/privacy-policy">Unity's privacy policy</a>.
     </p>
 
-    <h2>Your consent comes first</h2>
+    <h2>When you first open Foldwing</h2>
     <p>
-      Foldwing does not ask about ads when you open it, and no advertising software
-      runs until you say yes. The question appears after you finish your first fold,
-      when you tap an offer to watch an ad, or whenever you open
-      <code>Settings → Privacy &amp; ads</code>. It says who shows the ads, who
-      receives which data and why, and offers two equal answers: Accept and Decline.
+      Right after the start screen, once: a welcome card links our
+      <a href="https://noqyris.github.io/foldwing/terms.html">Terms of Use</a> and this
+      Privacy Policy, with one button, Accept. It is a notice, not consent to ads.
+      Then come the questions below that apply where you are (read from your phone's
+      time zone), and then iOS's own question about notifications, because Foldwing
+      can remind you of the Daily Fold and your streak. Each comes once; no
+      advertising software runs before you have answered the question about ads.
+    </p>
+    <h3>In the EU, EEA, United Kingdom and Switzerland</h3>
+    <p>
+      Our question about ads says who shows the ads, who receives which data and why,
+      and offers two equal answers: Accept and Decline. Only if you accept does
+      Foldwing show Apple's App Tracking Transparency prompt.
     </p>
     <p>
-      <strong>If you decline, the advertising software is never started</strong>:
-      Foldwing shows no ads and no rewards for watching them; reveals still come from
-      playing — the daily reveal, missions, chapters and streaks — only more slowly.
-      We ask again only if you tap an offer to watch an ad yourself, and not more than
-      once every six months. You can change your answer at any time in
-      <code>Settings → Privacy &amp; ads</code>; withdrawing takes effect at once and
-      stops the banner and every further ad request.
+      <strong>If you decline, you still see ads, but they are not personalised</strong>:
+      the advertising software starts with your refusal, Unity and its networks are
+      told you did not consent and not to sell your data, your advertising identifier
+      is not used and Apple's prompt is not shown. You can change your answer at any
+      time in <code>Settings → Privacy &amp; data → Privacy &amp; ads</code>
+      ("Change my answer"); a change takes effect at once. If the question is left
+      unanswered, no advertising software runs, and the game asks again when you
+      finish a fold or tap an offer to watch an ad.
     </p>
+    <h3>Everywhere else, on iPhone</h3>
     <p>
-      On iOS, only after you accept does Foldwing show Apple's App Tracking
-      Transparency prompt. If you decline that, your advertising identifier is not
-      shared; ads you have agreed to may still be shown, but they are less relevant
-      to you.
+      Foldwing asks no question of its own: Apple's App Tracking Transparency prompt
+      comes directly, with no screen of ours in front of it. The advertising software
+      starts after you answer it, whichever answer you give. If you allow tracking,
+      your advertising identifier may be used to tailor ads; if you do not, it is not
+      shared, the ads are not personalised, and Unity is told not to sell your data.
+      You can change that answer at any time in
+      <code>iOS Settings → Foldwing → Allow Tracking</code>.
+    </p>
+    <h3>Personalised ads, everywhere</h3>
+    <p>
+      <code>Settings → Privacy &amp; data → Privacy &amp; ads</code> has a
+      "Personalised ads" switch. Turned off, Unity LevelPlay is told you do not
+      consent to personalised ads and not to sell your data; ads still come, without
+      using your data. If you declined ads in a version of Foldwing before 1.5.1 (and
+      so had no ads), you now get ads that are not personalised, with this switch
+      off, and the game tells you so once.
     </p>
 
     <h2>Reporting an ad</h2>
     <p>
       If you see an ad that is inappropriate or not suitable for the game's
-      audience, tap <code>Settings → Report an ad</code>. It opens an email to us with
-      the app's version filled in; tell us what the ad showed and roughly when, so we
-      can have it blocked. Nothing is sent until you send it.
+      audience, tap <code>Settings → Privacy &amp; data → Report an ad</code>. It opens
+      an email to us with the app's version filled in; tell us what the ad showed and
+      roughly when, so we can have it blocked. Nothing is sent until you send it.
     </p>
 
     <h2>Purchases</h2>
     <p>
       Foldwing offers a one-time <em>Remove Ads</em> purchase and packs of reveals.
-      Payment is handled entirely by Apple; the app never sees your payment details.
+      Payment is handled entirely by Apple; the app never sees your payment details,
+      and the game statistics never say whether or what you bought.
     </p>
     <p>
       <em>Remove Ads</em> stops every ad for good: no banners, no interstitials,
       and the game no longer offers reward videos — reveals become unlimited and
-      skips are free. If you agreed to ads, the advertising software may still
+      skips are free. If you answered the question about ads (or, outside the
+      countries above, Apple's tracking prompt), the advertising software may still
       start with the app after the purchase, and Unity LevelPlay processes data as
       described above whenever it does.
     </p>
@@ -116,27 +255,51 @@
 
     <h2>Children</h2>
     <p>
-      Foldwing is not directed at children under 13 and does not knowingly collect
-      personal information from them.
+      Foldwing is for a general audience and is not directed at children under 13.
+      We do not knowingly collect data from children under 13. The 4+ App Store
+      rating describes the game's content, not the audience it is made for. If a
+      parent finds that a child has used the game, please write to us at
+      <a href="mailto:support@noqyris.com">support@noqyris.com</a> and we will
+      delete whatever we can find. We cannot find game statistics by email; the
+      "Delete my data" button in the game's Settings (<code>Settings → Privacy &amp;
+      data</code>) on the child's phone deletes them.
     </p>
 
     <h2>Your choices</h2>
     <ul>
       <li>
-        Change your ad consent in the game: <code>Settings → Privacy &amp; ads</code>.
+        Turn game statistics on or off:
+        <code>Settings → Privacy &amp; data → Game statistics</code>.
       </li>
-      <li>Report an ad: <code>Settings → Report an ad</code>.</li>
+      <li>
+        Delete your game statistics:
+        <code>Settings → Privacy &amp; data → Delete my data</code>.
+      </li>
+      <li>
+        Turn personalised ads off, and (EU, EEA, United Kingdom, Switzerland) change
+        your answer about ads: <code>Settings → Privacy &amp; data → Privacy &amp; ads</code>.
+      </li>
+      <li>Report an ad: <code>Settings → Privacy &amp; data → Report an ad</code>.</li>
       <li>
         Turn off tracking at any time in
         <code>Settings → Privacy &amp; Security → Tracking</code> on iOS.
       </li>
       <li>Buy <em>Remove Ads</em> to stop every ad in the game.</li>
-      <li>Delete the app to erase everything it has stored on your device.</li>
+      <li>
+        Delete the app to erase everything it has stored on your device. Deleting
+        the app does not delete game statistics already sent: use "Delete my data"
+        first (individual events are deleted automatically after 3 months in any
+        case).
+      </li>
     </ul>
 
     <h2>Changes</h2>
     <p>
       If this policy changes, the date at the top of this page changes with it.
+      Versions of Foldwing before 1.5.1 send no game statistics, ask the question
+      about ads, with Accept and Decline, in every country, and show no ads at all
+      after a Decline. In those versions Privacy &amp; ads and Report an ad are rows
+      directly in the game's Settings, not on a Privacy &amp; data page.
     </p>
 
     <h2>Contact</h2>
