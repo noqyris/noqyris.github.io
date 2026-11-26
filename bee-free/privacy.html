@@ -4,34 +4,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bee Free — Privacy Policy</title>
-<!--
-  PUBLISHED 2026-09-27 at https://noqyris.github.io/bee-free/privacy.html (repo
-  noqyris/noqyris.github.io, bee-free/privacy.html) — the URL the App Store listing
-  and the in-game consent modal link to. Edit here, then copy there.
-
-  2026-10-11 (branch ads/consent-a): rewritten for consent option A — the question
-  after the first finished level, ATT only after a yes, Settings → "Privacy & ads",
-  "Report an ad". Published 2026-10-11 with 1.1.1.
-
-  2026-10-20: Bee Free is for children too (the owner). The neutral age question before
-  the consent question, and no ad SDK under 16 (systems/adAge.ts). Published 2026-10-21
-  with the 1.2 submission, on the owner's word ("everything needed, send it to review").
-
-  2026-11-07 (branch feat/analytics, the 1.3 release): the game statistics (Noqyris), the
-  ATT regime outside the consent region (no Accept/Decline of ours there, a one-button notice
-  before Apple's prompt), Settings → "Privacy & data". NOT published: noqyris.github.io is a
-  public repo and publishes on push — only on the owner's word, before the 1.3 submission
-  (saas/noqyris-analytics/docs/planovi/statistika-igre-u-prodaji.md, phase 2). The section
-  title and "Cloudflare" are checked by the studio's events_privacy_page.
-
-  2026-11-11 (same branch): the rule "like Block Blast and most"
-  (saas/noqyris-analytics/docs/planovi/zadaci/pristanak-kao-vecina.md): the zone is the EEA, the
-  UK and Switzerland (Serbia outside); a no in the zone means ads without personal data, not no
-  ads; the questions at the first launch (welcome with the Terms of Use, age, our question in the
-  zone, Apple's prompt with no screen of ours in front of it); the "Personalised ads" switch;
-  contact support@noqyris.com; the name "Bee Free: Hive Escape Puzzle". NOT published: the
-  Releases session copies it to noqyris.github.io on the submission day.
--->
 <style>
   :root { color-scheme: dark; }
   body { margin:0; padding:2.5rem 1.25rem 4rem; background:#0d1117; color:#e6edf3;
@@ -50,19 +22,24 @@
 <body>
 <div class="wrap">
 <h1>Bee Free — Privacy Policy</h1>
-<p class="sub">Last updated 11 November 2026</p>
+<p class="sub">Last updated 24 November 2026</p>
 
-<p>Bee Free: Hive Escape Puzzle is a puzzle game made by Noqyris. This policy explains what
-the app collects, what it does not, and who else is involved.</p>
+<p>Bee Free is a puzzle game made by Noqyris. This policy explains what the app collects, what it
+does not, and who else is involved.</p>
+<p>It covers <strong>version 1.2</strong> and <strong>version 1.3</strong> of the game. They differ in
+when the questions about age and ads are asked, in what a "no" to ads means, in what a player under
+16 gets, and in game statistics, which only 1.3 has. Where they differ, this page says which version
+it means. You can see your version in the game's Settings.</p>
 
 <h2>What Bee Free itself collects</h2>
 <p>The app has no account and no login. Your progress, stars, honey, power-ups, daily quests and
 settings are stored only on your device, and are deleted when you delete the app. If you turn on
 daily reminders, they are scheduled on your device by iOS; no server is involved and nothing is
 sent anywhere for them.</p>
-<p>Since version 1.3 the game can send us <strong>game statistics</strong> about how it is played,
-but only after it knows your age, never if you are under 16, and in Europe only if you allow it.
-The section "Game statistics (Noqyris)" below says exactly what they are.</p>
+<p>Version 1.2 sends us nothing. Since version 1.3 the game can send us <strong>game
+statistics</strong> about how it is played, but only after it knows your age, never if you are under
+16, and in Europe only if you allow it. The section "Game statistics (Noqyris)" below says exactly
+what they are.</p>
 
 <h2>Advertising</h2>
 <p>Bee Free is free and shows ads served through <strong>Unity LevelPlay</strong> (formerly
@@ -80,28 +57,54 @@ controllers:</p>
 <p>This data is handled under <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's privacy policy</a>.</p>
 
 <h2>Before any ads: your age, then your answer</h2>
-<p>No advertising software starts before you have answered. The first time you open the game, after
-a short welcome that links these terms and this policy, Bee Free asks how old you are; under 16
-there are no ads at all (see "Children"). What comes next depends on where your phone is, read from
-its time zone:</p>
+<p>In both versions no advertising software starts before Bee Free knows your age, and, if you are 16
+or over, before you have answered the question about ads (version 1.2, and 1.3 in Europe) or Apple's
+tracking prompt (1.3 elsewhere); an answer you gave in version 1.2 counts. The age question is neutral: it offers every age and asks once on
+your device. What a player under 16 gets is under "Children".</p>
+
+<h3>Version 1.3</h3>
+<p>The first time you open the game, it shows a short welcome that links the Terms of Use and this
+policy, then asks how old you are. If you are 16 or over, what comes next depends on where your phone
+is, read from its time zone:</p>
 <ul>
   <li><strong>In the EU, the EEA, the United Kingdom and Switzerland</strong>, Bee Free asks its own
     question about ads. It says who shows the ads, what data Unity receives and why, and has two equal
     answers, Accept and Decline. If you accept, Bee Free then asks for tracking permission through
-    Apple's App Tracking Transparency prompt. If you decline, <strong>ads are still shown, but without
-    your personal data</strong>: Unity is told that you did not consent, your advertising identifier
-    is not used, Apple's prompt is not shown, and Unity is also told not to sell or share your data.</li>
+    Apple's App Tracking Transparency prompt. If you decline, <strong>ads are still shown, but they are
+    not personalised</strong>: Unity is told that you did not consent and not to sell or share your
+    data, and Apple's prompt is not shown. Unity and the ad networks may still process the device, app,
+    location and ad data listed under "Advertising" (the advertising identifier among them only while
+    tracking is allowed for Bee Free in iOS Settings → Privacy &amp; Security → Tracking; if you allowed
+    it earlier, declining here does not turn it off), to show and count ads and to prevent fraud.</li>
   <li><strong>Everywhere else</strong> (Serbia included), Bee Free asks no question of its own and
     shows no screen of its own before Apple's App Tracking Transparency prompt. Ads are shown whichever
     you choose; only if you allow tracking may they use your advertising identifier and be tailored to
     you, and otherwise Unity is also told not to sell or share your data.</li>
 </ul>
-<p>If you declined ads in an earlier version of Bee Free, that answer stays: the ads you now see do
-not use your personal data, and the game tells you so once.</p>
+<p>Then iOS asks once whether Bee Free may send you notifications (see "Reminders").</p>
+<p>If you are updating from version 1.2, the game does not ask again what you already answered there.
+If you declined ads in 1.2, that answer stays: the ads you now see are not personalised, and the game
+tells you so once.</p>
 <p>You can change your choice at any time in the game under <strong>Settings → Privacy &amp; data →
-Privacy &amp; ads</strong>: the "Personalised ads" switch everywhere (off, ads are shown without your
-personal data), and in Europe "Change my answer"; elsewhere it also leads to iOS Settings → Bee Free
+Privacy &amp; ads</strong>: the "Personalised ads" switch everywhere (off, the ads you see are not
+personalised), and in Europe "Change my answer"; elsewhere it also leads to iOS Settings → Bee Free
 → Allow Tracking.</p>
+
+<h3>Version 1.2</h3>
+<p>Nothing is asked when you open the game, and no ads are shown before you have answered. The
+questions come on the way out of your first finished level, or earlier if you tap an offer to watch an
+ad for a reward: first how old you are, then, if you are 16 or over, Bee Free's own question about ads,
+in every country, with two equal answers, Accept and Decline.</p>
+<ul>
+  <li>If you accept, Bee Free asks for tracking permission through Apple's App Tracking Transparency
+    prompt, and then ads start. Only if you allow tracking may they use your advertising
+    identifier.</li>
+  <li>If you decline, <strong>the advertising software does not start at all</strong> and no ads
+    are shown. The offers to watch an ad for a reward are not
+    shown either. The question comes back only when you tap such an offer yourself, and not sooner
+    than 180 days after your no.</li>
+</ul>
+<p>You can open the question again at any time under <strong>Settings → Privacy &amp; ads</strong>.</p>
 
 <h2>Purchases</h2>
 <p>Bee Free offers optional in-app purchases: Remove Ads, honey packs, power-up packs, a
@@ -110,17 +113,23 @@ never sees your payment details. What you bought is recorded on your device and 
 from Apple, so Restore Purchases works on a new device.</p>
 <p><strong>Remove Ads</strong> stops banner and between-level ads for good. Optional reward
 videos — the ones you start yourself, such as "Watch ad for +3 moves" — stay available, so the
-advertising software may still run after the purchase if you agreed to ads, and Unity LevelPlay
-processes data as described above whenever it does.</p>
+advertising software may still run after the purchase (in version 1.2 only if you accepted ads), and
+Unity LevelPlay processes data as described above whenever it does.</p>
 
 <h2>Reminders</h2>
-<p>Daily reminders are off until you turn them on (the game asks iOS for permission only when
-you tap "Remind me" or the Settings switch). They are local notifications about your daily gift
-and quests, at most one a day for about a week after you last played. Turn them off at any time
-in the game's Settings or in iOS Settings → Notifications.</p>
+<p>Reminders are local notifications about your daily gift and your streak, at most one a day for
+about a week after you last played. They are scheduled on your device by iOS; nothing is sent for
+them.</p>
+<ul>
+  <li>Version 1.3: iOS asks once, at the first launch, whether Bee Free may send notifications.
+    "Allow" turns the reminders on.</li>
+  <li>Version 1.2: reminders are off until you turn them on; the game asks iOS for permission only
+    when you tap "Remind me" or the Settings switch.</li>
+</ul>
+<p>Turn them off at any time in the game's Settings or in iOS Settings → Notifications.</p>
 
 <h2>Game statistics (Noqyris)</h2>
-<p>The game sends us statistics about how it is played, so we can see where players get stuck or
+<p>This section is about version 1.3 and later; version 1.2 has no game statistics. The game sends us statistics about how it is played, so we can see where players get stuck or
 stop, what is too hard and what does not work. Only we (Noqyris) make and read these statistics;
 they are not used for advertising and we do not sell them.</p>
 <h3>When they are sent</h3>
@@ -140,13 +149,24 @@ they are not used for advertising and we do not sell them.</p>
   <li>A random install number: a random ID the game creates on your phone. It is not the advertising
       identifier, not a device ID, and it is never given to anyone, including our ad network (Unity
       LevelPlay).</li>
-  <li>How you play: start and end of play, screens, levels and attempts, tutorial steps, ad offers and
-      ad views with revenue per view, errors in the game and loading time.</li>
-  <li>Game version, platform (iOS or Android), system version, language and time-zone offset.</li>
+  <li>How you play: start and end of play and how long it lasted, how the game was opened (from its
+      icon or from an event link) and whether it was started fresh or brought back from the background,
+      where the previous session ended (screen, level, how long it lasted and whether it ended right
+      after an ad), screens, levels and attempts with their result and time, the stars of a won level
+      and whether extra moves (a revive) were used, tutorial steps, offers to watch an ad and whether
+      you tapped them, ads loaded and shown, with the ad network, the ad unit's name and the revenue per
+      ad, the error code when an ad fails to load or to show, rewards from reward videos, that the
+      request to rate the game was shown, errors in the game and loading time.</li>
+  <li>Your answers: to the game's question about ads and to Apple's tracking prompt (accepted,
+      declined or closed), and that game statistics were turned on.</li>
+  <li>Game version and build number, whether it is a test build, platform (iOS or Android), language,
+      time-zone offset, the day the game was first opened on the phone and the number of play sessions
+      on it.</li>
   <li>Country: Cloudflare processes your IP address to deliver requests and limit their number; we do
       not store it and keep only the country derived from it.</li>
 </ul>
-<p>We do not send your name, email, phone model, advertising identifier, your age or purchases.</p>
+<p>We do not send your name, email, phone model, system version, advertising identifier, your age or
+purchases.</p>
 <h3>Legal basis</h3>
 <ul>
   <li>In the EU, EEA, United Kingdom and Switzerland: your consent (GDPR Art. 6(1)(a)). The game asks
@@ -184,21 +204,49 @@ you are, we can find your statistics only through that button in the game; we ca
 them by email. Your game progress stays.</p>
 
 <h2>Children</h2>
-<p>Bee Free is for players of all ages, children included. Since version 1.2, before anything to
-do with ads, the game asks once how old you are. If you are under 16, the advertising SDK never starts
-on that device: there is no consent question, no tracking prompt and no ads, and no advertising data
-leaves the device. Since version 1.3 the same answer also keeps the game statistics off: under 16 the
-game sends no statistics at all. Your answer is kept only on your device and is never sent. Purchases
-go through Apple, with its Ask to Buy and parental controls.</p>
+<p>Bee Free is for players of all ages, children included. Since version 1.2, before anything to do
+with ads, the game asks once how old you are. Only the result, under 16 or 16 and over, is kept, on
+your device. The game sends your age to no one; in version 1.3 the advertising software is only told
+that a player under 16 is a child, as described below. What a player under 16 gets depends on the
+version.</p>
+<h3>Version 1.3: ads that are not personalised</h3>
+<p>If you are under 16, you see ads, but they are not personalised and the game never asks for
+tracking:</p>
+<ul>
+  <li>there is no question about ads, and the game never asks for tracking permission (Apple's App
+    Tracking Transparency prompt); if tracking was allowed for Bee Free in an earlier version, it stays
+    allowed until you turn it off in iOS Settings → Privacy &amp; Security → Tracking, and while it is
+    allowed iOS still makes the advertising identifier available to the advertising software;</li>
+  <li>before the advertising software starts, Unity LevelPlay and the ad networks it works with are
+    told that you are a child (the "child-directed" setting of the US children's privacy law, COPPA),
+    that you have not consented to personalised ads, and that your data must not be sold or
+    shared;</li>
+  <li>Unity and the ad networks may still process the device, app, location and ad data listed under
+    "Advertising", to show and count ads and to prevent fraud; how Unity handles a child's data is in
+    <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity's privacy policy</a>;</li>
+  <li>Settings does not show "Privacy &amp; ads" with its "Personalised ads" switch; "Report an ad"
+    is there;</li>
+  <li>reward videos, purchases and Remove Ads work as for any player;</li>
+  <li>the game sends no game statistics at all, and the Settings switch for them is not shown.</li>
+</ul>
+<p>If you told version 1.2 that you are under 16, the game does not ask again, and from version 1.3
+that device shows ads in this way.</p>
+<h3>Version 1.2: no ads</h3>
+<p>If you are under 16, the advertising software never starts on that device: there is no question
+about ads, no tracking prompt, no ads and no offers to watch an ad, and no advertising data leaves the
+device. Remove Ads is not offered, because there are no ads to remove.</p>
+<p>In both versions, purchases go through Apple, with its Ask to Buy and parental controls.</p>
 
 <h2>Your choices</h2>
 <ul>
-  <li>Change your ad choice in the game: <strong>Settings → Privacy &amp; data → Privacy &amp; ads</strong>
-    ("Personalised ads", and in Europe "Change my answer").</li>
-  <li>Turn the game statistics off, or delete them: <strong>Settings → Privacy &amp; data → Game
-    statistics</strong> and <strong>Delete my data</strong>.</li>
+  <li>Change your ad choice in the game: in version 1.3 <strong>Settings → Privacy &amp; data →
+    Privacy &amp; ads</strong> ("Personalised ads", and in Europe "Change my answer"); in version 1.2
+    <strong>Settings → Privacy &amp; ads</strong>.</li>
+  <li>Turn the game statistics off, or delete them (version 1.3): <strong>Settings → Privacy &amp;
+    data → Game statistics</strong> and <strong>Delete my data</strong>.</li>
   <li>Report an ad that is inappropriate or not suitable for your age: <strong>Settings → Privacy
-    &amp; data → Report an ad</strong> opens an email to us, with the game's version filled in.</li>
+    &amp; data → Report an ad</strong> (in version 1.2 <strong>Settings → Report an ad</strong>) opens
+    an email to us, with the game's version filled in.</li>
   <li>Turn off tracking at any time in iOS <strong>Settings → Privacy &amp; Security → Tracking</strong>.</li>
   <li>Buy Remove Ads to stop banner and between-level ads.</li>
   <li>Delete the app to erase everything it has stored on your device.</li>

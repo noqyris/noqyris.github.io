@@ -92,10 +92,10 @@
     <tr><td>REMOVE ADS</td><td>Buys Remove Ads, at the price shown in the row. Once you own it, the row reads “✓ ADS REMOVED — THANK YOU”.</td></tr>
     <tr><td>RESTORE PURCHASES</td><td>Brings back everything you bought (see above).</td></tr>
     <tr><td>★ RATE QUADSHOT</td><td>Opens Quadshot on the App Store, where you can rate it.</td></tr>
-    <tr><td>PRIVACY &amp; ADS</td><td>A <em>Personalised ads</em> switch, in every country: off tells the ad network you do not consent and that your data must not be sold or shared, so ads stop being personalised (they keep showing either way). In the EU, EEA, United Kingdom and Switzerland (“the consent zone”) there is also <em>Change my answer</em>, which shows the ads question again (<em>Accept</em> or <em>Decline</em>, equal buttons). On iOS, a button opens iOS Settings for the tracking permission. Not shown once you own Remove Ads.</td></tr>
-    <tr><td>PRIVACY POLICY</td><td>Opens the <a href="https://noqyris.github.io/quadshot/privacy.html">privacy policy</a>. The <a href="https://noqyris.github.io/quadshot/terms.html">Terms of Use</a> are linked from the first-launch welcome screen, next to it.</td></tr>
-    <tr><td>GAME STATISTICS</td><td>Turns the game statistics on or off (see <a href="#statistics">Game statistics</a>).</td></tr>
-    <tr><td>DELETE MY DATA</td><td>Asks “Delete game statistics data?”. <em>Delete</em> turns statistics off and asks our server to delete what the game sent; your game progress stays. If you are offline, the game asks the server again each time it starts.</td></tr>
+    <tr><td>PRIVACY &amp; ADS</td><td>In version 1.5.3: shows the ads question again (<em>Accept</em> or <em>Decline</em>; a decline there means no ads). In version 1.5.4: a <em>Personalised ads</em> switch, in every country: off tells the ad network you do not consent and that your data must not be sold or shared, so ads stop being personalised (they keep showing either way). In the EU, EEA, United Kingdom and Switzerland (“the consent zone”) there is also <em>Change my answer</em>, which shows the ads question again (<em>Accept</em> or <em>Decline</em>, equal buttons). On iOS, a button opens iOS Settings for the tracking permission. Not shown once you own Remove Ads.</td></tr>
+    <tr><td>PRIVACY POLICY</td><td>Opens the <a href="https://noqyris.github.io/quadshot/privacy.html">privacy policy</a>. The <a href="https://noqyris.github.io/quadshot/terms.html">Terms of Use</a> are linked next to it from the first-launch welcome screen (version 1.5.4).</td></tr>
+    <tr><td>GAME STATISTICS</td><td>Version 1.5.4 only. Turns the game statistics on or off (see <a href="#statistics">Game statistics</a>).</td></tr>
+    <tr><td>DELETE MY DATA</td><td>Version 1.5.4 only. Asks “Delete game statistics data?”. <em>Delete</em> turns statistics off and asks our server to delete what the game sent; your game progress stays. If you are offline, the game asks the server again each time it starts.</td></tr>
     <tr><td>REPORT AN AD</td><td>Opens your mail app with a pre-written message to us, with the app version filled in, about an ad that looked wrong. Nothing is sent until you send it.</td></tr>
     <tr><td>RESET PROGRESS</td><td>Tap it, then <em>TAP AGAIN TO CONFIRM</em>. As the row says: “Resets scores and stats. Shards, items and purchases stay.” It clears your best score, the local high-score table and the Classic numbers on the STATS tab of PROGRESS (games played, symbols destroyed, best combo, highest phase). Your level, missions, awards and streak stay too, and it does not touch Game Center scores already sent, your game statistics or your answers about ads.</td></tr>
   </table>
@@ -103,26 +103,36 @@
 
   <h2>Ads and your privacy</h2>
   <h3>Where are the ads?</h3>
-  <p>An ad between some Classic runs (never during a run, and never in your first few
-  runs), and optional ads you choose to watch for a named reward, on buttons that start
+  <p>An ad between some Classic runs (never during a run). In version 1.5.4 the first
+  one can come once your 2nd Classic run is over (a run you leave from the pause menu
+  counts) and, in your first session, after 3 minutes of play; in version 1.5.3 not
+  before your 5th run is over and, in your first session, 4 minutes of play. Then there are
+  optional ads you choose to watch for a named reward, on buttons that start
   with <em>▶ WATCH AD</em>: three lives back to continue a run (once per run), double
   the shards a run earned, or double the daily gift. The Daily Challenge has no ads and
   no continue.</p>
 
   <h3>Why was I asked to accept ads, or about tracking?</h3>
-  <p>On first launch, right after the splash and before your first game: a welcome
-  screen (accept the Terms of Use and Privacy Policy); then, only in the <strong>EU,
+  <p><strong>Version 1.5.4:</strong> on first launch, right after the splash and before
+  your first game: a welcome screen (accept the Terms of Use, with a link to the Privacy
+  Policy); then, only in the <strong>EU,
   EEA, United Kingdom and Switzerland</strong> (“the consent zone”, decided by your
   phone’s time zone), Quadshot’s own ads question, with equal <em>Accept</em> and
   <em>Decline</em> buttons; then Apple’s tracking prompt — always outside the consent
   zone, only after <em>Accept</em> inside it, with no screen of ours in front of it.
   <strong>Decline no longer turns ads off</strong>: ads still show, just not
   personalised to you. A returning player only sees whichever of these they have not
-  yet answered. The <a href="https://noqyris.github.io/quadshot/privacy.html">privacy
+  yet answered.</p>
+  <p><strong>Version 1.5.3:</strong> no welcome screen, and Quadshot’s own ads question
+  in every country, never when you open the app: after your first finished Classic
+  game, or earlier if you tap an offer to watch an ad for a reward. <em>Accept</em>:
+  Apple’s tracking prompt follows, then ads start. <em>Decline</em>: no ads, no rewards
+  for watching them, and no Apple prompt.</p>
+  <p>The <a href="https://noqyris.github.io/quadshot/privacy.html">privacy
   policy</a> explains it in full.</p>
 
   <h3 id="statistics">Game statistics</h3>
-  <p>Quadshot sends us statistics about how it is played (screens, runs and their
+  <p>Version 1.5.3 sends nothing to us. Version 1.5.4 sends us statistics about how it is played (screens, runs and their
   results, the tutorial, ad offers and ads shown, errors and loading time) with a
   random install number the game creates, never your name or the advertising
   identifier, so we can improve the game. In the consent zone (EU, EEA, United Kingdom
@@ -151,8 +161,10 @@
   only if you sign in later.</p>
 
   <h2 id="reminders">Reminders</h2>
-  <p>Optional: switch on <em>Settings → REMINDERS</em>, and allow notifications when
-  iOS asks — at first launch, or later in iOS Settings if you skipped it then. They
+  <p>Optional: they come while <em>Settings → REMINDERS</em> is on and notifications
+  are allowed. In version 1.5.4 iOS asks at first launch, and a yes there also switches
+  REMINDERS on; in version 1.5.3 iOS asks when you first switch REMINDERS on. You can
+  also allow them later in iOS Settings. They
   are <strong>local notifications</strong>: the game schedules them on
   your device and iOS delivers them, and nothing goes to a server. There is at most one
   a day, about the new Daily Challenge (with your streak, missions or daily gift),

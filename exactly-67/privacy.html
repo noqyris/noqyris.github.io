@@ -26,7 +26,7 @@
   <div class="wrap">
     <a class="home" href="./index.html">← Exactly 67</a>
     <h1>Privacy Policy</h1>
-    <p class="date">Last updated: 11 November 2026 (version 1.3.4)</p>
+    <p class="date">Last updated: 24 November 2026 (version 1.3.4)</p>
 
     <p>Exactly 67 ("the app") is a number puzzle game. There are no accounts and no sign-in.
     The app shows ads, and the ad service it uses collects some data from your device. Since
@@ -93,7 +93,7 @@
       identifier; you can change this in iOS <em>Settings → Privacy &amp; Security →
       Tracking</em>.</li>
       <li><strong>If you don't accept,</strong> iOS does not ask about tracking, and you still see
-      ads, chosen without your personal data: the app tells the ad software that you did not consent
+      ads, but they are not personalised: the app tells the ad software that you did not consent
       and not to sell or share your personal information. Reward videos stay available.</li>
     </ul>
     <p><strong>To change your answer at any time,</strong> open Settings (the gear on the main
@@ -114,14 +114,14 @@
     <p>You can change your answer at any time in your phone's Settings → <em>Exactly 67</em> →
     <em>Allow Tracking</em> (or <em>Settings → Privacy &amp; Security → Tracking</em>); the app
     picks up the change the next time you return to it. If you said <em>Don't accept</em> to the
-    app's own ads question in an earlier version, the app now shows you ads that do not track you,
+    app's own ads question in an earlier version, the app now shows you ads that are not personalised,
     without asking again, and tells you so once.</p>
 
     <h3>Personalised ads, everywhere</h3>
     <p>Settings → <em>Privacy</em> → <em>Privacy &amp; ads</em> has a <em>Personalised ads</em>
     switch in every country. Turned off, the app tells the ad software that you do not consent to
-    personalised ads and not to sell or share your personal information; ads are then chosen without
-    your personal data. In the EU, EEA, United Kingdom and Switzerland, turning it on asks the ads
+    personalised ads and not to sell or share your personal information; ads are then not
+    personalised. In the EU, EEA, United Kingdom and Switzerland, turning it on asks the ads
     question again. The page also opens your phone's Settings (outside those countries) and this
     policy.</p>
 
@@ -163,10 +163,13 @@
       <li>In the EU, EEA, United Kingdom and Switzerland: your consent (GDPR Art. 6(1)(a)). The game asks
           you before anything is sent and stores or sends nothing until you choose "Allow" — also when the
           game was installed elsewhere and is now played in one of these countries. It asks in its own
-          window, <em>Game statistics</em>, after a finished level, once the first launch's questions are
-          behind you; <em>Allow</em> and <em>Don't allow</em> are offered the same way,
-          and closing the window without an answer sends nothing (the game asks again the next time you
-          play).</li>
+          window, <em>Game statistics</em>, where <em>Allow</em> and <em>Don't allow</em> are offered the
+          same way. From version 1.3.4 the window comes once per installation, on the main menu, the first
+          time you are there after the first launch's questions; closing it without an answer sends
+          nothing, and it does not come again (statistics stay off until you turn them on in
+          Settings&nbsp;&rarr; Privacy). Up to version 1.3.3 it came after a finished level, once the
+          questions about ads were behind you, and closing it without an answer sent nothing and the
+          game asked again the next time you played.</li>
       <li>In other countries (Serbia among them since version 1.3.4): our legitimate interest in improving
           the game (in Serbia, the Personal Data Protection Act Art. 12), and you can turn statistics off at
           any time.</li>
@@ -228,12 +231,14 @@
     Welcome pack, are part of your hint balance and are not restored.</p>
 
     <h2 id="reminders">Daily reminders</h2>
-    <p>The app can remind you when a new Daily Challenge is ready. Reminders are
-    <strong>off unless you turn them on</strong>: the app offers them on the win card after some
-    puzzles (<em>Remind me daily</em>, offered a few times at most), and there is a
-    <em>Daily reminder</em> switch in the game's Settings. Only when you tap one of these does iOS
-    ask whether the app may send you notifications, and no reminder is scheduled unless you allow
-    it.</p>
+    <p>The app can remind you when a new Daily Challenge is ready. From version 1.3.4, at the first
+    launch, after the questions about ads, iOS asks once whether the app may send you notifications:
+    if you choose <em>Allow</em>, daily reminders are turned on and scheduled; if you don't, none is
+    scheduled. The <em>Daily reminder</em> switch in the game's Settings turns them off or on at any
+    time. Up to version 1.3.3 reminders were <strong>off unless you turned them on</strong>: the app
+    offered them on the win card after some puzzles (<em>Remind me daily</em>, offered a few times at
+    most) and in Settings, and only when you tapped one of these did iOS ask. In every version no
+    reminder is scheduled unless you allow notifications.</p>
     <p>Reminders are <strong>local notifications</strong>: the app schedules them on your device, and
     iOS shows them at the planned time. There is no push server, and the reminders themselves are
     never sent to us or to anyone else; the only thing about them that leaves your device is, while
