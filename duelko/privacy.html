@@ -1,16 +1,4 @@
 <!doctype html>
-<!--
-  DUELKO privacy policy (2026-10-28; wording 2026-11-01; rewritten 2026-11-09 for the online 1.0:
-  generated names, photos reviewed by hand, friends and online status, no trening, recordings no
-  longer replayed, and the Noqyris game statistics that replace the Supabase usage events).
-  Source copy; published at
-  https://noqyris.github.io/duelko/privacy.html (repository/web/noqyris.github.io/duelko/), only
-  on the owner's word — that repository is public. Written from the code: the regional consent in
-  src/services/adConsent.ts, cordova-plugin-purchase, and the online half on Supabase — profiles,
-  set_profile (0013), finish_match, recordings, reports and blocks, the retention job (0014).
-  1.0 ships online (owner, 2026-11-09, DECISIONS 0083).
-  docs/APP_PRIVACY.md holds the App Store Connect answers; change both together.
--->
 <html lang="sr-Latn">
 <head>
 <meta charset="utf-8">
@@ -141,7 +129,7 @@
 <header>
   <p class="brand">DUELKO</p>
   <h1>Politika privatnosti</h1>
-  <p class="meta">Poslednja izmena: <time datetime="2026-11-09">9. novembra 2026.</time></p>
+  <p class="meta">Poslednja izmena: <time datetime="2026-11-25">25. novembra 2026.</time></p>
   <p class="lead">Ova stranica objašnjava koje podatke aplikacija DUELKO obrađuje, ko ih dobija i kako
     to kontrolišeš. Opisujemo ono što ova verzija aplikacije zaista radi. <a href="#en">English below.</a></p>
 </header>
@@ -156,11 +144,13 @@
       fotografiju, rang i rezultate — ime tek kad prihvatiš Uslove korišćenja, a fotografiju tek
       kad je mi pregledamo.</li>
     <li>Statistiku igre (Noqyris) šaljemo bez naloga i bez imena, pod nasumičnim brojem
-      instalacije; u Evropi i Srbiji tek kad je dozvoliš.</li>
+      instalacije; u EU, EEA, Ujedinjenom Kraljevstvu i Švajcarskoj tek kad je dozvoliš.</li>
     <li>Ono što ne treba više brišemo sami, po rokovima iz odeljka 5. „Obriši nalog“ u Profilu
       briše sve odmah.</li>
-    <li>Reklame prikazuje Unity (Unity Ads i ironSource Exchange). U Evropi samo ako to prihvatiš;
-      drugde posle Apple-ovog pitanja o praćenju.</li>
+    <li>Reklame prikazuje Unity (Unity Ads i ironSource Exchange). U EU, EEA, Ujedinjenom
+      Kraljevstvu i Švajcarskoj prvo te pitamo da li prihvataš reklame prilagođene tebi; ako
+      odbiješ, reklame idu i dalje, a Unity dobija tvoje odbijanje. Drugde, i u Srbiji, pita samo
+      Apple, za praćenje. Prekidač „Personalizovane reklame“ u Profilu važi svuda.</li>
     <li>Kupovine idu isključivo preko Apple-a. Podatke o kartici nikad ne vidimo.</li>
   </ul>
 </section>
@@ -232,6 +222,10 @@
     <li><strong>Ime i avatar ili odobrenu fotografiju</strong>, rang i rezultat — u predvorju meča,
       na rezultatu, među skorašnjim protivnicima i prijateljima, i na rang-listama. Ime tek kad
       prihvatiš uslove.</li>
+    <li><strong>Pretraga po imenu:</strong> drugi igrač može da te pronađe po imenu da bi ti poslao
+      zahtev za prijateljstvo. Vidi samo ime, avatar i rang — nikad tvoj nalog, kod ili mejl. Ne
+      pronalaze te igrači koje si blokirao, oni koji su blokirali tebe ni oni koji su te prijavili,
+      a dok nosiš početno ime „Igrač“ ne pronalazi te niko.</li>
     <li><strong>Da li si u igri:</strong> tvoji prijatelji vide da li si upravo u aplikaciji, da bi
       mogli da te izazovu.</li>
     <li><strong>Tvoje poteze ne vidi niko drugi</strong> osim protivnika u meču koji igrate. Ova
@@ -260,16 +254,19 @@
 <section aria-labelledby="statistika">
   <h2 id="statistika"><span class="n">6.</span>Statistika igre (Noqyris)</h2>
   <p>Igra nam šalje statistiku o tome kako se igra, da bismo videli gde igrači zapnu ili odustanu,
-    šta je preteško i šta ne radi. Statistiku pravimo i čitamo samo mi (Noqyris); nije reklamna i
+    šta je preteško i šta ne radi. Statistiku pravimo i čitamo samo mi (Noqyris) i
     ne prodajemo je. Odvojena je od naloga iz odeljka 3: ne nosi ni ID naloga, ni ime, ni podatke o
     protivnicima i prijateljima.</p>
   <h3>Koji podaci</h3>
   <ul>
     <li>Slučajni broj instalacije: nasumičan ID koji igra napravi na tvom telefonu. Nije reklamni
-      identifikator, nije ID uređaja ni naloga i ne daje se nikome, ni našoj reklamnoj mreži (Unity
+      identifikator, nije ID uređaja ni naloga, a igra ga ne daje našoj reklamnoj mreži (Unity
       LevelPlay).</li>
     <li>Kako igraš: početak i kraj igranja, ekrani, vrsta meča i njegov ishod, koraci prvog meča,
       ponude i prikazi reklama sa zaradom po prikazu, greške u igri i vreme učitavanja.</li>
+    <li>Pitanja o reklamama, o praćenju i o obaveštenjima: da je pitanje postavljeno, gde, i odgovor
+      koji posle njega važi (prihvaćeno, odbijeno, zatvoreno ili ostavljeno bez odgovora, ili da
+      telefon pitanje ne dozvoljava), i tvoje „Dozvoli“ na pitanje o statistici.</li>
     <li>Verzija igre, platforma, verzija sistema, jezik i razlika vremenske zone.</li>
     <li>Zemlja: Cloudflare obrađuje IP adresu radi prenosa i ograničenja broja zahteva; mi je ne
       upisujemo i iz nje čuvamo samo zemlju.</li>
@@ -277,12 +274,13 @@
   <p>Ne šaljemo ime, e-poštu, model telefona, reklamni identifikator ni kupovine.</p>
   <h3>Pravni osnov</h3>
   <ul>
-    <li>U EU, EEA, Ujedinjenom Kraljevstvu, Švajcarskoj i Srbiji: tvoj pristanak (GDPR čl. 6(1)(a),
-      ZZPL čl. 12, Zakon o elektronskim komunikacijama čl. 160). Igra te pita na početnom ekranu
-      posle prvog završenog meča, posebno od pitanja o reklamama, i dok ne kažeš „Dozvoli“ ništa ne
-      čuva ni ne šalje.</li>
-    <li>U ostalim zemljama: naš legitimni interes da popravljamo igru, uz mogućnost da statistiku
-      isključiš kad god hoćeš.</li>
+    <li>U Evropskom ekonomskom prostoru (EU, Island, Lihtenštajn, Norveška), Ujedinjenom Kraljevstvu
+      i Švajcarskoj: tvoj pristanak (GDPR čl. 6(1)(a)). Igra te pita na početnom ekranu posle prvog
+      završenog meča, posebno od pitanja o reklamama; do tada ništa ne šalje i ništa ne upisuje na
+      telefon, a posle „Dozvoli“ pošalje i ono što se u tom pokretanju desilo pre toga (na primer tvoj
+      odgovor na pitanje o reklamama).</li>
+    <li>U ostalim zemljama, i u Srbiji: naš legitimni interes da popravljamo igru, uz mogućnost da
+      statistiku isključiš kad god hoćeš.</li>
   </ul>
   <h3>Ko obrađuje podatke</h3>
   <p>Podatke za nas obrađuje Cloudflare, Inc., po svom ugovoru o obradi podataka. Pojedinačni
@@ -318,47 +316,68 @@
 <section aria-labelledby="reklame">
   <h2 id="reklame"><span class="n">7.</span>Reklame</h2>
   <p>Reklame u aplikaciji prikazuje <strong>Unity Technologies</strong> kroz Unity LevelPlay; reklame
-    dolaze iz mreža <strong>Unity Ads</strong> i <strong>ironSource Exchange</strong>. Ništa o reklamama
-    se ne pita i nijedna reklamna biblioteka se ne pokreće dok ne završiš drugi meč ili sam
-    ne dodirneš ponudu za reklamu.</p>
+    dolaze iz mreža <strong>Unity Ads</strong> i <strong>ironSource Exchange</strong>. Pitanja o reklamama
+    dolaze pri prvom pokretanju, odmah posle ekrana dobrodošlice (osim ako telefon već zna da si
+    kupio „Bez reklama“), i Unity LevelPlay se ne pokreće pre odgovora.</p>
 
-  <h3>U Evropi</h3>
-  <p>Kada telefon koristi evropsku vremensku zonu (to je i Srbija, i ceo region), aplikacija te
-    pita da li prihvataš reklame — kad napuštaš rezultat drugog završenog meča, ili kad sam dodirneš
-    ponudu „Pogledaj reklamu“. Samo ako dodirneš „Prihvatam“, iOS zatim prikazuje svoje pitanje o
-    praćenju i pokreće se Unity LevelPlay.</p>
+  <h3>U EU, EEA, Ujedinjenom Kraljevstvu i Švajcarskoj</h3>
+  <p>Kada telefon koristi vremensku zonu jedne od tih zemalja (ili kad aplikacija zonu ne može da
+    pročita), aplikacija te pita da li prihvataš reklame prilagođene tebi; oba odgovora su
+    ravnopravna. Ako dodirneš „Prihvatam“, iOS zatim prikazuje svoje pitanje o praćenju (ako mu još
+    nisi odgovorio) i pokreće se Unity LevelPlay. Ako na Apple-ovom pitanju ne dozvoliš praćenje, ili ga
+    kasnije isključiš u iOS podešavanjima, tvoje „Prihvatam“ i dalje važi, ali iOS aplikaciji ne daje
+    oglasni identifikator uređaja.</p>
   <div class="note">
-    <p><strong>Ako odbiješ:</strong> reklamna biblioteka se ne pokreće i ništa se ne šalje Unity-ju;
-      nema reklama, pa ni onih koje donose žetone. Žetone i dalje dobijaš igranjem. Posle odbijanja
-      te ponovo pitamo samo kad sam dodirneš ponudu za reklamu, i to najviše jednom u 180 dana.</p>
+    <p><strong>Ako odbiješ:</strong> reklame idu i dalje. Unity LevelPlay se pokreće sa tvojim
+      odbijanjem (GDPR pristanak „ne“) i označena je opcija „ne prodaj i ne deli moje podatke“;
+      posle odbijanja te aplikacija u tim zemljama ne vodi na Apple-ovo pitanje o praćenju. Ako si
+      praćenje ranije već dozvolio na Apple-ovom pitanju, ta dozvola ostaje dok je ne promeniš u
+      iOS podešavanjima.</p>
   </div>
 
-  <h3>Van Evrope</h3>
-  <p>Aplikacija ne postavlja svoje pitanje. U istim trenucima iOS prikazuje Apple-ovo pitanje o
-    praćenju, a Unity LevelPlay se pokreće posle bilo kog odgovora. Ako ne dozvoliš praćenje,
-    mreža ne dobija oglasni identifikator uređaja i označena je opcija „ne prodaj i ne deli moje
-    podatke“ (CCPA).</p>
+  <h3>Van tih zemalja (i u Srbiji)</h3>
+  <p>Aplikacija ne postavlja svoje pitanje. Pri prvom pokretanju iOS prikazuje Apple-ovo pitanje o
+    praćenju (ako mu još nisi odgovorio), bez našeg ekrana pre njega, a Unity LevelPlay se pokreće
+    posle bilo kog odgovora. Ako ne dozvoliš praćenje, iOS aplikaciji ne daje oglasni identifikator
+    uređaja, a aplikacija označava opciju „ne prodaj i ne deli moje podatke“ (CCPA). Ako praćenje
+    kasnije isključiš u iOS podešavanjima, ta oznaka se postavlja kad se vratiš u igru.</p>
+
+  <h3>Personalizovane reklame</h3>
+  <p>U <span class="path">Profil → Privatnost i reklame</span> svako ima prekidač „Personalizovane
+    reklame“; u EU, EEA, Ujedinjenom Kraljevstvu i Švajcarskoj može da se uključi tek posle
+    „Prihvatam“. Kad ga isključiš, Unity dobija odbijanje (GDPR pristanak „ne“) i opciju „ne prodaj
+    i ne deli moje podatke“; reklame se zbog toga ne gase. Prekidač ne menja Apple-ovu dozvolu za praćenje;
+    nju menjaš u iOS podešavanjima.</p>
+  <p>Tvoj odgovor na naše pitanje postavlja i prekidač: „Odbijam“ ga isključuje, a „Prihvatam“ ga
+    uključuje, i kad si ga pre toga isključio (osim ako aplikacija pri tom pokretanju nije uspela da
+    pročita tvoj raniji odgovor: tada „Prihvatam“ ne uključuje prekidač, a „Odbijam“ ga isključuje pri
+    prvom sledećem pokretanju na kom aplikacija uspe da pročita svoje podatke). Prekidač važi i van tih
+    zemalja: dok je isključen, i tamo Unity dobija odbijanje i opciju „ne prodaj i ne deli moje
+    podatke“.</p>
 
   <h3>Šta Unity dobija kada se pokrene</h3>
   <p>Prema Unity-jevim objavama: podatke o uređaju i aplikaciji (model, jezik, vrsta veze, IP
     adresa, približna lokacija na nivou države), podatke o reklamama koje vidiš i dodirneš, podatke
     o performansama i dijagnostici, i oglasni identifikator (IDFA) — samo ako dozvoliš praćenje.
-    Mi Unity-ju ne šaljemo tvoje ime. Šaljemo mu tvoj izbor o saglasnosti, oznaku „ne prodaj moje
-    podatke“ kad važi i oznaku da aplikacija nije namenjena deci.</p>
+    Igra mu prosleđuje tvoj izbor o saglasnosti kad ga ima (odgovor na naše pitanje i prekidač),
+    oznaku „ne prodaj i ne deli moje podatke“ kad važi i oznaku da aplikacija nije namenjena
+    deci.</p>
   <p>Više: <a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
     rel="noopener">Unity politika privatnosti za igrače</a>.</p>
 
   <h3>Kada se reklame prikazuju</h3>
   <p>Nikad usred meča. Kratka reklama može da se pojavi kad napuštaš rezultat završenog meča
-    (najviše posle svakog drugog meča, nikad prvog dana), uz najavu „Kratka pauza za reklamu“.
+    (najviše posle svakog drugog meča, od trećeg meča), uz najavu „Kratka pauza za reklamu“.
     Reklamu za nagradu gledaš samo ako je sam izabereš, i uvek piše koju nagradu donosi. Kupovina
     „Bez reklama“ uklanja reklame posle mečeva, a nagrade daje bez gledanja.</p>
 
   <h3>Kako da promeniš izbor i prijaviš reklamu</h3>
-  <p>U Evropi: <span class="path">Profil → Reklame → „Promeni izbor“</span>. Van Evrope praćenje menjaš
-    u iOS podešavanjima, kod aplikacije DUELKO; <span class="path">Profil → Reklame → „Više o tome“</span>
-    vodi tamo. Neprikladnu reklamu prijavljuješ iz <span class="path">Profil → Reklame → „Prijavi
-    reklamu“</span>: otvara se imejl koji šalješ ti.</p>
+  <p>U EU, EEA, Ujedinjenom Kraljevstvu i Švajcarskoj: <span class="path">Profil → Privatnost i
+    reklame → „Promeni odgovor“</span>. Van njih praćenje menjaš u iOS podešavanjima, kod aplikacije
+    DUELKO; <span class="path">Profil → Privatnost i reklame → „Više o tome“</span> vodi tamo.
+    Prekidač „Personalizovane reklame“ je tu svuda. Neprikladnu reklamu prijavljuješ iz
+    <span class="path">Profil → Privatnost i reklame → „Prijavi reklamu“</span>: otvara se imejl
+    koji šalješ ti.</p>
 
   <h3>Merenje instalacija</h3>
   <p>Ako preko neke reklame instaliraš drugu aplikaciju, iOS može toj reklamnoj mreži da pošalje
@@ -434,6 +453,9 @@
       prevent cheating and abuse; we do not sell it or share it for advertising.</li>
     <li><strong>What other players see:</strong> your name and avatar or approved photo, rank, scores
       and leaderboard place; your friends see whether you are in the app, so they can challenge you.
+      Another player can find you by name to send a friend request, seeing only your name, avatar
+      and rank — never your account, code or email — unless either of you blocked the other or they
+      reported you; while you carry the starting name "Igrač", nobody finds you.
       Nobody but your opponent in that match sees your moves; this version does not replay
       recordings of other players' matches. Reports and blocks are never announced.</li>
     <li><strong>Retention:</strong> match moves 90 days; matches and results 13 months; weekly
@@ -443,19 +465,23 @@
       once. You may ask us by e-mail for access to, correction or deletion of your data.</li>
     <li><strong>Game statistics (Noqyris).</strong> Separate from the account, the game sends us
       statistics about how it is played, so we can see where players get stuck or stop, what is too
-      hard and what does not work. Only we (Noqyris) make and read them; they are not used for
-      advertising and we do not sell them. <em>What:</em> a random install number the game creates
-      on your phone (not the advertising identifier, not a device or account ID, never given to
-      anyone, including Unity LevelPlay); how you play (start and end of play, screens, the kind of
+      hard and what does not work. Only we (Noqyris) make and read them, and we do not sell them. <em>What:</em> a random install number the game creates
+      on your phone (not the advertising identifier, not a device or account ID; the game does not
+      give it to Unity LevelPlay); how you play (start and end of play, screens, the kind of
       match and its outcome, the first match's steps, ad offers and ad views with revenue per view,
-      errors, loading time); game version, platform, system version, language and time-zone
+      errors, loading time); the questions about ads, tracking and notifications: that a question
+      was asked, where, and the answer standing after it (accepted, declined, closed or left
+      unanswered, or that the phone does not allow the question), and your “Dozvoli” (allow)
+      to the statistics question; game version, platform, system version, language and time-zone
       offset; the country, derived by Cloudflare from your IP address, which we do not store. We
       do not send your name, account ID, opponents, friends, email, phone model, advertising
-      identifier or purchases. <em>Legal basis:</em> in the EU, EEA, United Kingdom, Switzerland
-      and Serbia, your consent (GDPR Art. 6(1)(a), Serbian Personal Data Protection Act Art. 12,
-      Electronic Communications Act Art. 160): the game asks on the home screen after your first
-      finished match, separately from the ads question, and stores or sends nothing until you
-      choose “Dozvoli” (allow). Elsewhere, our legitimate interest in improving the game, and you
+      identifier or purchases. <em>Legal basis:</em> in the European Economic Area (the EU, Iceland,
+      Liechtenstein, Norway), the United Kingdom and Switzerland, your consent (GDPR Art. 6(1)(a)):
+      the game asks on the home screen after your first finished match, separately from the ads
+      question; until then it sends nothing and writes nothing to the phone, and after “Dozvoli”
+      (allow) it also sends what happened earlier in that launch (for example your answer to the
+      ads question). In other countries,
+      Serbia included, our legitimate interest in improving the game, and you
       can turn statistics off at any time. <em>Who:</em> Cloudflare, Inc. processes the data for us
       under its data processing agreement; individual events with the install number are stored
       at Cloudflare, possibly outside the EU (USA), under the EU-U.S. Data Privacy Framework and
@@ -475,16 +501,32 @@
       button; we cannot find or delete them by email. If you are under 16 (15 in Serbia), turn
       statistics on only with a parent's consent.</li>
     <li><strong>Ads</strong> are shown by Unity Technologies through Unity LevelPlay (Unity Ads,
-      ironSource Exchange). Nothing ad-related starts before your second finished match, or before you tap an ad offer yourself. In a
-      European time zone the app first asks whether you accept ads; only after “Prihvatam” (accept)
-      does iOS ask about tracking and the SDK start — a refusal starts nothing. Elsewhere there is no
-      question of ours: Apple’s tracking prompt is shown at those moments and the SDK starts after any
-      answer; without tracking permission it gets no advertising identifier and the CCPA “do not
-      sell or share” flag is set. Unity receives device and app data, ad interactions, diagnostics and,
-      only with permission, the IDFA (<a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s player privacy policy</a>).
+      ironSource Exchange). The questions come at the first launch, right after the welcome screen
+      (unless the phone already knows you bought “Bez reklama”), and Unity LevelPlay does not start
+      before an answer. In the EEA, the UK and Switzerland (by the phone's time zone, or when the
+      app cannot read it) the app first asks whether you accept personalised ads, two equal
+      answers. After “Prihvatam” (accept) iOS asks about tracking (if you have not answered it yet)
+      and the SDK starts; if you do not allow tracking there, or turn it off later in iOS Settings,
+      your “Prihvatam” still stands, but iOS gives the app no advertising identifier. After “Odbijam” (decline) ads still run: the SDK starts with your refusal (GDPR
+      consent false), “do not sell or share” is set, and in those countries the app does not lead
+      to Apple’s tracking prompt; a tracking permission you gave Apple earlier stays until you
+      change it in iOS Settings. Elsewhere, Serbia included, there is no question of ours: Apple’s
+      tracking prompt is shown (if you have not answered it yet) with no screen of ours before it
+      and the SDK starts after any answer; without tracking permission iOS gives the app no
+      advertising identifier and the app sets the CCPA “do not sell or share” flag, also when you
+      turn tracking off later in iOS Settings, once you come back to the game. Everywhere, Profil →
+      Privatnost i reklame has a “Personalizovane reklame” (personalised ads) switch (in the EEA, the
+      UK and Switzerland it can be turned on only after “Prihvatam”); off, Unity gets consent false
+      and “do not sell or share”; ads are not turned off by it. The switch does not change Apple’s tracking
+      permission. Your answer to our question also sets the switch: “Odbijam” turns it off,
+      “Prihvatam” turns it on, also if you had turned it off before (unless the app could not read
+      your earlier answer at that launch: then “Prihvatam” does not turn the switch on, and “Odbijam”
+      turns it off at the first later launch at which the app can read its own records); and the switch holds outside
+      those countries too: while it is off, Unity gets consent false there as well. Unity receives
+      device and app data, ad interactions, diagnostics and, only with permission, the IDFA (<a class="url" href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity’s player privacy policy</a>).
       Interstitials appear only when leaving a finished match’s results, at most after every
-      second match and never on the first day; rewarded ads are opt-in. Profil → Reklame changes your
-      choice or reports an ad.</li>
+      second match and from the third match on; rewarded ads are opt-in. Profil → Privatnost i
+      reklame changes your answer (in the zone) or reports an ad.</li>
     <li><strong>Purchases</strong> go through Apple only; we never see payment data. The app keeps the
       transaction ids of coin packs on the device so each is granted once.</li>
     <li><strong>Reminders</strong> are local notifications scheduled on the device, if you allow them.</li>
